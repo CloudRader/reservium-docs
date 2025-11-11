@@ -48,17 +48,6 @@ plugins:
       branch: main
       enabled: !ENV [CI, false]
 
-  - git-latest-changes:
-      limit_to_docs_dir: true
-      repo_vendor: github
-      timestamp_format: "%Y-%m-%d %H:%M"
-      history_limit: 10
-      table_features:
-        - page_path_link
-        - timestamp
-        - author
-        - message
-
 nav:
   - Getting Started: index.md
   - About: about.md
