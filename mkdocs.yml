@@ -1,6 +1,67 @@
 site_name: Reservium
 theme:
   name: material
+
+  palette:
+  - media: '(prefers-color-scheme: dark)'
+    scheme: default
+    primary: green
+    accent: yellow
+    toggle:
+      icon: material/weather-night
+      name: Switch to light mode
+  - media: '(prefers-color-scheme: light)'
+    scheme: slate
+    primary: green
+    accent: yellow
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to dark mode
+
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.top
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.prune
+    - navigation.indexes
+
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/alpha-r-circle
+
+repo_name: CloudRader/reservium-api
+repo_url: https://github.com/CloudRader/reservium-api
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      enabled: !ENV [CI, false]
+
+  - git-committers:
+      repository: squidfunk/mkdocs-material
+      branch: main
+      enabled: !ENV [CI, false]
+
+  - git-latest-changes:
+      limit_to_docs_dir: true
+      repo_vendor: github
+      timestamp_format: "%Y-%m-%d %H:%M"
+      history_limit: 10
+      table_features:
+        - page_path_link
+        - timestamp
+        - author
+        - message
+
 nav:
-  - Home: index.md
+  - Getting Started: index.md
   - About: about.md
+  - Release Notes:
+    - release-notes/backend.md
+    - release-notes/frontend.md
