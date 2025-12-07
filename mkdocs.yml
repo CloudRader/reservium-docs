@@ -40,6 +40,7 @@ repo_url: https://github.com/CloudRader/reservium-api
 plugins:
   - search
   - git-revision-date-localized:
+      enable_parallel_processing: false
       enable_creation_date: true
       enabled: !ENV [CI, false]
 
