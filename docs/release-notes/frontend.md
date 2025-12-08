@@ -1,4 +1,4 @@
-# Changelog
+# Frontend Release Notes
 
 ## [2.2.2](https://github.com/CloudRader/reservium-ui/compare/v2.2.1...v2.2.2) (2025-12-07)
 

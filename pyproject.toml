@@ -8,5 +8,6 @@ dependencies = [
     "mkdocs-git-committers-plugin-2==2.5.0",
     "mkdocs-git-revision-date-localized-plugin==1.5.0",
     "mkdocs-material==9.7.0",
+    "pymdown-extensions==10.18",
     "typer==0.20.0",
 ]
