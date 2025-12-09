@@ -1,3 +1,8 @@
+---
+icon: lucide/mouse-pointer-click
+---
+
+
 # Why Use a Reservium?
 
 A reservation system is essential for organizing shared spaces efficiently and reducing administrative overhead. By adopting Reservium, organizations can replace manual booking methods—such as email threads, spreadsheets, or in-person coordination—with a structured, transparent, and consistent process.

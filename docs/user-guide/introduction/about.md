@@ -1,3 +1,7 @@
+---
+icon: lucide/badge-question-mark
+---
+
 # What is Reservium?
 
 **Reservium is an open source reservation system designed for booking open spaces in an organization.**
