@@ -10,4 +10,5 @@ dependencies = [
     "mkdocs-material==9.7.0",
     "pymdown-extensions==10.18",
     "typer==0.20.0",
+    "zensical==0.0.11",
 ]
