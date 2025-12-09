@@ -1,0 +1,86 @@
+site_name: Reservium
+theme:
+  name: material
+
+  palette:
+  - media: '(prefers-color-scheme: dark)'
+    scheme: default
+    primary: green
+    accent: yellow
+    toggle:
+      icon: material/weather-night
+      name: Switch to light mode
+  - media: '(prefers-color-scheme: light)'
+    scheme: slate
+    primary: green
+    accent: yellow
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to dark mode
+
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.top
+    - navigation.tracking
+    - navigation.tabs
+    # - navigation.expand
+    - navigation.prune
+    - navigation.indexes
+    - navigation.footer
+
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/alpha-r-circle
+
+repo_name: CloudRader/reservium-api
+repo_url: https://github.com/CloudRader/reservium-api
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.superfences
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_parallel_processing: false
+      enable_creation_date: true
+      enabled: !ENV [CI, false]
+
+  - git-committers:
+      repository: squidfunk/mkdocs-material
+      branch: main
+      enabled: !ENV [CI, false]
+
+nav:
+  - User Guide:
+    - Introduction:
+      - user-guide/introduction/index.md
+      - user-guide/introduction/about.md
+      - user-guide/introduction/why-use.md
+    - Quickstart:
+      - user-guide/quickstart/index.md
+      - user-guide/quickstart/first-setup.md
+    - Basic Features:
+      - user-guide/basic-features/index.md
+    - FAQ:
+      - user-guide/faq/index.md
+  - Manager Guide:
+    - Introduction:
+      - manager-guide/introduction/index.md
+  - Hosting Guide:
+    - Introduction:
+      - hosting-guide/introduction/index.md
+  - Contribute Guide:
+    - Introduction:
+      - contribute-guide/introduction/index.md
+  - API Reference:
+    - api-reference/index.md
+  - Release Notes:
+    - release-notes/backend.md
+    - release-notes/frontend.md
