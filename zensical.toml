@@ -10,14 +10,17 @@ nav = [
     {"Introduction" = [
         "user-guide/introduction/index.md",
         "user-guide/introduction/about.md",
-        "user-guide/introduction/why-use.md"
+        "user-guide/introduction/why-use.md",
     ]},
     {"Quickstart" = [
         "user-guide/quickstart/index.md",
         "user-guide/quickstart/first-setup.md",
     ]},
     {"Basic Features" = [
-        "user-guide/basic-features/index.md"
+        "user-guide/basic-features/index.md",
+        "user-guide/basic-features/navigation.md",
+        "user-guide/basic-features/create-reservation.md",
+        "user-guide/basic-features/dashboard.md",
     ]},
     {"FAQ" = [
         "user-guide/faq/index.md"
