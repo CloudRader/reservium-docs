@@ -1,4 +1,8 @@
 [build]
-  command = "pip install -r requirements.txt && zensical build"
+  command = """
+    curl -LsSf https://astral.sh/uv/install.sh | sh &&
+    uv sync &&
+    zensical build
+  """
   publish = "site/"
   environment = { PYTHON_VERSION = "3.13" }
