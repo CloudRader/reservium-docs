@@ -40,6 +40,8 @@ Each service can have **multiple reservation types**, such as:
 - Specific Area  
 - atd
 
+![Reservation Types ](../../assets/screenshots/reservation-type.png)
+
 Reservation rules **depend on the selected type**, and may differ by:
 
 - Maximum number of participants
@@ -48,7 +50,9 @@ Reservation rules **depend on the selected type**, and may differ by:
 - Approval requirements
 - Available additional services
 
-Changing the reservation type may affect what rules apply.
+!!! Info
+
+    Changing the reservation type may affect what rules apply.
 
 ---
 
@@ -60,12 +64,16 @@ Some reservation types allow selecting **additional mini-services**, for example
 - Consoles or equipment
 - Extra access permissions
 
+![Mini Services Form](../../assets/screenshots/additionals-services.png)
+
 Available mini-services depend on:
 
 - The selected service
 - The reservation type
 
-If no additional services are available, this section may be hidden.
+!!! Info
+
+    If no additional services are available, this section may be hidden.
 
 ---
 
@@ -87,6 +95,8 @@ If something is incorrect or not allowed:
 - A **warning or error message** explains what went wrong
 - You can adjust the form and try again
 
+![Validation Error](../../assets/screenshots/validation-error.png)
+
 Examples:
 - Time slot already reserved
 - Too many participants
@@ -101,11 +111,16 @@ Some reservations cannot be confirmed automatically, for example:
 
 - Night-time reservations
 - Reservations exceeding capacity limits
+
+![Event Registration Form](../../assets/screenshots/event-registration-form.png)
+
+![Event Registration Form Confirmation](../../assets/screenshots/event-registration-form-confirmation.png)
+
 - Reservations requiring manager permission
 
 In these cases:
 
-- The reservation is created with **Pending** status
+- The reservation is created with **Not approved** status
 - Managers are notified for approval
 - You will receive updates by email
 
@@ -119,12 +134,16 @@ If all checks pass and no approval is required:
 - It appears in the calendar
 - A confirmation message is shown
 
+![Reservation Successful](../../assets/screenshots/reservation-successful.png)
+
 You will also receive a **confirmation email** with:
 
 - Reservation details
 - Date and time
 - Selected service and type
 - Additional services (if any)
+
+![Email Confirmation](../../assets/screenshots/email-confirmation.png)
 
 ---
 
