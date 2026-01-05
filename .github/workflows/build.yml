@@ -1,12 +1,8 @@
 name: Build Reservium Documentation
 on:
-  workflow_run:
-    workflows: ["SemVer Tag"]
-    types:
-      - completed
-  # push:
-  #   branches:
-  #     - main
+   push:
+     branches:
+       - main
 
 permissions:
   contents: read
