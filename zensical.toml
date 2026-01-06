@@ -30,6 +30,16 @@ nav = [
     {"Introduction" = [
         "manager-guide/introduction/index.md",
     ]},
+    {"Manager Panel" = [
+        "manager-guide/manager-panel/index.md",
+        "manager-guide/manager-panel/manage-reservation-services.md",
+    ]},
+    {"Manage Events" = [
+        "manager-guide/manage-events/index.md",
+    ]},
+    {"FAQ" = [
+        "manager-guide/faq/index.md"
+    ]}
   ]},
   {"Hosting Guide" = [
     {"Introduction" = [
