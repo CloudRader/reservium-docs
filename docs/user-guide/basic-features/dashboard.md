@@ -16,7 +16,7 @@ You can open the Dashboard from the **user menu** in the top-right corner:
 1. Click your **username**
 2. Select **My Events**
 
-![Dashboard](../../assets/screenshots/dashboard.png)
+![Dashboard](../assets/dashboard.png)
 
 ---
 
@@ -30,7 +30,7 @@ This section displays all **current and future reservations**.
 
 If you don’t have any upcoming reservations, you’ll see an informational message indicating that no events are scheduled.
 
-![Upcoming Events](../../assets/screenshots/dashboard-with-upcoming.png)
+![Upcoming Events](assets/dashboard-with-upcoming.png)
 
 ---
 

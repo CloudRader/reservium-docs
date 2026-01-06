@@ -8,7 +8,7 @@ icon: lucide/footprints
 
 To begin using Reservium, click **Log in**.
 
-![Login Page](../../assets/screenshots/login-page.png)
+![Login Page](assets/login-page.png)
 
 ---
 
@@ -17,7 +17,7 @@ To begin using Reservium, click **Log in**.
 You will be redirected to the authentication page.
 Reservium uses SSO (Single Sign-On) through Keycloak.
 
-![Login Keycloak](../../assets/screenshots/login-keycloak.png)
+![Login Keycloak](assets/login-keycloak.png)
 
 ---
 
@@ -29,7 +29,7 @@ Reservium uses SSO (Single Sign-On) through Keycloak.
     
 After successful authentication, you’ll be redirected to the **Reservium Main Page**, where you can see your services and calendar overview.
 
-![Main Page](../../assets/screenshots/main-page.png)
+![Main Page](assets/main-page.png)
 
 ---
 
@@ -72,4 +72,4 @@ After creating a reservation, you can view it at any time:
 1. Navigate to **Dashboard**
 2. Overview your reservations
 
-![Dashboard](../../assets/screenshots/dashboard.png)
+![Dashboard](../assets/dashboard.png)

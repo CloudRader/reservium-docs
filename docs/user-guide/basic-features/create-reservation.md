@@ -9,7 +9,7 @@ types affect the process, and what happens if additional validation or approval
 is required.
 
 
-![Reservation Page](../../assets/screenshots/create-reservation-panel-calendar.png)
+![Reservation Page](assets/create-reservation-panel-calendar.png)
 
 ---
 
@@ -17,7 +17,7 @@ is required.
 
 The **reservation form** is located on the **left side** of the page.
 
-![Reservation Form](../../assets/screenshots/reservation-form.png)
+![Reservation Form](assets/reservation-form.png)
 
 You must provide the following information:
 
@@ -40,7 +40,7 @@ Each service can have **multiple reservation types**, such as:
 - Specific Area  
 - atd
 
-![Reservation Types ](../../assets/screenshots/reservation-type.png)
+![Reservation Types ](assets/reservation-type.png)
 
 Reservation rules **depend on the selected type**, and may differ by:
 
@@ -64,7 +64,7 @@ Some reservation types allow selecting **additional mini-services**, for example
 - Consoles or equipment
 - Extra access permissions
 
-![Mini Services Form](../../assets/screenshots/additionals-services.png)
+![Mini Services Form](assets/additionals-services.png)
 
 Available mini-services depend on:
 
@@ -95,7 +95,7 @@ If something is incorrect or not allowed:
 - A **warning or error message** explains what went wrong
 - You can adjust the form and try again
 
-![Validation Error](../../assets/screenshots/validation-error.png)
+![Validation Error](assets/validation-error.png)
 
 Examples:
 - Time slot already reserved
@@ -112,9 +112,9 @@ Some reservations cannot be confirmed automatically, for example:
 - Night-time reservations
 - Reservations exceeding capacity limits
 
-![Event Registration Form](../../assets/screenshots/event-registration-form.png)
+![Event Registration Form](assets/event-registration-form.png)
 
-![Event Registration Form Confirmation](../../assets/screenshots/event-registration-form-confirmation.png)
+![Event Registration Form Confirmation](assets/event-registration-form-confirmation.png)
 
 - Reservations requiring manager permission
 
@@ -134,7 +134,7 @@ If all checks pass and no approval is required:
 - It appears in the calendar
 - A confirmation message is shown
 
-![Reservation Successful](../../assets/screenshots/reservation-successful.png)
+![Reservation Successful](assets/reservation-successful.png)
 
 You will also receive a **confirmation email** with:
 
@@ -143,7 +143,7 @@ You will also receive a **confirmation email** with:
 - Selected service and type
 - Additional services (if any)
 
-![Email Confirmation](../../assets/screenshots/email-confirmation.png)
+![Email Confirmation](assets/email-confirmation.png)
 
 ---
 
