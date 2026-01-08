@@ -45,6 +45,15 @@ nav = [
     {"Introduction" = [
         "hosting-guide/introduction/index.md",
     ]},
+    {"Install" = [
+        "hosting-guide/install/docker.md",
+    ]},
+    {"Update" = [
+        "hosting-guide/update/docker.md",
+    ]},
+    {"FAQ" = [
+        "hosting-guide/faq/index.md"
+    ]}
   ]},
   {"Contribute Guide" = [
     {"Introduction" = [
