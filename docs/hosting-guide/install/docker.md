@@ -1,23 +1,95 @@
 # Docker
 
-## ⚙️ Quick Start with Docker Compose
+## Docker Compose
 
-Reservium can be deployed quickly with Docker.  
-You only need a `.env` file and a `token.json` file.
+The easiest and recommended way to deploy your reservium stack is to use docker compose.
 
-### 📁 Example Directory Layout
+### Step 1. Install Docker and Docker Compose
 
-/your-project
+The way that you install Docker and Docker Compose depends on your Linux distribution. You can find specific instructions for each component in the links below:
 
-├── .env
+- [Docker Engine](https://docs.docker.com/engine/install/)
+- [Docker Compose](https://docs.docker.com/compose/install/linux/)
 
-├── docker-compose.yml
+After following the installation instructions, verify that Docker and Docker Compose are available by typing:
 
-└── token.json
+```bash
+docker --version
+docker compose version
+```
 
----
+### Step 2. Create an ```.env``` file
 
-### 🧩 docker-compose.yml
+Create a project directory to store your n8n environment configuration and Docker Compose files and navigate inside:
+
+```bash
+mkdir reservium
+cd reservium
+```
+
+Inside the ```reservium``` directory, create an ```.env``` file to customize your reservium instance's details. Change it to match your own information:
+
+```editorconfig
+# Database
+POSTGRES_DB=reservium
+POSTGRES_USER=reservium
+POSTGRES_PASSWORD=secretpassword
+
+# Mail
+MAIL__USERNAME=reservium@buk.cvut.cz
+MAIL__PASSWORD=exampleapp123
+MAIL__FROM_NAME=Reservium System
+
+# Keycloak
+KEYCLOAK__SERVER_URL=https://auth.buk.cvut.cz
+KEYCLOAK__REALM=reservium
+KEYCLOAK__CLIENT_ID=reservium-api
+KEYCLOAK__CLIENT_SECRET=supersecret
+
+# SpiceDB
+SPICEDB__CLIENT_SECRET=myspicedbsecret
+
+# Google
+GOOGLE__CLIENT_ID=example.apps.googleusercontent.com
+GOOGLE__CLIENT_SECRET=example-secret
+
+# Dormitory Access System
+DORMITORY_ACCESS_SYSTEM__API_KEY=ABCDEFG1234567890
+```
+
+### Step 3. Create a ```token.json``` file
+
+Inside your project directory, create a file named `token.json`.  
+This file is used to authenticate with Google Calendar and allows the application to access and manage calendar data.
+
+The access token is refreshed automatically, so in most cases you do not need to update this file manually after the initial setup.
+
+#### **Example ```token.json```**:
+
+```json
+{
+  "token": "...",
+  "refresh_token": "...",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "client_id": "...",
+  "client_secret": "...",
+  "scopes": ["https://www.googleapis.com/auth/calendar"],
+  "expiry": "2025-12-31T23:59:59Z"
+}
+```
+
+**Initial setup**
+
+For the first setup, you can copy the example above and replace only the following fields with values from Google Cloud Console:
+
+- client_id
+- client_secret
+
+All other fields can remain unchanged for initial testing and will be updated automatically by the application during authentication.
+
+### Step 4. Create a Docker Compose file
+
+Create a ```docker-compose.yaml``` file. Paste the following in the file:
 
 ```yaml
 ---
@@ -88,53 +160,14 @@ volumes:
   postgres_data:
 ```
 
-### 🧾 .env Example
+!!! warning 
 
-```env
-# Database
-POSTGRES_DB=reservium
-POSTGRES_USER=reservium
-POSTGRES_PASSWORD=secretpassword
+    Add information about containers and ENVS!!!
 
-# Mail
-MAIL__USERNAME=reservium@buk.cvut.cz
-MAIL__PASSWORD=exampleapp123
-MAIL__FROM_NAME=Reservium System
 
-# Keycloak
-KEYCLOAK__SERVER_URL=https://auth.buk.cvut.cz
-KEYCLOAK__REALM=reservium
-KEYCLOAK__CLIENT_ID=reservium-api
-KEYCLOAK__CLIENT_SECRET=supersecret
+### Step 5. Start Docker Compose
 
-# SpiceDB
-SPICEDB__CLIENT_SECRET=myspicedbsecret
-
-# Google
-GOOGLE__CLIENT_ID=example.apps.googleusercontent.com
-GOOGLE__CLIENT_SECRET=example-secret
-
-# Dormitory Access System
-DORMITORY_ACCESS_SYSTEM__API_KEY=ABCDEFG1234567890
-```
-
-### 🔐 token.json Example
-
-```token
-{
-  "token": "...",
-  "refresh_token": "...",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "client_id": "...",
-  "client_secret": "...",
-  "scopes": ["https://www.googleapis.com/auth/calendar"],
-  "expiry": "2025-12-31T23:59:59Z"
-}
-```
-
-> This token enables Google Calendar integration and is refreshed automatically.
-
-### ▶️ Running Reservium
+Start reservium by typing:
 
 ```bash
 docker compose up -d
@@ -145,9 +178,15 @@ docker compose up -d
 - Start PostgreSQL
 - Run database migrations
 - Launch the backend API on port 8000
-- Launch the frontend (if included) on port 3000
+- Launch the frontend on port 3000
 
 **You can access:**
 
 - API Docs: http://localhost:8000/docs
 - Frontend: http://localhost:3000
+
+To stop the containers, type:
+
+```bash
+docker compose stop
+```
