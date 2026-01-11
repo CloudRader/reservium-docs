@@ -160,10 +160,35 @@ volumes:
   postgres_data:
 ```
 
-!!! warning 
+The Docker Compose file above defines **three containers** that together form the Reservium stack:
 
-    Add information about containers and ENVS!!!
+**1. `db` (PostgreSQL)**
 
+- Stores all application data (reservations, services, users, etc.)
+- Uses environment variables:
+    - `POSTGRES_DB`
+    - `POSTGRES_USER`
+    - `POSTGRES_PASSWORD`
+- Data is persisted in the `postgres_data` Docker volume
+
+**2. `reservium-api`**
+
+- The backend API responsible for business logic, authentication, and integrations
+- Requires configuration via environment variables, including:
+    - **Database connection** (`DB__*`)
+    - **Email settings** (`MAIL__*`) for reservation notifications
+    - **Keycloak** (`KEYCLOAK__*`) for SSO authentication
+    - **Google Calendar** (`GOOGLE__*`) for calendar synchronization
+    - **External integrations** (e.g. access systems)
+- The `token.json` file is mounted into the container and used for Google Calendar authentication
+
+**3. `reservium-ui`**
+
+- The frontend web interface
+- Exposed on port `3000`
+- Communicates internally with the API container
+
+All sensitive values should be defined in a `.env` file and **must not be committed to version control**.
 
 ### Step 5. Start Docker Compose
 
