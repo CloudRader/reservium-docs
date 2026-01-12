@@ -48,6 +48,9 @@ nav = [
     {"Install" = [
         "hosting-guide/install/docker.md",
     ]},
+    {"Configure" = [
+        "hosting-guide/configure/keycloak.md",
+    ]},
     {"Update" = [
         "hosting-guide/update/docker.md",
     ]},
