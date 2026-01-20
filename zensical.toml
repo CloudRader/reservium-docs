@@ -34,6 +34,7 @@ nav = [
         "manager-guide/manager-panel/index.md",
         "manager-guide/manager-panel/manage-reservation-services.md",
         "manager-guide/manager-panel/manage-calendars.md",
+        "manager-guide/manager-panel/manage-mini-services.md",
     ]},
     {"Manage Events" = [
         "manager-guide/manage-events/index.md",
