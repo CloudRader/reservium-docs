@@ -2,18 +2,18 @@
 
 It is recommended that users pull the tags pointing to specific reservium versions when running in environments other than testing.
 
-To update reservium, change the image tag in your docker-compose.yml file:
+To update reservium, change the image tag in your compose.yaml file:
 
 For api:
 
 ```yaml
- image: darkrader/reservium-api:<IMAGE_TAG>
+ image: ghcr.io/cloudrader/reservium-api:<IMAGE_TAG>
 ```
 
 For ui:
 
 ```yaml
- image: darkrader/reservium-ui:<IMAGE_TAG>
+ image: ghcr.io/cloudrader/reservium-ui:<IMAGE_TAG>
 ```
 
 Then pull the latest image and relaunch your containers:
