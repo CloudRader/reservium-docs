@@ -46,36 +46,16 @@ KEYCLOAK__REALM=reservium
 KEYCLOAK__CLIENT_ID=reservium-api
 KEYCLOAK__CLIENT_SECRET=supersecret
 
-# SpiceDB
-SPICEDB__CLIENT_SECRET=myspicedbsecret
-
 # Google
 GOOGLE__CLIENT_ID=example.apps.googleusercontent.com
 GOOGLE__CLIENT_SECRET=example-secret
 
-# Dormitory Access System
-DORMITORY_ACCESS_SYSTEM__API_KEY=ABCDEFG1234567890
-```
-
-### Step 3. Create a ```token.json``` file
-
-Inside your project directory, create a file named `token.json`.  
-This file is used to authenticate with Google Calendar and allows the application to access and manage calendar data.
-
-The access token is refreshed automatically, so in most cases you do not need to update this file manually after the initial setup.
-
-#### **Example ```token.json```**:
-
-```json
-{
-  "token": "...",
-  "refresh_token": "...",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "client_id": "...",
-  "client_secret": "...",
-  "scopes": ["https://www.googleapis.com/auth/calendar"],
-  "expiry": "2025-12-31T23:59:59Z"
-}
+GOOGLE__PROJECT_ID=example-project-id
+GOOGLE__PRIVATE_KEY_ID=example-private-key
+GOOGLE__PRIVATE_KEY='-----BEGIN PRIVATE KEY-----\nexample-private-key\n-----END PRIVATE KEY-----\n'
+GOOGLE__CLIENT_EMAIL=example-client-email
+GOOGLE__CLIENT_ID=example-client-id
+GOOGLE__CLIENT_X509_CERT_URL=https://www.googleapis.com/robot/v1/metadata/x509/example-client-email.iam.gserviceaccount.com
 ```
 
 **Initial setup**
@@ -87,9 +67,9 @@ For the first setup, you can copy the example above and replace only the followi
 
 All other fields can remain unchanged for initial testing and will be updated automatically by the application during authentication.
 
-### Step 4. Create a Docker Compose file
+### Step 3. Create a Docker Compose file
 
-Create a ```docker-compose.yaml``` file. Paste the following in the file:
+Create a ```compose.yaml``` file. Paste the following in the file:
 
 ```yaml
 ---
@@ -109,7 +89,7 @@ services:
 
   reservium-api:
     container_name: reservium-api
-    image: darkrader/reservium-api:latest
+    image: ghcr.io/cloudrader/reservium-api:latest
     environment:
       ORGANIZATION_NAME: "Your organization name"
 
@@ -122,21 +102,20 @@ services:
       MAIL__PASSWORD: ${MAIL__PASSWORD}
       MAIL__FROM_NAME: ${MAIL__FROM_NAME}
       MAIL__SENT_DORMITORY_HEAD: true  # defalt false
-      MAIL__DORMITORY_HEAD_EMAIL: develop@buk.cvut.cz
+      MAIL__DORMITORY_HEAD_EMAIL: example@gmail.com
 
       KEYCLOAK__SERVER_URL: ${KEYCLOAK__SERVER_URL}
       KEYCLOAK__REALM: ${KEYCLOAK__REALM}
       KEYCLOAK__CLIENT_ID: ${KEYCLOAK__CLIENT_ID}
       KEYCLOAK__CLIENT_SECRET: ${KEYCLOAK__CLIENT_SECRET}
 
-      SPICEDB__CLIENT_SECRET: ${SPICEDB__CLIENT_SECRET}
-
+      GOOGLE__PROJECT_ID: ${GOOGLE__PROJECT_ID}
+      GOOGLE__PRIVATE_KEY_ID: ${GOOGLE__PRIVATE_KEY_ID}
+      GOOGLE__PRIVATE_KEY: ${GOOGLE__PRIVATE_KEY}
+      GOOGLE__CLIENT_EMAIL: ${GOOGLE__CLIENT_EMAIL}
       GOOGLE__CLIENT_ID: ${GOOGLE__CLIENT_ID}
-      GOOGLE__CLIENT_SECRET: ${GOOGLE__CLIENT_SECRET}
+      GOOGLE__CLIENT_X509_CERT_URL: ${GOOGLE__CLIENT_X509_CERT_URL}
 
-      DORMITORY_ACCESS_SYSTEM__API_KEY: ${DORMITORY_ACCESS_SYSTEM__API_KEY}
-    volumes:
-      - ./token.json:/usr/src/app/src/token.json
     depends_on:
       - db
     restart: on-failure
@@ -147,7 +126,7 @@ services:
 
   reservium-ui:
     container_name: reservium-ui
-    image: darkrader/reservium-ui:latest
+    image: ghcr.io/cloudrader/reservium-ui:latest
     ports:
       - "3000:3000"
     networks:
@@ -180,7 +159,6 @@ The Docker Compose file above defines **three containers** that together form th
     - **Keycloak** (`KEYCLOAK__*`) for SSO authentication
     - **Google Calendar** (`GOOGLE__*`) for calendar synchronization
     - **External integrations** (e.g. access systems)
-- The `token.json` file is mounted into the container and used for Google Calendar authentication
 
 **3. `reservium-ui`**
 
@@ -190,7 +168,7 @@ The Docker Compose file above defines **three containers** that together form th
 
 All sensitive values should be defined in a `.env` file and **must not be committed to version control**.
 
-### Step 5. Start Docker Compose
+### Step 4. Start Docker Compose
 
 Start reservium by typing:
 
