@@ -2,7 +2,7 @@
 name = "reservium-docs"
 version = "0.1.0"
 description = "Add your description here"
-requires-python = "==3.14.3"
+requires-python = "==3.14.4"
 dependencies = [
     "zensical==0.0.33",
     "typer==0.24.1",
