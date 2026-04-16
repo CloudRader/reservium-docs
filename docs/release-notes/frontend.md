@@ -1,4 +1,55 @@
-# Frontend Release Notes
+# Changelog
+
+## [2.3.2](https://github.com/CloudRader/reservium-ui/compare/v2.3.1...v2.3.2) (2026-04-14)
+
+
+### 🧱 Updates & Improvements
+
+* change realm to dev for development ([2999a2b](https://github.com/CloudRader/reservium-ui/commit/2999a2bf3d9b2393b6b96c4d479c77049c6156d8))
+* change to prod realm ([1b59279](https://github.com/CloudRader/reservium-ui/commit/1b592799d088067f09797a3b9b9416dd6d83e02d))
+
+
+### 🛠️ Fixes
+
+* to correct dev realm ([8dad8e5](https://github.com/CloudRader/reservium-ui/commit/8dad8e5dea72f486b7d5c7603f043c69ce8b04f6))
+
+
+### ⚙️ DevOps & CI/CD
+
+* **build:** migrate to ghrc from docker hub, merge build jobs and use docker/build-push-action ([a4a5892](https://github.com/CloudRader/reservium-ui/commit/a4a58923a4cc6160ffb7fdbcd0f7d779658a21ac))
+
+## [2.3.1](https://github.com/CloudRader/reservium-ui/compare/v2.3.0...v2.3.1) (2026-04-04)
+
+
+### 🛠️ Fixes
+
+* keycloak realm ([391e6d1](https://github.com/CloudRader/reservium-ui/commit/391e6d1a8e699fb5cbf9045c4e15a2f977500ba9))
+* keycloak realm ([#16](https://github.com/CloudRader/reservium-ui/issues/16)) ([7be46f1](https://github.com/CloudRader/reservium-ui/commit/7be46f1e484613484066e3d10e68e9a077cbfc3b))
+
+## [2.3.0](https://github.com/CloudRader/reservium-ui/compare/v2.2.2...v2.3.0) (2026-04-04)
+
+
+### ✨ New Features
+
+* update ui, fix bugs with relations and keycloak ([#14](https://github.com/CloudRader/reservium-ui/issues/14)) ([a67f53d](https://github.com/CloudRader/reservium-ui/commit/a67f53dccadc94a258d243c10794bdd81bc69e6a))
+
+
+### 🧱 Updates & Improvements
+
+* update .gitignore, bump package versions, and replace outdated assets ([11d7940](https://github.com/CloudRader/reservium-ui/commit/11d79401035e846c7e30d95da31b037665139f25))
+* update dependencies and add new assets ([20a27e4](https://github.com/CloudRader/reservium-ui/commit/20a27e4bbf6c8370ed249b907e0bec19451b9484))
+
+
+### 🛠️ Fixes
+
+* keycloak ([07a9350](https://github.com/CloudRader/reservium-ui/commit/07a9350285c06de43c898bc0d8381d335e12f709))
+* simplify reservation data query ([a4fedce](https://github.com/CloudRader/reservium-ui/commit/a4fedce42d10a4c2cb9e844322332a6f4718b8b1))
+
+
+### 🧹 Refactors
+
+* update Keycloak configuration to use environment variables ([b354349](https://github.com/CloudRader/reservium-ui/commit/b354349bce09324c70e419e15d8c7e47c57001f5))
+* update project to use APP_SETTINGS and move date formatting functions to dateUtils ([6690bfb](https://github.com/CloudRader/reservium-ui/commit/6690bfb11685655e0f79c7394d5f6ed42050f85b))
 
 ## [2.2.2](https://github.com/CloudRader/reservium-ui/compare/v2.2.1...v2.2.2) (2025-12-07)
 
