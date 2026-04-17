@@ -13,6 +13,7 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 REPOS: Dict[str, str] = {
     "Backend": "CloudRader/reservium-api",
     "Frontend": "CloudRader/reservium-ui",
+    "Documentation": "CloudRader/reservium-docs",
 }
 
 
@@ -47,7 +48,11 @@ def generate(
     for title, repo_slug in REPOS.items():
         logging.info("Fetching CHANGELOG.md for %s...", repo_slug)
         changelog = fetch_changelog(repo_slug, branch)
-        output_file = output_dir / ("backend.md" if title == "Backend" else "frontend.md")
+
+        filename = f"{title.lower().replace(' ', '-')}.md"
+        output_file = output_dir / filename
+
+
         output_file.write_text(changelog, encoding="utf-8")
         logging.info("✅ Generated %s", output_file)
 

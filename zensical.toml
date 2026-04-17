@@ -69,8 +69,9 @@ nav = [
     "api-reference/index.md",
   ]},
   {"Release Notes" = [
-    "release-notes/backend.md",
-    "release-notes/frontend.md",
+    {"Backend" = "release-notes/backend.md"},
+    {"Frontend" = "release-notes/frontend.md"},
+    {"Documentation" = "release-notes/documentation.md"}
   ]},
 ]
 
