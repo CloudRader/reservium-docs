@@ -80,7 +80,7 @@ You need the following to configure Keycloak SSO with Reservium:
 ### Step 2: Configure Reservium Environment Variables
 
 1. Connect to the server where Reservium is running.
-2. Navigate to the working directory containing your ```docker-compose.yml``` and configuration files.
+2. Navigate to the working directory containing your ```compose.yaml``` and configuration files.
 3. Open the ```.env``` file and add the following environment variables:
 ```editorconfig
 KEYCLOAK__SERVER_URL=https://keycloak.example.com:8443
