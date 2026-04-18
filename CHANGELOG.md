@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.11](https://github.com/CloudRader/reservium-docs/compare/v0.2.10...v0.2.11) (2026-04-18)
+
+
+### 🧱 Updates & Improvements
+
+* **release-notes:** add documentation page for this repo changelog ([728c3a9](https://github.com/CloudRader/reservium-docs/commit/728c3a9827cb60a38b5d359b76dd0a02c2fffd10))
+
+
+### 🛠️ Fixes
+
+* **hosting:** step 2 description (compose file name) ([fc32cec](https://github.com/CloudRader/reservium-docs/commit/fc32cecff2ba208e400ac8daf1f902cb81ca4e78))
+
 ## [0.2.10](https://github.com/CloudRader/reservium-docs/compare/v0.2.9...v0.2.10) (2026-04-16)
 
 
