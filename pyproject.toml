@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Add your description here"
 requires-python = "==3.14.3"
 dependencies = [
-    "zensical==0.0.33",
+    "zensical==0.0.34",
     "typer==0.24.1",
     "requests==2.33.1",
 ]
