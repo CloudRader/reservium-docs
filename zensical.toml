@@ -38,10 +38,12 @@ nav = [
     ]},
     {"Manage Events" = [
         "manager-guide/manage-events/index.md",
+        "manager-guide/manage-events/dashboard.md",
     ]},
     {"FAQ" = [
         "manager-guide/faq/index.md"
     ]}
+
   ]},
   {"Hosting Guide" = [
     {"Introduction" = [
