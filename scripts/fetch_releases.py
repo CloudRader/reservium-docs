@@ -13,7 +13,6 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 REPOS: Dict[str, str] = {
     "Backend": "CloudRader/reservium-api",
     "Frontend": "CloudRader/reservium-ui",
-    "Documentation": "CloudRader/reservium-docs",
 }
 
 
