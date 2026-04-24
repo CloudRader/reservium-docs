@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.13](https://github.com/CloudRader/reservium-docs/compare/v0.2.12...v0.2.13) (2026-04-24)
+
+
+### ⚙️ DevOps & CI/CD
+
+* **docs-changelog:** extend if condition ([287a211](https://github.com/CloudRader/reservium-docs/commit/287a2118a9719b583895af077e5c602fc1fe1f50))
+
 ## [0.2.12](https://github.com/CloudRader/reservium-docs/compare/v0.2.11...v0.2.12) (2026-04-24)
 
 
