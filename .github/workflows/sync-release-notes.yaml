@@ -1,4 +1,4 @@
-name: Update Documentation Release Notes
+name: Sync Release Notes
 
 on:
   workflow_run:
@@ -7,17 +7,16 @@ on:
       - completed
 
 jobs:
-  update-docs-release:
-    runs-on: ubuntu-latest
+  sync-release-notes:
     
+    runs-on: ubuntu-latest
     if: >
       ${{ github.event.workflow_run.conclusion == 'success' &&
       github.event.workflow_run.head_branch == 'main' &&
       !contains(github.event.workflow_run.head_commit.message, 'chore(main): release') }}
-      
     permissions:
       contents: write
-      
+
     steps:
       - uses: actions/checkout@v6
         with:
@@ -27,14 +26,20 @@ jobs:
       - name: Copy CHANGELOG to docs
         run: cp CHANGELOG.md docs/release-notes/documentation.md
 
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Fetch and generate release notes
+        run: uv run scripts/fetch_releases.py
+
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/release-notes/documentation.md
+          git add docs/release-notes/*.md
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "docs(release): sync changelog to documentation release notes"
+            git commit -m "docs(release): sync all release notes (backend, frontend, docs)"
             git push origin HEAD:release-please--branches--main
           fi
