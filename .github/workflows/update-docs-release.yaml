@@ -3,9 +3,7 @@ name: Update Documentation Release Notes
 on:
   push:
     branches:
-      - main
-    paths:
-      - 'CHANGELOG.md'
+      - release-please--branches--main
 
 jobs:
   update-docs-release:
