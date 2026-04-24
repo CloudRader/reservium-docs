@@ -1,5 +1,29 @@
 # Changelog
 
+## [0.2.11](https://github.com/CloudRader/reservium-docs/compare/v0.2.10...v0.2.11) (2026-04-24)
+
+
+### 🧱 Updates & Improvements
+
+* **deps:** update astral-sh/setup-uv action to v8 ([#21](https://github.com/CloudRader/reservium-docs/issues/21)) ([9207ca7](https://github.com/CloudRader/reservium-docs/commit/9207ca793350df55cf18c592635132c1cd50af6f))
+* **deps:** update googleapis/release-please-action action to v5 ([#22](https://github.com/CloudRader/reservium-docs/issues/22)) ([730485b](https://github.com/CloudRader/reservium-docs/commit/730485b5a8970a225e4b985bd515663e9d516c18))
+* **manager-guide:** add dashboard management guide for managers ([1a419f7](https://github.com/CloudRader/reservium-docs/commit/1a419f75474bac4585103728b15c6b7f385c0bd3))
+* **release-notes:** add documentation page for this repo changelog ([728c3a9](https://github.com/CloudRader/reservium-docs/commit/728c3a9827cb60a38b5d359b76dd0a02c2fffd10))
+* **release-notes:** update release notes ([89c3d42](https://github.com/CloudRader/reservium-docs/commit/89c3d429f30cddbce249d5e31ef8987d44511348))
+
+
+### 🛠️ Fixes
+
+* **deps:** update dependency typer to v0.24.2 ([#23](https://github.com/CloudRader/reservium-docs/issues/23)) ([1e6a780](https://github.com/CloudRader/reservium-docs/commit/1e6a780a8dc5cee8fb9573db3b40b1c7ead22068))
+* **deps:** update dependency zensical to v0.0.34 ([#18](https://github.com/CloudRader/reservium-docs/issues/18)) ([e02f71f](https://github.com/CloudRader/reservium-docs/commit/e02f71fddd815e7763f4b9342d3a54166447ae1c))
+* **deps:** update dependency zensical to v0.0.36 ([#24](https://github.com/CloudRader/reservium-docs/issues/24)) ([a9b38a7](https://github.com/CloudRader/reservium-docs/commit/a9b38a77e0bd4565a24fb9cadf7d0bdff355e9a8))
+* **hosting:** step 2 description (compose file name) ([fc32cec](https://github.com/CloudRader/reservium-docs/commit/fc32cecff2ba208e400ac8daf1f902cb81ca4e78))
+
+
+### ⚙️ DevOps & CI/CD
+
+* **build:** change trigger condition ([30c07c0](https://github.com/CloudRader/reservium-docs/commit/30c07c08274a175d14d5d3973254135111664b20))
+
 ## [0.2.10](https://github.com/CloudRader/reservium-docs/compare/v0.2.9...v0.2.10) (2026-04-16)
 
 
