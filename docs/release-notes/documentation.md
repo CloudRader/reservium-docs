@@ -1,5 +1,30 @@
 # Changelog
 
+## [0.2.12](https://github.com/CloudRader/reservium-docs/compare/v0.2.11...v0.2.12) (2026-04-24)
+
+
+### 🧱 Updates & Improvements
+
+* **docs-changelog:** fix push to correct branch ([77f516f](https://github.com/CloudRader/reservium-docs/commit/77f516f4b22b875a04649e3d81494fecea77ecd0))
+* **docs-changelog:** fix trigger workflow ([eabba16](https://github.com/CloudRader/reservium-docs/commit/eabba169bb39632c50b571d15dccfe6b4f20bd95))
+* **docs-release:** fix trigger workflow and run conditions ([1e92836](https://github.com/CloudRader/reservium-docs/commit/1e928360c91acb5cf2bf0bcf57b546f12e704bf8))
+
+
+### 🛠️ Fixes
+
+* **build:** correct trigger condition (probably) ([09a5de3](https://github.com/CloudRader/reservium-docs/commit/09a5de3e09900ad4ccd95e0c0d0772c81e54957f))
+
+
+### 📝 Documentation
+
+* **release:** sync changelog to documentation release notes ([fe3d0c7](https://github.com/CloudRader/reservium-docs/commit/fe3d0c72d3089ec427b27749774e5bdab7aff1f2))
+
+
+### ⚙️ DevOps & CI/CD
+
+* **docs-release:** add workflow for sync changelog ([430e12c](https://github.com/CloudRader/reservium-docs/commit/430e12c3c43bc6722e1a64ae77f451136e7e87bf))
+* **docs-release:** fix trigger workflow ([ad9ed86](https://github.com/CloudRader/reservium-docs/commit/ad9ed86050bac02ed9dca0bdf7a3df82299098f1))
+
 ## [0.2.11](https://github.com/CloudRader/reservium-docs/compare/v0.2.10...v0.2.11) (2026-04-24)
 
 
