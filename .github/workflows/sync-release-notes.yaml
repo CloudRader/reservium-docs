@@ -8,7 +8,6 @@ on:
 
 jobs:
   sync-release-notes:
-    
     runs-on: ubuntu-latest
     if: >
       ${{ github.event.workflow_run.conclusion == 'success' &&
@@ -23,14 +22,14 @@ jobs:
           fetch-depth: 0
           ref: release-please--branches--main
 
-      - name: Copy CHANGELOG to docs
-        run: cp CHANGELOG.md docs/release-notes/documentation.md
-
       - name: Install uv
         uses: astral-sh/setup-uv@v8.1.0
 
       - name: Fetch and generate release notes
         run: uv run scripts/fetch_releases.py
+        
+      - name: Copy CHANGELOG to docs
+        run: cp CHANGELOG.md docs/release-notes/documentation.md
 
       - name: Commit and push changes
         run: |
