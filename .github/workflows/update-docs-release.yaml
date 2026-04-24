@@ -18,6 +18,7 @@ jobs:
       - uses: actions/checkout@v6
         with:
           fetch-depth: 0
+          ref: release-please--branches--main
 
       - name: Copy CHANGELOG to docs
         run: cp CHANGELOG.md docs/release-notes/documentation.md
@@ -31,5 +32,5 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "docs(release): sync changelog to documentation release notes"
-            git push
+            git push origin HEAD:release-please--branches--main
           fi
