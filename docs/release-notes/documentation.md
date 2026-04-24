@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.2.13](https://github.com/CloudRader/reservium-docs/compare/v0.2.12...v0.2.13) (2026-04-24)
+
+
+### 🧱 Updates & Improvements
+
+* **ci-workflow:** add fetch changelogs for all repos ([afb62b9](https://github.com/CloudRader/reservium-docs/commit/afb62b9a66b7e03749240cbd793c71e67a271146))
+* **deps:** update astral-sh/setup-uv action to v8 ([#28](https://github.com/CloudRader/reservium-docs/issues/28)) ([44a80f6](https://github.com/CloudRader/reservium-docs/commit/44a80f65365dddca1d707f14c3b62ed248f1007c))
+
+
+### ⚙️ DevOps & CI/CD
+
+* **docs-changelog:** extend if condition ([287a211](https://github.com/CloudRader/reservium-docs/commit/287a2118a9719b583895af077e5c602fc1fe1f50))
+* **sync-changelogs:** change steps placing ([1403ded](https://github.com/CloudRader/reservium-docs/commit/1403dedf0b4eacf149ca0ba2e86898845502665e))
+
 ## [0.2.12](https://github.com/CloudRader/reservium-docs/compare/v0.2.11...v0.2.12) (2026-04-24)
 
 
