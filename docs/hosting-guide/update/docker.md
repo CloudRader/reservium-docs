@@ -23,7 +23,7 @@ docker compose pull
 docker compose up -d
 ```
 
-!!! warning 
+!!! warning
 
     The 'latest' tag does not automatically keep your container up to date. You must run docker compose pull to fetch the latest image version before updating.
 

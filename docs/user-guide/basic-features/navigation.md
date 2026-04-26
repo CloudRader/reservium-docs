@@ -21,7 +21,7 @@ At the top of the page, you’ll see the **navigation bar** with all the service
     - Reserved slots
     - Available slots
     - Reservation types (e.g., Entire Space, Ground Floor, Pool, etc.)
-  
+
 - **Calendar Views:** You can switch between different calendar views:
     - Day
   	- Week

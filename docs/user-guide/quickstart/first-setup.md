@@ -21,12 +21,12 @@ Reservium uses SSO (Single Sign-On) through Keycloak.
 
 ---
 
-!!! warning "Authentication flow may differ" 
+!!! warning "Authentication flow may differ"
 
-    Your organization may use different identity providers behind Keycloak —  
-    such as LDAP, OAuth2, Google, Azure AD, or internal accounts.  
+    Your organization may use different identity providers behind Keycloak —
+    such as LDAP, OAuth2, Google, Azure AD, or internal accounts.
     The exact login method depends on how SSO is configured by your IT department.
-    
+
 After successful authentication, you’ll be redirected to the **Reservium Main Page**, where you can see your services and calendar overview.
 
 ![Main Page](assets/main-page.png)
@@ -53,7 +53,7 @@ To create a reservation, follow these steps:
     - Email – Contact email for the reservation
     - Reservation type – The specific room or room section
     - Additionals – Optional add-ons (equipment, accessories, services)
-    
+
 3. Submit the Reservation
 
     Click **Submit** to finalize the booking.

@@ -4,7 +4,7 @@ icon: lucide/layout-dashboard
 
 # Dashboard
 
-The **Dashboard** provides an overview of all your reservations.  
+The **Dashboard** provides an overview of all your reservations.
 Here you can track their status, manage upcoming events, and review past activity.
 
 ---

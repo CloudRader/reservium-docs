@@ -4,10 +4,10 @@ icon: lucide/badge-plus
 
 # Manage Reservation Services
 
-Reservation services define **what can be reserved** in Reservium — for example, rooms, spaces, or facilities.  
+Reservation services define **what can be reserved** in Reservium — for example, rooms, spaces, or facilities.
 From the **Manager Panel**, managers can view and manage the list of available services.
 
-This section explains how to work with **services only**.  
+This section explains how to work with **services only**.
 Calendars and mini-services are described in separate sections.
 
 ---

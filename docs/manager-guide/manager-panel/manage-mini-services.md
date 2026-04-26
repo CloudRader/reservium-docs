@@ -8,7 +8,7 @@ Mini services define **optional add-ons** that can be attached to a reservation 
 
 Mini services always belong to a **specific reservation service** and can be assigned to one or more calendars.
 
-This section focuses on **mini services only**.  
+This section focuses on **mini services only**.
 Calendar configuration and reservation rules are described elsewhere.
 
 ---

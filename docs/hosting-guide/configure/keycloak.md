@@ -1,6 +1,6 @@
 # How to configure SSO with Keycloak
 
-!!! warning "DEMO CONFIGURATION" 
+!!! warning "DEMO CONFIGURATION"
 
     This documentation includes examples from a demo environment for informational purposes only. Adapt the configuration values (domains, ports, credentials) to match your specific setup.
 
@@ -17,7 +17,7 @@ You need the following to configure Keycloak SSO with Reservium:
 - A running Keycloak instance (version 26.4 or later)
 - Access to Keycloak and Reservium server where they run
 
-!!! info "KEYCLOAK VERSION" 
+!!! info "KEYCLOAK VERSION"
 
     This guide uses Keycloak 26.4. Use a specific version rather than latest for consistency: quay.io/keycloak/keycloak:26.4.
 
