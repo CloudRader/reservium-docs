@@ -4,12 +4,12 @@ icon: lucide/calendar
 
 # Manage Calendars
 
-Calendars define **when and how a service can be reserved**.  
+Calendars define **when and how a service can be reserved**.
 Each calendar belongs to a specific reservation service and controls availability rules, limits, and reservation behavior.
 
 From the **Manager Panel**, managers can view and manage calendars assigned to a service.
 
-This section focuses on **calendars only**.  
+This section focuses on **calendars only**.
 Mini-services and advanced rules are described later.
 
 ---

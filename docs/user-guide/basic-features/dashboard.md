@@ -4,7 +4,7 @@ icon: lucide/layout-dashboard
 
 # Dashboard
 
-The **Dashboard** is where you manage and track all your reservations.  
+The **Dashboard** is where you manage and track all your reservations.
 It gives you a clear overview of your upcoming and past events, along with their current status.
 
 ---
@@ -71,9 +71,9 @@ For each reservation, regular users can:
 
 All actions are available directly from the reservation list.
 
-!!! Note "Manager View (Brief Note)" 
+!!! Note "Manager View (Brief Note)"
 
-    Managers see the same Dashboard layout as regular users.  
+    Managers see the same Dashboard layout as regular users.
     However, they have **additional management options** (such as approval and administration tools).
 
     Detailed manager functionality is covered separately in the **Manager Guide**.

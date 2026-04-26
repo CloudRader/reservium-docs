@@ -27,7 +27,7 @@ jobs:
 
       - name: Fetch and generate release notes
         run: uv run scripts/fetch_releases.py
-        
+
       - name: Copy CHANGELOG to docs
         run: cp CHANGELOG.md docs/release-notes/documentation.md
 

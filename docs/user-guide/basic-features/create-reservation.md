@@ -35,9 +35,9 @@ You must provide the following information:
 
 Each service can have **multiple reservation types**, such as:
 
-- Entire Space  
-- Upper Floor  
-- Specific Area  
+- Entire Space
+- Upper Floor
+- Specific Area
 - atd
 
 ![Reservation Types ](assets/reservation-type.png)
