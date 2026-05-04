@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.2.14](https://github.com/CloudRader/reservium-docs/compare/v0.2.13...v0.2.14) (2026-05-04)
+
+
+### 🧱 Updates & Improvements
+
+* fix all files with pre-commit hook ([cd3837e](https://github.com/CloudRader/reservium-docs/commit/cd3837ed30f0919255e302fb1ba6d8a0b4afcf12))
+* **pre-commit:** add config ([0313d00](https://github.com/CloudRader/reservium-docs/commit/0313d00f1d4d333170888dcdc2ff67cb32189a81))
+
+
+### 🛠️ Fixes
+
+* **deps:** update dependency typer to v0.25.1 ([#30](https://github.com/CloudRader/reservium-docs/issues/30)) ([23a327d](https://github.com/CloudRader/reservium-docs/commit/23a327df9e32c42060171ac356bff69bf453825f))
+* **deps:** update dependency zensical to v0.0.38 ([#31](https://github.com/CloudRader/reservium-docs/issues/31)) ([fb7a6ba](https://github.com/CloudRader/reservium-docs/commit/fb7a6ba03fff5c2936c5b2da516128ce240688cf))
+* **deps:** update dependency zensical to v0.0.39 ([#32](https://github.com/CloudRader/reservium-docs/issues/32)) ([48b6878](https://github.com/CloudRader/reservium-docs/commit/48b6878d1981b725b8d77001090c9bfbe9ca9fc7))
+* **deps:** update dependency zensical to v0.0.40 ([#33](https://github.com/CloudRader/reservium-docs/issues/33)) ([6dd62ab](https://github.com/CloudRader/reservium-docs/commit/6dd62ab6f170890a59c4cfd822c0aa75765b1973))
+
 ## [0.2.13](https://github.com/CloudRader/reservium-docs/compare/v0.2.12...v0.2.13) (2026-04-24)
 
 
