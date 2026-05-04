@@ -1,5 +1,55 @@
 # Changelog
 
+## [2.3.15](https://github.com/CloudRader/reservium-api/compare/v2.3.14...v2.3.15) (2026-04-30)
+
+
+### 🧱 Updates & Improvements
+
+* **base-model:** add created, updated, deleted at in base model ([5d71ef7](https://github.com/CloudRader/reservium-api/commit/5d71ef74a4e9e4af5d0b9257b1e23a7aa6623a94))
+* **deps:** update dependency astral-sh/uv to v0.11.8 ([#250](https://github.com/CloudRader/reservium-api/issues/250)) ([a918fca](https://github.com/CloudRader/reservium-api/commit/a918fca3b91515a91907656a264ddaa9ffec0580))
+* **deps:** update googleapis/release-please-action action to v5 ([#244](https://github.com/CloudRader/reservium-api/issues/244)) ([8b11a69](https://github.com/CloudRader/reservium-api/commit/8b11a69367389813b2677a16d53dc81ae6c989c0))
+
+
+### 🛠️ Fixes
+
+* **basedpyright:** warnings ([8ae5bd1](https://github.com/CloudRader/reservium-api/commit/8ae5bd1bcd6df4a9c2023c6074110802c797a5ca))
+* **config:** SecretStr configuration for secrets ([ecdf442](https://github.com/CloudRader/reservium-api/commit/ecdf442529c152b3f300cb91920de7cf9ca9fb96))
+* **hard-delete-event:** correct check condition ([a505100](https://github.com/CloudRader/reservium-api/commit/a505100185f71b7320441df7297b76a80291dd3b))
+
+
+### 🧹 Refactors
+
+* **models:** unify tablename in Base, rename base model ([096e40c](https://github.com/CloudRader/reservium-api/commit/096e40cfcbea31e06fe6d7578802112a978d5dc9))
+
+
+### 🧪 Tests & Quality
+
+* **basedpyright:** fix warnings (setup in code editor) ([5aa5619](https://github.com/CloudRader/reservium-api/commit/5aa5619c1c1e94715ecf5ea5db6d44516c8bfb86))
+* **pytest:** fix schemas tests ([17778ec](https://github.com/CloudRader/reservium-api/commit/17778ecffd312264f25b3c2a33a3d2060bac828e))
+
+## [2.3.14](https://github.com/CloudRader/reservium-api/compare/v2.3.13...v2.3.14) (2026-04-25)
+
+
+### 🧱 Updates & Improvements
+
+* **deps:** update astral-sh/setup-uv action to v8.1.0 ([#234](https://github.com/CloudRader/reservium-api/issues/234)) ([f34add4](https://github.com/CloudRader/reservium-api/commit/f34add480246ce64f05903cecff0d6ea5d8c4f48))
+* **deps:** update dependency ruff to v0.15.12 ([#247](https://github.com/CloudRader/reservium-api/issues/247)) ([389078a](https://github.com/CloudRader/reservium-api/commit/389078a12312aa2f4408cd73da47cbdddd6ac4e8))
+* **models:** rename db tables ([fa9bca9](https://github.com/CloudRader/reservium-api/commit/fa9bca9a7e8eb3fe92504dd8af7479aad859aae2))
+* **user:** apply migration for remove section_head attr ([eb58fba](https://github.com/CloudRader/reservium-api/commit/eb58fbaac023d3b4eb78c862a3fc65d3786eecef))
+* **user:** remove deprecated section_head attribute ([efa315f](https://github.com/CloudRader/reservium-api/commit/efa315ff1e232746cf44a041ef38562d989da675))
+* **user:** start remove depr. active_member attr ([9da2d5e](https://github.com/CloudRader/reservium-api/commit/9da2d5ed247f53238253a94ef502094c026ba2ea))
+
+
+### 🛠️ Fixes
+
+* **deps:** update dependency fastapi to v0.136.1 ([#246](https://github.com/CloudRader/reservium-api/issues/246)) ([64c955c](https://github.com/CloudRader/reservium-api/commit/64c955cb0eff9364aff59bd4dafb9c15e12e1a49))
+* **deps:** update dependency uvicorn to v0.46.0 ([#245](https://github.com/CloudRader/reservium-api/issues/245)) ([f86ec23](https://github.com/CloudRader/reservium-api/commit/f86ec23a778f9124ee5a5f308529f0f2feffeeec))
+
+
+### 📝 Documentation
+
+* **readme:** update readme info ([65caa0f](https://github.com/CloudRader/reservium-api/commit/65caa0f3b127f8a5e3c05023679f8728c106aae3))
+
 ## [2.3.13](https://github.com/CloudRader/reservium-api/compare/v2.3.12...v2.3.13) (2026-04-22)
 
 
@@ -282,41 +332,41 @@
 
 ### 🚀 Reservium Backend v2.1.0 — Code Quality & Dependency Update
 
-A focused minor release that improves **code quality**, **test coverage**, and **CI/CD visibility**.
+A focused minor release that improves **code quality**, **test coverage**, and **CI/CD visibility**.  
 This version introduces full test coverage for schemas and models layers, expanded Ruff rules, visual Codecov integration and **dependency upgrades**.
 
 
 ### ✨ Highlights
 
-- 🧩 **Full coverage added for Schemas and Models layers**
-- 🔧 **Expanded Ruff rule set** for stricter code style and best practices
-- 🧱 **Refactored imports and RET/ERA rule fixes** across multiple modules
-- 🧩 **Moved Renovate configuration** under `.github` for cleaner repository structure
-- ⚙️ **Updated most of dependencies** to the latest stable versions
+- 🧩 **Full coverage added for Schemas and Models layers** 
+- 🔧 **Expanded Ruff rule set** for stricter code style and best practices  
+- 🧱 **Refactored imports and RET/ERA rule fixes** across multiple modules  
+- 🧩 **Moved Renovate configuration** under `.github` for cleaner repository structure  
+- ⚙️ **Updated most of dependencies** to the latest stable versions 
 
 
 ### 🧹 Refactoring & Cleanup
 
-- 🧹 Sorted `__all__` declarations in `__init__` modules
-- 🧹 Addressed `RET`, `ERA`, and `DTZ` warnings in Ruff configuration
-- 🧹 Improved static analysis results and enforced new linting standards
+- 🧹 Sorted `__all__` declarations in `__init__` modules  
+- 🧹 Addressed `RET`, `ERA`, and `DTZ` warnings in Ruff configuration  
+- 🧹 Improved static analysis results and enforced new linting standards  
 
 
 ### 🧪 CI/CD & Tooling
 
-- ✅ Added **Codecov and Pipeline badges** to `README.md`
-- ✅ Improved **Ruff** and workflows with consistent checks
-- ✅ Maintained dependency automation via **Renovate**
-- ✅ Simplified coverage artifact uploads for easier inspection
+- ✅ Added **Codecov and Pipeline badges** to `README.md`  
+- ✅ Improved **Ruff** and workflows with consistent checks  
+- ✅ Maintained dependency automation via **Renovate**  
+- ✅ Simplified coverage artifact uploads for easier inspection  
 
 
 ### 🏁 Summary
 
-Reservium Backend **v2.1.0** enhances internal quality by improving structure, coverage, and CI visibility.
+Reservium Backend **v2.1.0** enhances internal quality by improving structure, coverage, and CI visibility.  
 Developers now benefit from improved linting, full schema/model validation coverage, and automatic Codecov reporting.
 
 
-**Released:** 7 November 2025
+**Released:** 7 November 2025  
 **Maintainer:** [DarkRader](mailto:artyom.20century@gmail.com)
 
 ## [2.0.0](https://github.com/CloudRader/reservium-api/compare/v1.0.0...v2.0.0) (2025-10-25)
@@ -329,78 +379,78 @@ A complete system refactor introducing a more modular structure, updated depende
 
 ### ✨ New Features
 
-- ✅ Added **Keycloak integration** for authentication and authorization
+- ✅ Added **Keycloak integration** for authentication and authorization  
 - ✅ Introduced **JWT-based role and permission handling**
-- ✅ Introduced **new event endpoints** with timelines and pagination
-- ✅ Added **automatic database migrations** at container startup
-- ✅ Added **email sending logic** and improved email templates
-- ✅ Added **GitHub Actions** for build, test, and Docker publishing
-- ✅ Added **semantic versioning (SemVer)** tagging and release workflow
-- ✅ Added **support for soft delete restore** and **hard delete** for reservation services
+- ✅ Introduced **new event endpoints** with timelines and pagination  
+- ✅ Added **automatic database migrations** at container startup  
+- ✅ Added **email sending logic** and improved email templates  
+- ✅ Added **GitHub Actions** for build, test, and Docker publishing  
+- ✅ Added **semantic versioning (SemVer)** tagging and release workflow  
+- ✅ Added **support for soft delete restore** and **hard delete** for reservation services  
 - ✅ Added **manager registration forms** and **PDF generation**
 
 
 ### 🧱 Updates & Improvements
 
-- ✴️ Updated dependencies and switched to **UV** environment management
-- ✴️ Updated and reorganized **Google Calendar integration**
-- ✴️ Improved event and reservation filtering, pagination, and performance
-- ✴️ Updated Pydantic schemas, naming conventions, and configuration settings
-- ✴️ Improved code formatting with **Ruff** (replacing Black and Pylint)
-- ✴️ Updated Docker and CI/CD pipelines for versioned builds
+- ✴️ Updated dependencies and switched to **UV** environment management  
+- ✴️ Updated and reorganized **Google Calendar integration**  
+- ✴️ Improved event and reservation filtering, pagination, and performance  
+- ✴️ Updated Pydantic schemas, naming conventions, and configuration settings  
+- ✴️ Improved code formatting with **Ruff** (replacing Black and Pylint)  
+- ✴️ Updated Docker and CI/CD pipelines for versioned builds  
 - ✴️ Enhanced app logging in API layer
 
 
 ### 🧹 Refactoring
 
-- 🧹 Major **codebase restructuring**: new folder layout (`core`, `integrations`, `api`)
-- 🧹 Migrated from IS authentication to Keycloak
-- 🧹 Unified exception handling, error mapping, and docstring consistency
-- 🧹 Simplified routers using **BaseCRUDRouter** and **Routers classes**
-- 🧹 Moved shared utilities, constants, and configuration to core modules
-- 🧹 Replaced UUID types with string identifiers across all models
-- 🧹 Introduced **strict dependency versioning** and refactored old scripts
+- 🧹 Major **codebase restructuring**: new folder layout (`core`, `integrations`, `api`)  
+- 🧹 Migrated from IS authentication to Keycloak  
+- 🧹 Unified exception handling, error mapping, and docstring consistency  
+- 🧹 Simplified routers using **BaseCRUDRouter** and **Routers classes**  
+- 🧹 Moved shared utilities, constants, and configuration to core modules  
+- 🧹 Replaced UUID types with string identifiers across all models  
+- 🧹 Introduced **strict dependency versioning** and refactored old scripts  
 
 
 ### 🛠️ Fixes
 
-- 🛠️ Fixed multiple CI/CD pipeline issues (Docker builds, Mypy, Ruff)
-- 🛠️ Fixed role schemas, Alembic configs, and migration scripts
-- 🛠️ Fixed CORS configuration and environment variables
-- 🛠️ Fixed async database engine and SQLAlchemy 2.0 migration
-- 🛠️ Fixed login routes, permissions, and exception handling
-- 🛠️ Fixed event/reservation relationships, API responses, and timezone handling
-- 🛠️ Fixed dependency mismatches after major refactor
+- 🛠️ Fixed multiple CI/CD pipeline issues (Docker builds, Mypy, Ruff)  
+- 🛠️ Fixed role schemas, Alembic configs, and migration scripts  
+- 🛠️ Fixed CORS configuration and environment variables  
+- 🛠️ Fixed async database engine and SQLAlchemy 2.0 migration  
+- 🛠️ Fixed login routes, permissions, and exception handling  
+- 🛠️ Fixed event/reservation relationships, API responses, and timezone handling  
+- 🛠️ Fixed dependency mismatches after major refactor  
 
 
 ### ❌ Removed / Deprecated
 
-- ❌ Removed IS authentication
-- ❌ Removed old Pylint and Black setup
-- ❌ Deprecated old router and schema structures
+- ❌ Removed IS authentication  
+- ❌ Removed old Pylint and Black setup  
+- ❌ Deprecated old router and schema structures  
 
 
 ### 🧪 Tests & Quality
 
-- ✅ Added linting and formatting checks to CI
+- ✅ Added linting and formatting checks to CI  
 
 
 ### ⚙️ DevOps & CI/CD
 
-- ✅ Introduced automated **SemVer tagging** and image versioning
-- ✅ Added **Docker Hub** publishing workflow
-- ✅ Set up **test matrix** for Mypy and Pytest jobs
+- ✅ Introduced automated **SemVer tagging** and image versioning  
+- ✅ Added **Docker Hub** publishing workflow  
+- ✅ Set up **test matrix** for Mypy and Pytest jobs  
 
 
 ### 🏁 Summary
 
 Reservium v2.0.0 marks a **major milestone** in the project:
 
-- Modernized backend architecture
-- Unified CI/CD pipelines
-- Introduced scalable authentication and permissions
-- Ensured maintainability through stricter structure and linting
+- Modernized backend architecture  
+- Unified CI/CD pipelines  
+- Introduced scalable authentication and permissions  
+- Ensured maintainability through stricter structure and linting  
 
 
-**Released:** 25 October 2025
+**Released:** 25 October 2025  
 **Maintainer:** [DarkRader](mailto:artyom.20century@gmail.com)
