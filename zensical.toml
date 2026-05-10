@@ -39,6 +39,7 @@ nav = [
     {"Manage Events" = [
         "manager-guide/manage-events/index.md",
         "manager-guide/manage-events/dashboard.md",
+        "manager-guide/manage-events/review-reservations.md",
     ]},
     {"FAQ" = [
         "manager-guide/faq/index.md"
