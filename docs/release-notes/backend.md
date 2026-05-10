@@ -1,5 +1,33 @@
 # Changelog
 
+## [2.3.16](https://github.com/CloudRader/reservium-api/compare/v2.3.15...v2.3.16) (2026-05-07)
+
+
+### 🧱 Updates & Improvements
+
+* **deps:** update dependency astral-sh/uv to v0.11.11 ([#258](https://github.com/CloudRader/reservium-api/issues/258)) ([715686d](https://github.com/CloudRader/reservium-api/commit/715686df28e610c63309d36b693a97ee7725d5ec))
+* **deps:** update dependency astral-sh/uv to v0.11.9 ([#257](https://github.com/CloudRader/reservium-api/issues/257)) ([7a4a8b1](https://github.com/CloudRader/reservium-api/commit/7a4a8b175fe2b550dea70094cdee9c240e2993fc))
+* **deps:** update dependency types-pytz to v2026.2.0.20260506 ([#259](https://github.com/CloudRader/reservium-api/issues/259)) ([8e490ef](https://github.com/CloudRader/reservium-api/commit/8e490ef10c9d5f6d623a91e79d7d105f2c0e66e9))
+* **pre-commit:** add configuration ([a05e97e](https://github.com/CloudRader/reservium-api/commit/a05e97e839bc5e8865cc6fc01fb089af05d75c97))
+
+
+### 🛠️ Fixes
+
+* **deps:** update dependency fastapi-mail to v1.6.3 ([#255](https://github.com/CloudRader/reservium-api/issues/255)) ([4c88cb5](https://github.com/CloudRader/reservium-api/commit/4c88cb5a3349bafb62b3783c56b1db3a43154600))
+* **deps:** update dependency fastapi-mail to v1.6.4 ([#262](https://github.com/CloudRader/reservium-api/issues/262)) ([1eac0cf](https://github.com/CloudRader/reservium-api/commit/1eac0cf42e8ec46efb08c193fd31d42e500f7048))
+* **deps:** update dependency google-api-python-client to v2.196.0 ([#254](https://github.com/CloudRader/reservium-api/issues/254)) ([fc01bc3](https://github.com/CloudRader/reservium-api/commit/fc01bc33f197f72a4d65874e44db88b38ab39bb0))
+* **deps:** update dependency google-auth-oauthlib to v1.4.0 ([#263](https://github.com/CloudRader/reservium-api/issues/263)) ([80f4294](https://github.com/CloudRader/reservium-api/commit/80f4294416e1721a58d03291eeb8b80aa3947f08))
+* **deps:** update dependency pydantic to v2.13.4 ([#260](https://github.com/CloudRader/reservium-api/issues/260)) ([1177dfb](https://github.com/CloudRader/reservium-api/commit/1177dfbda526b40584bf247bb9a30bbb3889f253))
+* **deps:** update dependency pytz to v2026.2 ([#256](https://github.com/CloudRader/reservium-api/issues/256)) ([52571b8](https://github.com/CloudRader/reservium-api/commit/52571b80ac6f997caea0f964ac8b6cc9abf19089))
+
+
+### 🧪 Tests & Quality
+
+* **mypy:** upgrade to v2 version. Update script and config ([fe58c6e](https://github.com/CloudRader/reservium-api/commit/fe58c6e50e56673c576d11c78790197e95dc88e8))
+* **pre-commit:** add pytest and refactor with use local scripts ([c31c3e6](https://github.com/CloudRader/reservium-api/commit/c31c3e60afc7ef0d0a5dc498942b5121a502c90a))
+* **pre-commit:** add ruff and mypy to config ([3af8ac6](https://github.com/CloudRader/reservium-api/commit/3af8ac6e91fc954551c27bb67d1d2f54dd635052))
+* **pre-commit:** run pre-commit in repository ([f69a0c3](https://github.com/CloudRader/reservium-api/commit/f69a0c31f8a0b30b973b52ac9301f212f6d3f50d))
+
 ## [2.3.15](https://github.com/CloudRader/reservium-api/compare/v2.3.14...v2.3.15) (2026-04-30)
 
 
@@ -205,7 +233,7 @@
 
 ### 🛠️ Fixes
 
-* **deps:** update dependency pypdf to v6.10.0 [security] ([#200](https://github.com/CloudRader/reservium-api/issues/200)) ([e6fc363](https://github.com/CloudRader/reservium-api/commit/e6fc3635ca42f4ac81d446a5562e0f3c4e9ed917))
+* **deps:** update dependency pypdf to v6.10.0 \[security\] ([#200](https://github.com/CloudRader/reservium-api/issues/200)) ([e6fc363](https://github.com/CloudRader/reservium-api/commit/e6fc3635ca42f4ac81d446a5562e0f3c4e9ed917))
 * **tetsts:** test variables ([f5c5a06](https://github.com/CloudRader/reservium-api/commit/f5c5a062d6dc1c676efa0b6c3f50ca0d0d45d181))
 
 ## [2.3.1](https://github.com/CloudRader/reservium-api/compare/v2.3.0...v2.3.1) (2026-04-10)
@@ -270,8 +298,8 @@
 ### 🛠️ Fixes
 
 * blocking code to async and race condition after background task ([8ead512](https://github.com/CloudRader/reservium-api/commit/8ead5124a79044cc3eca232ce2b5c4cecd8e8bd6))
-* **deps:** update dependency aiohttp to v3.13.3 [security] ([#139](https://github.com/CloudRader/reservium-api/issues/139)) ([932b936](https://github.com/CloudRader/reservium-api/commit/932b9364445f39edb5e78dddbce8d5d845f3f37f))
-* **deps:** update dependency aiohttp to v3.13.4 [security] ([#162](https://github.com/CloudRader/reservium-api/issues/162)) ([45c776d](https://github.com/CloudRader/reservium-api/commit/45c776da5dd9208208f9133443eb3492a89f589e))
+* **deps:** update dependency aiohttp to v3.13.3 \[security\] ([#139](https://github.com/CloudRader/reservium-api/issues/139)) ([932b936](https://github.com/CloudRader/reservium-api/commit/932b9364445f39edb5e78dddbce8d5d845f3f37f))
+* **deps:** update dependency aiohttp to v3.13.4 \[security\] ([#162](https://github.com/CloudRader/reservium-api/issues/162)) ([45c776d](https://github.com/CloudRader/reservium-api/commit/45c776da5dd9208208f9133443eb3492a89f589e))
 * **deps:** update dependency aiohttp to v3.13.5 ([#165](https://github.com/CloudRader/reservium-api/issues/165)) ([fa269d7](https://github.com/CloudRader/reservium-api/commit/fa269d7e95cbc4482d5376969abfcf83c259efe7))
 * **deps:** update dependency alembic to v1.18.0 ([#146](https://github.com/CloudRader/reservium-api/issues/146)) ([f7a3814](https://github.com/CloudRader/reservium-api/commit/f7a38149e654dbbc8beccf8d9ed8faae3a401c07))
 * **deps:** update dependency alembic to v1.18.4 ([#149](https://github.com/CloudRader/reservium-api/issues/149)) ([80aa479](https://github.com/CloudRader/reservium-api/commit/80aa4792462bd9f77c3a5e2f16a8e6639b16a6c6))
@@ -285,9 +313,9 @@
 * **deps:** update dependency google-auth-oauthlib to v1.3.1 ([#173](https://github.com/CloudRader/reservium-api/issues/173)) ([82378f4](https://github.com/CloudRader/reservium-api/commit/82378f4bca0ee4cc7d24008e57460d28fc196dac))
 * **deps:** update dependency orjson to v3.11.7 ([#157](https://github.com/CloudRader/reservium-api/issues/157)) ([8094836](https://github.com/CloudRader/reservium-api/commit/809483648f94e166793b02d497761afb2f5d670b))
 * **deps:** update dependency pydantic-settings to v2.13.1 ([#174](https://github.com/CloudRader/reservium-api/issues/174)) ([135cffe](https://github.com/CloudRader/reservium-api/commit/135cffe939cc3835fcb37955a85043fc8ff4eaae))
-* **deps:** update dependency pypdf to v6.6.0 [security] ([#144](https://github.com/CloudRader/reservium-api/issues/144)) ([e8bb0b0](https://github.com/CloudRader/reservium-api/commit/e8bb0b01ce903a14cf2118e1fb14514a611326ff))
-* **deps:** update dependency pypdf to v6.6.2 [security] ([#151](https://github.com/CloudRader/reservium-api/issues/151)) ([472eb3d](https://github.com/CloudRader/reservium-api/commit/472eb3dea4898b5b9b720bfce3064c75332b0da7))
-* **deps:** update dependency pypdf to v6.9.2 [security] ([#161](https://github.com/CloudRader/reservium-api/issues/161)) ([d4470e9](https://github.com/CloudRader/reservium-api/commit/d4470e9fd520032ff8fd46eb6a0c189d6895a78d))
+* **deps:** update dependency pypdf to v6.6.0 \[security\] ([#144](https://github.com/CloudRader/reservium-api/issues/144)) ([e8bb0b0](https://github.com/CloudRader/reservium-api/commit/e8bb0b01ce903a14cf2118e1fb14514a611326ff))
+* **deps:** update dependency pypdf to v6.6.2 \[security\] ([#151](https://github.com/CloudRader/reservium-api/issues/151)) ([472eb3d](https://github.com/CloudRader/reservium-api/commit/472eb3dea4898b5b9b720bfce3064c75332b0da7))
+* **deps:** update dependency pypdf to v6.9.2 \[security\] ([#161](https://github.com/CloudRader/reservium-api/issues/161)) ([d4470e9](https://github.com/CloudRader/reservium-api/commit/d4470e9fd520032ff8fd46eb6a0c189d6895a78d))
 * **deps:** update dependency python-keycloak to v7 ([#138](https://github.com/CloudRader/reservium-api/issues/138)) ([eb4bced](https://github.com/CloudRader/reservium-api/commit/eb4bced8768ffc8f102baad929349af676823b88))
 * **deps:** update dependency python-keycloak to v7.0.3 ([#158](https://github.com/CloudRader/reservium-api/issues/158)) ([976efd9](https://github.com/CloudRader/reservium-api/commit/976efd945bef42bef45b3453933ba950161255b3))
 * **deps:** update dependency python-keycloak to v7.1.1 ([#175](https://github.com/CloudRader/reservium-api/issues/175)) ([fff502d](https://github.com/CloudRader/reservium-api/commit/fff502dce9271e664d35f922a750bada57dafcb0))
@@ -332,41 +360,41 @@
 
 ### 🚀 Reservium Backend v2.1.0 — Code Quality & Dependency Update
 
-A focused minor release that improves **code quality**, **test coverage**, and **CI/CD visibility**.  
+A focused minor release that improves **code quality**, **test coverage**, and **CI/CD visibility**.
 This version introduces full test coverage for schemas and models layers, expanded Ruff rules, visual Codecov integration and **dependency upgrades**.
 
 
 ### ✨ Highlights
 
-- 🧩 **Full coverage added for Schemas and Models layers** 
-- 🔧 **Expanded Ruff rule set** for stricter code style and best practices  
-- 🧱 **Refactored imports and RET/ERA rule fixes** across multiple modules  
-- 🧩 **Moved Renovate configuration** under `.github` for cleaner repository structure  
-- ⚙️ **Updated most of dependencies** to the latest stable versions 
+- 🧩 **Full coverage added for Schemas and Models layers**
+- 🔧 **Expanded Ruff rule set** for stricter code style and best practices
+- 🧱 **Refactored imports and RET/ERA rule fixes** across multiple modules
+- 🧩 **Moved Renovate configuration** under `.github` for cleaner repository structure
+- ⚙️ **Updated most of dependencies** to the latest stable versions
 
 
 ### 🧹 Refactoring & Cleanup
 
-- 🧹 Sorted `__all__` declarations in `__init__` modules  
-- 🧹 Addressed `RET`, `ERA`, and `DTZ` warnings in Ruff configuration  
-- 🧹 Improved static analysis results and enforced new linting standards  
+- 🧹 Sorted `__all__` declarations in `__init__` modules
+- 🧹 Addressed `RET`, `ERA`, and `DTZ` warnings in Ruff configuration
+- 🧹 Improved static analysis results and enforced new linting standards
 
 
 ### 🧪 CI/CD & Tooling
 
-- ✅ Added **Codecov and Pipeline badges** to `README.md`  
-- ✅ Improved **Ruff** and workflows with consistent checks  
-- ✅ Maintained dependency automation via **Renovate**  
-- ✅ Simplified coverage artifact uploads for easier inspection  
+- ✅ Added **Codecov and Pipeline badges** to `README.md`
+- ✅ Improved **Ruff** and workflows with consistent checks
+- ✅ Maintained dependency automation via **Renovate**
+- ✅ Simplified coverage artifact uploads for easier inspection
 
 
 ### 🏁 Summary
 
-Reservium Backend **v2.1.0** enhances internal quality by improving structure, coverage, and CI visibility.  
+Reservium Backend **v2.1.0** enhances internal quality by improving structure, coverage, and CI visibility.
 Developers now benefit from improved linting, full schema/model validation coverage, and automatic Codecov reporting.
 
 
-**Released:** 7 November 2025  
+**Released:** 7 November 2025
 **Maintainer:** [DarkRader](mailto:artyom.20century@gmail.com)
 
 ## [2.0.0](https://github.com/CloudRader/reservium-api/compare/v1.0.0...v2.0.0) (2025-10-25)
@@ -379,78 +407,78 @@ A complete system refactor introducing a more modular structure, updated depende
 
 ### ✨ New Features
 
-- ✅ Added **Keycloak integration** for authentication and authorization  
+- ✅ Added **Keycloak integration** for authentication and authorization
 - ✅ Introduced **JWT-based role and permission handling**
-- ✅ Introduced **new event endpoints** with timelines and pagination  
-- ✅ Added **automatic database migrations** at container startup  
-- ✅ Added **email sending logic** and improved email templates  
-- ✅ Added **GitHub Actions** for build, test, and Docker publishing  
-- ✅ Added **semantic versioning (SemVer)** tagging and release workflow  
-- ✅ Added **support for soft delete restore** and **hard delete** for reservation services  
+- ✅ Introduced **new event endpoints** with timelines and pagination
+- ✅ Added **automatic database migrations** at container startup
+- ✅ Added **email sending logic** and improved email templates
+- ✅ Added **GitHub Actions** for build, test, and Docker publishing
+- ✅ Added **semantic versioning (SemVer)** tagging and release workflow
+- ✅ Added **support for soft delete restore** and **hard delete** for reservation services
 - ✅ Added **manager registration forms** and **PDF generation**
 
 
 ### 🧱 Updates & Improvements
 
-- ✴️ Updated dependencies and switched to **UV** environment management  
-- ✴️ Updated and reorganized **Google Calendar integration**  
-- ✴️ Improved event and reservation filtering, pagination, and performance  
-- ✴️ Updated Pydantic schemas, naming conventions, and configuration settings  
-- ✴️ Improved code formatting with **Ruff** (replacing Black and Pylint)  
-- ✴️ Updated Docker and CI/CD pipelines for versioned builds  
+- ✴️ Updated dependencies and switched to **UV** environment management
+- ✴️ Updated and reorganized **Google Calendar integration**
+- ✴️ Improved event and reservation filtering, pagination, and performance
+- ✴️ Updated Pydantic schemas, naming conventions, and configuration settings
+- ✴️ Improved code formatting with **Ruff** (replacing Black and Pylint)
+- ✴️ Updated Docker and CI/CD pipelines for versioned builds
 - ✴️ Enhanced app logging in API layer
 
 
 ### 🧹 Refactoring
 
-- 🧹 Major **codebase restructuring**: new folder layout (`core`, `integrations`, `api`)  
-- 🧹 Migrated from IS authentication to Keycloak  
-- 🧹 Unified exception handling, error mapping, and docstring consistency  
-- 🧹 Simplified routers using **BaseCRUDRouter** and **Routers classes**  
-- 🧹 Moved shared utilities, constants, and configuration to core modules  
-- 🧹 Replaced UUID types with string identifiers across all models  
-- 🧹 Introduced **strict dependency versioning** and refactored old scripts  
+- 🧹 Major **codebase restructuring**: new folder layout (`core`, `integrations`, `api`)
+- 🧹 Migrated from IS authentication to Keycloak
+- 🧹 Unified exception handling, error mapping, and docstring consistency
+- 🧹 Simplified routers using **BaseCRUDRouter** and **Routers classes**
+- 🧹 Moved shared utilities, constants, and configuration to core modules
+- 🧹 Replaced UUID types with string identifiers across all models
+- 🧹 Introduced **strict dependency versioning** and refactored old scripts
 
 
 ### 🛠️ Fixes
 
-- 🛠️ Fixed multiple CI/CD pipeline issues (Docker builds, Mypy, Ruff)  
-- 🛠️ Fixed role schemas, Alembic configs, and migration scripts  
-- 🛠️ Fixed CORS configuration and environment variables  
-- 🛠️ Fixed async database engine and SQLAlchemy 2.0 migration  
-- 🛠️ Fixed login routes, permissions, and exception handling  
-- 🛠️ Fixed event/reservation relationships, API responses, and timezone handling  
-- 🛠️ Fixed dependency mismatches after major refactor  
+- 🛠️ Fixed multiple CI/CD pipeline issues (Docker builds, Mypy, Ruff)
+- 🛠️ Fixed role schemas, Alembic configs, and migration scripts
+- 🛠️ Fixed CORS configuration and environment variables
+- 🛠️ Fixed async database engine and SQLAlchemy 2.0 migration
+- 🛠️ Fixed login routes, permissions, and exception handling
+- 🛠️ Fixed event/reservation relationships, API responses, and timezone handling
+- 🛠️ Fixed dependency mismatches after major refactor
 
 
 ### ❌ Removed / Deprecated
 
-- ❌ Removed IS authentication  
-- ❌ Removed old Pylint and Black setup  
-- ❌ Deprecated old router and schema structures  
+- ❌ Removed IS authentication
+- ❌ Removed old Pylint and Black setup
+- ❌ Deprecated old router and schema structures
 
 
 ### 🧪 Tests & Quality
 
-- ✅ Added linting and formatting checks to CI  
+- ✅ Added linting and formatting checks to CI
 
 
 ### ⚙️ DevOps & CI/CD
 
-- ✅ Introduced automated **SemVer tagging** and image versioning  
-- ✅ Added **Docker Hub** publishing workflow  
-- ✅ Set up **test matrix** for Mypy and Pytest jobs  
+- ✅ Introduced automated **SemVer tagging** and image versioning
+- ✅ Added **Docker Hub** publishing workflow
+- ✅ Set up **test matrix** for Mypy and Pytest jobs
 
 
 ### 🏁 Summary
 
 Reservium v2.0.0 marks a **major milestone** in the project:
 
-- Modernized backend architecture  
-- Unified CI/CD pipelines  
-- Introduced scalable authentication and permissions  
-- Ensured maintainability through stricter structure and linting  
+- Modernized backend architecture
+- Unified CI/CD pipelines
+- Introduced scalable authentication and permissions
+- Ensured maintainability through stricter structure and linting
 
 
-**Released:** 25 October 2025  
+**Released:** 25 October 2025
 **Maintainer:** [DarkRader](mailto:artyom.20century@gmail.com)

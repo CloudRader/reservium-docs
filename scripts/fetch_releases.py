@@ -1,10 +1,13 @@
-import requests
-from pathlib import Path
 import logging
-import typer
+from pathlib import Path
 from typing import Dict
 
-app = typer.Typer(help="Generate Markdown release notes from GitHub CHANGELOG.md files.")
+import requests
+import typer
+
+app = typer.Typer(
+    help="Generate Markdown release notes from GitHub CHANGELOG.md files."
+)
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
@@ -28,15 +31,19 @@ def fetch_changelog(repo_slug: str, branch: str = "main") -> str:
     headers = {}  # optional: {"Authorization": f"token {GITHUB_TOKEN}"}
     response = requests.get(url, headers=headers)
     if response.status_code == 404:
-        logging.warning("CHANGELOG.md not found for %s on branch '%s'", repo_slug, branch)
+        logging.warning(
+            "CHANGELOG.md not found for %s on branch '%s'", repo_slug, branch
+        )
         return "_No changelog found_"
     response.raise_for_status()
-    return response.text
+    return response.text.replace("[security]", "\\[security\\]")
 
 
 @app.command()
 def generate(
-    output_dir: Path = typer.Option(Path("docs/release-notes"), help="Directory to save release notes"),
+    output_dir: Path = typer.Option(
+        Path("docs/release-notes"), help="Directory to save release notes"
+    ),
     branch: str = typer.Option("main", help="Branch to fetch CHANGELOG.md from"),
 ):
     """
@@ -50,7 +57,6 @@ def generate(
 
         filename = f"{title.lower().replace(' ', '-')}.md"
         output_file = output_dir / filename
-
 
         output_file.write_text(changelog, encoding="utf-8")
         logging.info("✅ Generated %s", output_file)
