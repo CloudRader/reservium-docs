@@ -73,6 +73,7 @@ Shows reservations that are **waiting for approval**.
 
 - Status is marked as **Pending Approval**
 - No access is granted until approval
+- **Managers:** Can [**Approve or Decline**](review-reservations.md#reviewing-pending-approvals) these requests directly from this tab.
 
 ---
 
@@ -84,6 +85,7 @@ Displays reservations where a **time change has been requested**.
 
 - Waiting for manager approval
 - Original reservation remains active until confirmed
+- **Managers:** Can [**Approve or Decline time changes**](review-reservations.md#reviewing-time-changes).
 
 ---
 
@@ -95,6 +97,7 @@ Shows all **approved reservations**.
 
 - These reservations are fully active
 - Access rights (if applicable) are granted
+- **Managers:** Can [**Edit or Cancel**](review-reservations.md#editing-and-canceling) confirmed reservations if necessary.
 
 ---
 
@@ -111,16 +114,15 @@ Displays all **canceled reservations**.
 ## Role Differences (Brief)
 
 - **Regular Users**
-  - View their reservations
-  - Cancel reservations
-  - Request time changes
+    - View, manage, and cancel their own reservations.
+    - Request time changes for upcoming events.
+    - Receive automated email notifications on status changes.
 
 - **Managers**
-  - Can additionally:
-    - **Approve events**
-    - **Decline events**
-
-Manager-specific actions are visible only in relevant tabs (e.g., *Not Approved*).
+    - All user capabilities, plus:
+    - [**Review and Approve/Decline**](review-reservations.md) pending reservations.
+    - Handle time change requests.
+    - **Email Notifications:** When a manager updates a reservation, the system sends an email to the user including any [**Manager Observations**](review-reservations.md#manager-observations) provided.
 
 ---
 
