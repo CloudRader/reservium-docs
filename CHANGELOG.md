@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.15](https://github.com/CloudRader/reservium-docs/compare/v0.2.14...v0.2.15) (2026-05-10)
+
+
+### 🧱 Updates & Improvements
+
+* **manager-guide:** add reviewing reservations page ([50a1c42](https://github.com/CloudRader/reservium-docs/commit/50a1c425aa2d29e69344fb4eca1a536bc3e9d6d9))
+
+
+### 🛠️ Fixes
+
+* **deps:** update dependency zensical to v0.0.41 ([#34](https://github.com/CloudRader/reservium-docs/issues/34)) ([2242eb4](https://github.com/CloudRader/reservium-docs/commit/2242eb44678d95e4f80f42d696c8b7737e453482))
+* **zensical:** fix issues after update zensical ([92d5c0c](https://github.com/CloudRader/reservium-docs/commit/92d5c0c14e0a9feb1d45b3ffd26ad55c04334fb7))
+
 ## [0.2.14](https://github.com/CloudRader/reservium-docs/compare/v0.2.13...v0.2.14) (2026-05-04)
 
 
