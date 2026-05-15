@@ -2,78 +2,72 @@
 icon: lucide/layout-dashboard
 ---
 
-# Dashboard
+# Dashboard :material-view-dashboard-outline:{ .main-color }
 
-The **Dashboard** is where you manage and track all your reservations.
-It gives you a clear overview of your upcoming and past events, along with their current status.
+The **Dashboard** is your personal command center in Reservium. It's where you can track all your active bookings, review past events, and manage your schedule at a glance.
 
 ---
 
-## Accessing the Dashboard
+## :material-login: Accessing the Dashboard
 
-You can open the Dashboard from the **user menu** in the top-right corner:
+You can quickly reach your Dashboard from any page:
 
-1. Click your **username**
-2. Select **My Events**
+1. Click your **username** in the top-right corner.
+2. Select **My Events** from the dropdown menu.
 
 ![Dashboard](../assets/dashboard.png)
 
 ---
 
-## Dashboard Overview
+## :material-eye-outline: Dashboard Overview
 
-The Dashboard is divided into two main sections:
+The Dashboard is organized into two primary sections to help you focus on what's coming up next.
 
-### Upcoming Events
+### :material-calendar-clock: Upcoming Events
 
-This section displays all **current and future reservations**.
+This section displays all your **current and future reservations**.
 
-If you don’t have any upcoming reservations, you’ll see an informational message indicating that no events are scheduled.
+- **Stay Informed**: Each card shows the service name, date, and time.
+- **Empty State**: If you have no upcoming plans, a friendly message will let you know there are no scheduled events.
 
 ![Upcoming Events](assets/dashboard-with-upcoming.png)
 
 ---
 
-### Past Events
+### :material-history: Past Events
 
-Below the upcoming events, you’ll find a list of **past reservations**.
+Scroll down to see a complete history of your **past reservations**. This is useful for reviewing where you've been or re-booking a favorite spot.
 
-Each entry shows key details such as:
+Each entry includes:
 
-- **Event name**
-- **Service** (e.g., Club Room, Chill Room)
-- **Date and time**
-- **Number of guests**
-- **Reservation status**
-
----
-
-## Reservation Statuses
-
-Each reservation is marked with a clear status label, for example:
-
-- **confirmed** – The reservation is approved and active
-- **not_approved** – Waiting for manual approval
-- **canceled** – The reservation was canceled
-
-These statuses help you quickly understand the current state of each reservation.
+- :material-tag-outline: **Event Name**
+- :material-map-marker-outline: **Service** (e.g., Club Room, Chill Room)
+- :material-calendar-range: **Date and Time**
+- :material-account-group-outline: **Guests**
+- :material-list-status: **Status**
 
 ---
 
-## Available Actions (Regular Users)
+## :material-label-multiple-outline: Understanding Statuses
 
-For each reservation, regular users can:
+Every reservation is assigned a status to keep you updated on its progress:
 
-- **View reservation details**
-- **Delete a reservation**
-- **Request a change** (e.g., update the reservation time)
-- **Check the approval status**
+| Status | Description |
+| :--- | :--- |
+| :material-check-circle:{ .main-color } **confirmed** | Your reservation is approved and ready for you. |
+| :material-clock-outline: **not_approved** | The reservation is pending review by a manager. |
+| :material-cancel: **canceled** | The reservation has been removed. |
 
-All actions are available directly from the reservation list.
+---
 
-!!! Note "Manager View (Brief Note)"
+## :material-gesture-tap: Available Actions
 
-    Managers see the same Dashboard layout as regular users.
-    However, they have **additional management options** (such as approval and administration tools).
+Manage your reservations directly from the list:
 
-    Detailed manager functionality is covered separately in the **Manager Guide**.
+- :material-magnify: **View Details** – See full information about the booking.
+- :material-delete-outline: **Delete** – Cancel a reservation you no longer need.
+- :material-calendar-edit: **Request Change** – Ask to update the time or details.
+- :material-progress-check: **Check Status** – See if your pending reservation has been reviewed.
+
+!!! info "Manager Privileges"
+    If you have a manager role, you will see the same layout but with **additional administrative tools** to approve and edit reservations for other users. Learn more in the [Manager Guide](../../manager-guide/introduction/index.md).

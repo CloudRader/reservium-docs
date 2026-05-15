@@ -2,74 +2,61 @@
 icon: lucide/footprints
 ---
 
-# First Setup
+# First Setup :material-stairs-up:{ .main-color }
 
-## Logging in to Reservium
+Welcome to Reservium! This guide will help you through your first login and show you how to create your very first reservation in just a few minutes.
 
-To begin using Reservium, click **Log in**.
+---
+
+## :material-numeric-1-circle-outline: Logging in
+
+To begin, visit the Reservium home page and click the **Log in** button in the top navigation bar.
 
 ![Login Page](assets/login-page.png)
 
 ---
 
-## Authenticate with Keycloak (SSO)
+## :material-numeric-2-circle-outline: Authentication
 
-You will be redirected to the authentication page.
-Reservium uses SSO (Single Sign-On) through Keycloak.
+You will be redirected to the **Keycloak SSO** (Single Sign-On) page. This ensures a secure and seamless login using your organization's credentials.
 
 ![Login Keycloak](assets/login-keycloak.png)
 
+!!! warning "Identity Providers"
+    The login screen might look slightly different depending on your organization's setup (e.g., LDAP, Google, Azure AD). If you're unsure which method to use, contact your IT department.
+
 ---
 
-!!! warning "Authentication flow may differ"
+## :material-numeric-3-circle-outline: Create Your First Reservation
 
-    Your organization may use different identity providers behind Keycloak —
-    such as LDAP, OAuth2, Google, Azure AD, or internal accounts.
-    The exact login method depends on how SSO is configured by your IT department.
-
-After successful authentication, you’ll be redirected to the **Reservium Main Page**, where you can see your services and calendar overview.
+Once logged in, you'll see the main dashboard and available services.
 
 ![Main Page](assets/main-page.png)
 
----
+### Follow these steps to book:
 
-## Creating Your First Reservation
-
-To create a reservation, follow these steps:
-
-1. Select a service
-
-    Use the top navigation bar to choose the service you want to reserve
-    (e.g., meeting room, workspace, conference room).
-
-2. Fill out the reservation form
-
-    Use the left-side panel to provide the required information:
-
-    - Start date & time – When your reservation begins
-    - End date & time – When your reservation ends
-    - Purpose – The reason for your reservation
-    - Participants – Number of people attending
-    - Email – Contact email for the reservation
-    - Reservation type – The specific room or room section
-    - Additionals – Optional add-ons (equipment, accessories, services)
-
-3. Submit the Reservation
-
-    Click **Submit** to finalize the booking.
+1.  **Choose a Service**: Use the top bar to select what you want to reserve (e.g., *Meeting Room*).
+2.  **Fill the Form**: Use the left panel to enter your details:
+    - :material-clock-start: **Start & End Time**
+    - :material-message-text-outline: **Purpose**
+    - :material-account-multiple: **Participants**
+3.  **Submit**: Click the **Submit** button to finalize.
 
 ---
 
-## Reservation Confirmation Email
+## :material-email-check-outline: Confirmation
 
-After successfully creating a reservation, the system automatically sends you a confirmation email.
-This email includes your reservation details such as date, time, location, and additional options selected.
+After successful creation:
+- **Immediate Feedback**: A success message appears in the app.
+- **Email Receipt**: You'll receive an automated confirmation email with all the reservation details for your records.
 
-## Reviewing Your Reservations
+---
 
-After creating a reservation, you can view it at any time:
+## :material-numeric-4-circle-outline: Review Your Bookings
 
-1. Navigate to **Dashboard**
-2. Overview your reservations
+You can track your new reservation at any time via the Dashboard.
+
+1. Navigate to **My Events** in the user menu.
+2. Review the status and details of your booking.
 
 ![Dashboard](../assets/dashboard.png)
