@@ -2,158 +2,127 @@
 icon: lucide/circle-plus
 ---
 
-# Create Reservation
+# Create Reservation :material-plus-circle-outline:{ .main-color }
 
-This page explains how to create a reservation in Reservium, how reservation
-types affect the process, and what happens if additional validation or approval
-is required.
-
+Creating a reservation in Reservium is a straightforward process. This guide will walk you through the reservation form, the impact of reservation types, and how to handle validations and approvals.
 
 ![Reservation Page](assets/create-reservation-panel-calendar.png)
 
 ---
 
-## Reservation Form Overview
+## :material-form-select: Reservation Form Overview
 
-The **reservation form** is located on the **left side** of the page.
+The **reservation form** is conveniently located on the **left side** of the page, allowing you to quickly enter your details while keeping the calendar in view.
 
 ![Reservation Form](assets/reservation-form.png)
 
-You must provide the following information:
+### Required Information
 
-- **Start date & time** – When the reservation begins
-- **End date & time** – When the reservation ends
-- **Purpose** – Reason for the reservation
-- **Number of guests** – Total number of participants
-- **Email** – Contact email for notifications
-- **Reservation type** – Type of space or area being reserved
-- **Additional services** – Optional extras (if available)
+To ensure a smooth booking, you must provide the following:
+
+- **Start & End Time** – Specify the exact duration of your reservation.
+- **Purpose** – Briefly describe why you are reserving the space.
+- **Guests** – The total number of participants.
+- **Email** – Your contact address for confirmation and updates.
+- **Type** – Select the specific area or floor you wish to book.
+- **Additional Services** – Select any extras like equipment or catering (if available).
 
 ---
 
-## Reservation Types and Rules
+## :material-tune-variant: Reservation Types and Rules
 
-Each service can have **multiple reservation types**, such as:
+Services can offer different **reservation types**, which allow for flexible booking of the same space. Common types include:
 
-- Entire Space
-- Upper Floor
-- Specific Area
-- atd
+- :material-layers-outline: **Entire Space**
+- :material-stairs-up: **Upper Floor**
+- :material-vector-square: **Specific Area**
 
 ![Reservation Types ](assets/reservation-type.png)
 
-Reservation rules **depend on the selected type**, and may differ by:
+!!! warning "Rules vary by type"
+    Each reservation type may have unique constraints:
 
-- Maximum number of participants
-- Allowed time range
-- Advance booking limits
-- Approval requirements
-- Available additional services
-
-!!! Info
-
-    Changing the reservation type may affect what rules apply.
+    - **Participant Limits**: Minimum/maximum people allowed.
+    - **Time Windows**: Specific hours when the type is available.
+    - **Lead Time**: How far in advance you must book.
+    - **Approval**: Whether a manager needs to manually confirm the booking.
 
 ---
 
-## Optional Mini-Services
+## :material-puzzle-outline: Optional Mini-Services
 
-Some reservation types allow selecting **additional mini-services**, for example:
-
-- Board games
-- Consoles or equipment
-- Extra access permissions
+Enhance your reservation by selecting **additional mini-services**. These are tailored to the service and reservation type you've chosen.
 
 ![Mini Services Form](assets/additionals-services.png)
 
-Available mini-services depend on:
+Examples of mini-services include:
 
-- The selected service
-- The reservation type
+- :material-controller: **Gaming Consoles** or VR equipment.
+- :material-dice-5: **Board Games** collection access.
+- :material-key-variant: **Extra Access Permissions** for restricted areas.
 
-!!! Info
-
-    If no additional services are available, this section may be hidden.
+!!! info
+    This section only appears if the selected reservation type supports additional services.
 
 ---
 
-## Validation and Error Messages
+## :material-shield-check-outline: Validation and Error Messages
 
-When you submit the reservation, Reservium performs automatic validation checks,
-including:
+Upon submission, Reservium automatically validates your request against real-time availability and service rules.
 
-- Time slot availability
-- Participant limits
-- Required permissions or membership
-- Restricted time periods (e.g. night reservations)
+### :material-alert-circle-outline: Common Validation Errors
 
-### Validation Errors
-
-If something is incorrect or not allowed:
-
-- The reservation is **not created**
-- A **warning or error message** explains what went wrong
-- You can adjust the form and try again
+If a conflict is detected, you will see a warning message explaining the issue. You can then adjust your request and try again.
 
 ![Validation Error](assets/validation-error.png)
 
-Examples:
-- Time slot already reserved
-- Too many participants
-- Reservation outside allowed hours
-- Missing required data
+| Error Type | Description |
+| :--- | :--- |
+| **Availability** | The requested time slot is already fully or partially booked. |
+| **Capacity** | The number of guests exceeds the limit for the selected type. |
+| **Timing** | The reservation falls outside of allowed operating hours. |
+| **Permissions** | You do not have the required role or membership level. |
 
 ---
 
-## Reservations Requiring Approval
+## :material-account-clock-outline: Reservations Requiring Approval
 
-Some reservations cannot be confirmed automatically, for example:
-
-- Night-time reservations
-- Reservations exceeding capacity limits
+In some scenarios, your reservation might not be confirmed immediately. This usually happens for high-demand periods or large-scale events.
 
 ![Event Registration Form](assets/event-registration-form.png)
 
 ![Event Registration Form Confirmation](assets/event-registration-form-confirmation.png)
 
-- Reservations requiring manager permission
-
-In these cases:
-
-- The reservation is created with **Not approved** status
-- Managers are notified for approval
-- You will receive updates by email
+### The Approval Flow:
+1. **Submit**: Create your reservation as usual.
+2. **Pending**: The status will show as **"Not approved"**.
+3. **Review**: A manager receives a notification to review your request.
+4. **Update**: You will receive an email once the manager approves or declines the request.
 
 ---
 
-## Successful Reservation
+## :material-check-decagram: Successful Reservation
 
-If all checks pass and no approval is required:
-
-- The reservation is created immediately
-- It appears in the calendar
-- A confirmation message is shown
+Once all checks pass (and approval is granted if necessary), your reservation is finalized.
 
 ![Reservation Successful](assets/reservation-successful.png)
 
-You will also receive a **confirmation email** with:
+### Confirmation Email
+You will receive a detailed email containing:
 
-- Reservation details
-- Date and time
-- Selected service and type
-- Additional services (if any)
+- :material-calendar-check: **Date and Time**
+- :material-map-marker: **Service and Type**
+- :material-star-outline: **Selected Add-ons**
+- :material-link-variant: **Management Links**
 
 ![Email Confirmation](assets/email-confirmation.png)
 
 ---
 
-## After Creating a Reservation
+## :material-arrow-right-circle-outline: What's Next?
 
-Once created, you can:
+After your reservation is confirmed, you can:
 
-- View your reservations in **My Events**
-- Track current, upcoming, and past reservations
-- See approval status if applicable
-
-Managing existing reservations (edit, cancel, approval flow) is described in a
-separate section of the documentation.
+- View it in your **[Dashboard](dashboard.md)**.
+- Track status updates in **My Events**.
+- Prepare for your visit!

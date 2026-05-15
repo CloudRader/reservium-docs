@@ -2,68 +2,73 @@
 icon: lucide/milestone
 ---
 
-# Navigation
+# Navigation :material-compass-outline:{ .main-color }
 
-## Navigating Reservium on Desktop Browser
+Navigating Reservium is designed to be intuitive and fast. This guide breaks down the main interface components you'll interact with on a desktop browser.
 
-### Top Navigation Bar
+---
 
-At the top of the page, you’ll see the **navigation bar** with all the services you can reserve.
+## :material-dock-top: Top Navigation Bar
+
+The header is your gateway to all available services. Use it to quickly switch between different areas or rooms.
 
 ![Header](assets/header.png)
 
 ---
 
-### Calendar View
+## :material-calendar-month: Calendar View
 
-- **Select a service:** Clicking on a service opens its calendar view, showing:
+Once you select a service, the calendar becomes the central part of your experience.
 
-    - Reserved slots
-    - Available slots
-    - Reservation types (e.g., Entire Space, Ground Floor, Pool, etc.)
+- **:material-cursor-default-click: Select a Service:** Clicking a service name loads its specific calendar, displaying:
+    - **Reserved slots**: Times that are already taken.
+    - **Available slots**: Times you can book.
+    - **Types**: Visual indicators for different areas (e.g., Entire Space vs. Pool).
 
-- **Calendar Views:** You can switch between different calendar views:
-    - Day
-  	- Week
-  	- Month
-  	- List
+- **:material-calendar-sync: Toggle Views:** Customize how you see availability:
+    - :material-calendar-day: **Day**
+  	- :material-calendar-week: **Week**
+  	- :material-calendar-month: **Month**
+  	- :material-view-list: **List**
 
-- **Reservation Details:** Hover over or click on any reservation to see detailed information about it.
+- **:material-information-outline: Inspect Details:** Hover over or click any existing reservation to see its details.
 
 ![Calendar View](assets/calendar-view.png)
 
 ---
 
-### Reservation Form
+## :material-form-select: Reservation Form
 
-On the **left side panel**, you’ll find the **reservation form**.
+Located on the **left side panel**, this form is your primary tool for creating bookings. It stays pinned so you can reference the calendar while filling it out.
 
 ![Reservation Form](assets/reservation-form.png)
 
 ---
 
-### User Menu
+## :material-account-circle-outline: User Menu
 
-On the **top-right corner**, click your username to open a dropdown menu:
+In the **top-right corner**, click your name to manage your account:
 
-- **My Events:** View your reservations:
-- **Logout:** Exit your account safely
+- :material-calendar-heart: **My Events**: Access your dashboard and reservation history.
+- :material-logout: **Logout**: Securely exit your session.
 
 ![User Menu](assets/user-menu.png)
 
-### Dashboard
+---
 
-In my **My Events** you can find:
+## :material-view-dashboard: Dashboard Quick View
 
-- **Current and Upcoming Reservations:** At the top
-- **Past Reservations:** Below
+Inside **My Events**, you'll find a summary of your activity:
+
+- **Current & Upcoming**: Track what's happening now or soon.
+- **Past Reservations**: A historical record of your bookings.
 
 ![Dashboard](../assets/dashboard.png)
 
 ---
 
-### Footer
+## :material-dock-bottom: Footer
 
-The footer contains useful links for quick access to
+The footer provides quick links to essential resources and support information at the bottom of every page.
 
 ![Footer](assets/footer.png)
