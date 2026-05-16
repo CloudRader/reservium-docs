@@ -2,126 +2,83 @@
 icon: lucide/badge-plus
 ---
 
-# Manage Reservation Services
+# Manage Reservation Services :fontawesome-solid-building-circle-check:{ .main-color }
 
-Reservation services define **what can be reserved** in Reservium — for example, rooms, spaces, or facilities.
-From the **Manager Panel**, managers can view and manage the list of available services.
-
-This section explains how to work with **services only**.
-Calendars and mini-services are described in separate sections.
+Reservation Services are the top-level entities in Reservium. They represent the actual rooms, spaces, or facilities that your organization makes available for booking.
 
 ---
 
-## Services Overview
+## :fontawesome-solid-building-columns: Services Overview
 
-In the **Services** section, managers see a list of all reservation services available in the system.
+The **Services** list provides an inventory of all reservable spaces. Each service acts as a container for calendars and mini-services.
 
 ![Services List](assets/services-list.png)
 
-Each service represents a reservable entity, such as:
+Examples of services include:
 
-- Club Room
-- Study Room
-- Chill Room
-- Other shared or private spaces
+- :fontawesome-solid-door-open: **Meeting Rooms**
+- :fontawesome-solid-graduation-cap: **Study Zones**
+- :fontawesome-solid-couch: **Chill Rooms**
 
 ---
 
-## Available Actions
+## :fontawesome-solid-gears: Available Actions
 
-For each service, the following actions may be available depending on your role.
-
-### View Service Details
-
-Click **View** to open the service details page.
+### :fontawesome-solid-eye: View Details
+See high-level metadata and configuration for a specific space.
 
 ![View Service](assets/service-view.png)
 
-The details page displays:
+**Key Information:**
 
-- Service name and alias
-- Public visibility status
-- Contact information
-- External website (if provided)
-- Access and room-related metadata
+- :fontawesome-solid-signature: **Name & Alias**: How the service appears to users.
+- :fontawesome-solid-globe: **Visibility**: Whether the room is public or hidden.
+- :fontawesome-solid-envelope: **Contact Email**: The email address for service-related inquiries.
+- :fontawesome-solid-address-card: **Contact Info**: Links or websites for the room.
+- :fontawesome-solid-microchip: **Metadata**: Internal room and locker IDs.
 
-From this page, managers can also navigate to:
-- **Calendars** associated with the service
-- **Mini-services** available for the service
-
-!!! note
-
-    These sections are covered later in the documentation.
 
 ---
 
-### Edit Service
+### :fontawesome-solid-pen: Edit Metadata
+Updating the core identity of a service (like its name or visibility) is a sensitive operation.
 
-- **Editing services is currently restricted to superusers**
-- Managers can view service details but cannot modify them
-
-Editing includes updating service metadata such as:
-- Name and alias
-- Visibility (public/private)
-- Contact and web information
-- Access-related settings
-- Room and locker configuration
+- **Permission**: Currently restricted to **Superusers**.
+- **Scope**: Managers can view these details but cannot modify the top-level service metadata.
 
 ---
 
-### Soft Delete Service
+### :fontawesome-solid-box-archive: Soft Delete
+Temporarily hide a service from all users.
 
-Click **Soft Delete** to temporarily disable a service.
-
-- The service becomes unavailable for new reservations
-- Existing data is preserved
-- The service can be restored later
-- Restricted to superusers
-
-Soft-deleted services are visually distinguished in the list.
+- :fontawesome-solid-ban: No new calendars or reservations can be created while deleted.
+- :fontawesome-solid-database: All existing data remains safe in the background.
 
 ---
 
-### Hard Delete Service
+### :fontawesome-solid-trash-can: Hard Delete
+Permanently erases the service and all its children (calendars, mini-services, events).
 
-Click **Hard Delete** to permanently remove a service.
-
-- All related data is removed
-- This action is **irreversible**
-- Restricted to superusers
-
-Use this option with caution.
+!!! danger "Critical Action"
+    Hard deletion is restricted to **Superusers** and is **irreversible**. Use only for removing test data or redundant entries.
 
 ---
 
-### Restore Soft-Deleted Service
+## :fontawesome-solid-user-shield: Permissions Summary
 
-For soft-deleted services, a **Retrieve** option is available.
-
-- Restores the service
-- Makes it available for reservations again
-- Restricted to superusers
-
----
-
-## Role Differences (Brief)
-
-- **Managers**
-  - View services
-  - Access calendars and mini-services
-
-- **Superusers**
-  - Full control, including editing, restoring, soft and hard deletion
-
-Manager and superuser interfaces look similar, but available actions may differ.
+| Action | Manager | Superuser |
+| :--- | :---: | :---: |
+| View Details | :fontawesome-solid-check: | :fontawesome-solid-check: |
+| Edit Service | :fontawesome-solid-xmark: | :fontawesome-solid-check: |
+| Soft Delete | :fontawesome-solid-xmark: | :fontawesome-solid-check: |
+| Hard Delete | :fontawesome-solid-xmark: | :fontawesome-solid-check: |
+| Access Calendars | :fontawesome-solid-check: | :fontawesome-solid-check: |
 
 ---
 
-## What’s Next
+## :fontawesome-solid-arrow-right-long: What’s Next?
 
-After selecting a service, managers typically continue with:
+Once a service is defined, you can build its internal logic:
 
-- Managing **calendars** (availability, time rules)
-- Managing **mini-services** (optional add-ons for reservations)
-
-These topics are covered in the following sections.
+- **[Manage Calendars](manage-calendars.md)**: Set up the actual booking tracks and rules.
+- **[Manage Mini-Services](manage-mini-services.md)**: Add optional extras for the service.

@@ -2,124 +2,84 @@
 icon: lucide/calendar
 ---
 
-# Manage Calendars
+# Manage Calendars :fontawesome-solid-calendar-days:{ .main-color }
 
-Calendars define **when and how a service can be reserved**.
-Each calendar belongs to a specific reservation service and controls availability rules, limits, and reservation behavior.
-
-From the **Manager Panel**, managers can view and manage calendars assigned to a service.
-
-This section focuses on **calendars only**.
-Mini-services and advanced rules are described later.
+Calendars are the heartbeat of Reservium. They define exactly **when and how** a service can be reserved. Each calendar controls the specific availability rules, participant limits, and collision behavior for a given space.
 
 ---
 
-## Calendars Overview
+## :fontawesome-solid-list-ul: Calendars Overview
 
-In the **Calendars** section, managers see a list of all calendars associated with the selected service.
+The **Calendars** section provides a bird's-eye view of all booking tracks associated with your service.
 
 ![Calendars List](assets/calendars-list.png)
 
-Each calendar typically represents:
+A single service (like a "Club Room") might have multiple calendars for:
 
-- A specific area or resource (e.g. Upper Floor, Pool, Projector)
-- A reservation type within the same service
-- Different rules or limits for the same service
+- :fontawesome-solid-layer-group: **Different Areas**: Upper floor vs. Ground floor.
+- :fontawesome-solid-tags: **Reservation Types**: Entire space vs. Single desk.
+- :fontawesome-solid-clock: **Specific Rules**: Different hours or limits for the same physical room.
 
 ---
 
-## Available Actions
+## :fontawesome-solid-gears: Available Actions
 
-For each calendar, the following actions may be available depending on your role.
+Manage your calendars using the actions column in the list view.
 
-### View Calendar Details
-
-Click **View** to open the calendar details page.
+### :fontawesome-solid-eye: View Details
+Click **View** to inspect the internal logic of a calendar. This is where you verify if the rules are working as intended.
 
 ![View Calendar](assets/calendar-view.png)
 ![View Calendar 2](assets/calendar-view2.png)
 
-The details page displays:
+**What you can check:**
 
-- Calendar ID and color
-- Reservation type name
-- Maximum allowed people
-- Collision rules with other calendars
-- Assigned mini-services
-- Reservation constraints and member rules
-
-This page is primarily used to **inspect rules and configuration**.
+- :fontawesome-solid-palette: **Visuals**: The color used in the public calendar.
+- :fontawesome-solid-people-arrows: **Collision Rules**: Whether this calendar blocks others.
+- :fontawesome-solid-screwdriver-wrench: **Mini-services**: Which add-ons are available for this track.
 
 ---
 
-### Edit Calendar
+### :fontawesome-solid-pen: Edit Configuration
+While viewing permissions are broad, editing is restricted to ensure stability.
 
-- **Editing calendars is currently restricted to manager of specific reservation service**
-- Manager other reservation service can view all settings but cannot modify them
-
-Editing may include:
-
-- Changing calendar color
-- Updating maximum number of people
-- Allowing or restricting overlaps with other calendars
-- Assigning mini-services
-- Configuring reservation and member rules
+- **Permissions**: Only the designated manager of the specific service can modify its calendars.
+- **Capabilities**: Update participant limits, change colors, or reconfigure rule sets.
 
 ---
 
-### Soft Delete Calendar
+### :fontawesome-solid-box-archive: Soft Delete
+Use **Soft Delete** to temporarily take a calendar offline without losing any historical data.
 
-Click **Soft Delete** to temporarily disable a calendar.
-
-- The calendar becomes unavailable for new reservations
-- Existing reservations and data are preserved
-- The calendar can be restored later
-- Restricted to manager of specific reservation service
-
-Soft-deleted calendars are visually distinguished in the list.
+- :fontawesome-solid-ban: **New Bookings**: Prevented immediately.
+- :fontawesome-solid-database: **Existing Data**: Preserved for records.
+- :fontawesome-solid-arrows-rotate: **Restoration**: Can be retrieved at any time.
 
 ---
 
-### Hard Delete Calendar
+### :fontawesome-solid-trash-can: Hard Delete
+Permanently removes the calendar and all associated configuration.
 
-Click **Hard Delete** to permanently remove a calendar.
-
-- All related configuration is removed
-- This action is **irreversible**
-- Restricted to superusers
-
-Use with caution, especially if the calendar has existing reservations.
+!!! danger "Irreversible Action"
+    Hard deletion is restricted to **Superusers** and should only be used for cleaning up incorrectly created entries. This action cannot be undone.
 
 ---
 
-### Restore Soft-Deleted Calendar
+## :fontawesome-solid-user-shield: Permissions Summary
 
-For soft-deleted calendars, a **Retrieve** option is available.
-
-- Restores the calendar
-- Makes it available for reservations again
-- Restricted to manager of specific reservation service
-
----
-
-## Role Differences (Brief)
-
-- **Managers**
-  - View, edit, soft delete calendars and their configuration, but under their specific reservation service
-  - Understand availability and reservation rules
-
-- **Superusers**
-  - Full control, including editing, restoring, soft and hard deletion
-
-The interface is shared, but available actions depend on permissions.
+| Action | Manager | Superuser |
+| :--- | :---: | :---: |
+| View Rules | :fontawesome-solid-check: | :fontawesome-solid-check: |
+| Edit Rules | :fontawesome-solid-check: | :fontawesome-solid-check: |
+| Soft Delete | :fontawesome-solid-check: | :fontawesome-solid-check: |
+| Hard Delete | :fontawesome-solid-xmark: | :fontawesome-solid-check: |
+| Restore | :fontawesome-solid-check: | :fontawesome-solid-check: |
 
 ---
 
-## What’s Next
+## :fontawesome-solid-arrow-right-long: What’s Next?
 
-Calendars are often used together with:
+Calendars work hand-in-hand with other configurations:
 
-- **Mini-services** (optional add-ons like equipment or extras)
-- **Reservation rules** (time limits, advance booking, permissions)
-
-These topics are covered in the next sections.
+- **[Manage Mini-Services](manage-mini-services.md)**: Add equipment or extras to your tracks.
+- **[Manage Services](manage-reservation-services.md)**: Configure high-level room metadata.
