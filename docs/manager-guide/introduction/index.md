@@ -1,14 +1,69 @@
-# Welcome to the Manager Guide!
+# Welcome to the Manager Guide! :fontawesome-solid-user-shield:{ .main-color }
 
 ## What is the Manager Guide?
 
-The documentation for Reservium contains several main sections, all accessible from the top navigation bar:
+The **Manager Guide** provides comprehensive information for users with administrative and oversight responsibilities. As a manager, you have the tools to ensure that your organization's shared spaces are used efficiently and fairly.
 
-- The [**Manager Guide**](index.md) that you're currently reading contains all the information for users with the manager role, e.g. all about the manager features.
-- The [**User Guide**](../../user-guide/introduction/index.md) contains all about the functionalities available to every user.
-- The [**Hosting Guide**](../../hosting-guide/introduction/index.md) contains all the technical information related to the setup and update of your reservium self-hosted server.
-- The [**Contribute Guide**](../../contribute-guide/introduction/index.md) contains information about how you can contribute to Reservium.
-- The [**API Guide**](../../api-reference/index.md) contains detailed information related to the different endpoints of the backend API.
-- The [**Release Notes**](../../release-notes/backend.md) section provides a complete history of changes for both the backend (API) and the frontend (UI), including all updates, improvements, and bug fixes.
+---
 
-If you are new to Reservium you can get some introduction in the next section, otherwise feel free to peruse and find what you are looking for using the navigation on the left.
+### :fontawesome-solid-map: Explore the Documentation
+
+Choose a section below to dive into specific details:
+
+<div class="grid cards" markdown>
+
+-   :fontawesome-solid-user-shield:{ .main-color } __[Manager Guide]__
+
+    ---
+
+    Advanced features for administrators and space managers.
+
+-   :fontawesome-solid-book-open:{ .main-color } __[User Guide]__
+
+    ---
+
+    Everything you need to know about using Reservium daily.
+
+-   :fontawesome-solid-server:{ .main-color } __[Hosting Guide]__
+
+    ---
+
+    Technical instructions for self-hosting your own instance.
+
+-   :fontawesome-solid-users-rectangle:{ .main-color } __[Contribute Guide]__
+
+    ---
+
+    Learn how to help improve Reservium and join the community.
+
+-   :fontawesome-solid-code:{ .main-color } __[API Reference]__
+
+    ---
+
+    Detailed documentation for developers and integrations.
+
+-   :fontawesome-solid-clock-rotate-left:{ .main-color } __[Release Notes]__
+
+    ---
+
+    Stay updated with the latest features and bug fixes.
+
+</div>
+
+  [Manager Guide]: index.md
+  [User Guide]: ../../user-guide/introduction/index.md
+  [Hosting Guide]: ../../hosting-guide/introduction/index.md
+  [Contribute Guide]: ../../contribute-guide/introduction/index.md
+  [API Reference]: ../../api-reference/index.md
+  [Release Notes]: ../../release-notes/backend.md
+
+---
+
+## :fontawesome-solid-circle-info: Manager Responsibilities
+
+Managers carry extra responsibilities to maintain the integrity of the reservation system:
+
+!!! tip "Key Manager Duties"
+    - **Approval Flow**: Promptly review "Not approved" reservations to minimize wait times.
+    - **Service Health**: Keep room rules and constraints updated as organizational needs change.
+    - **User Support**: Use **Manager Observations** to communicate clearly with users when declining or editing requests.

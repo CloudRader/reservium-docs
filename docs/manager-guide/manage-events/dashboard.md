@@ -2,136 +2,87 @@
 icon: lucide/layout-dashboard
 ---
 
-# Dashboard
+# Manager Dashboard :fontawesome-solid-table-columns:{ .main-color }
 
-The **Dashboard** provides an overview of all your reservations.
-Here you can track their status, manage upcoming events, and review past activity.
-
----
-
-## Dashboard Overview
-
-At the top of the page, you’ll find navigation tabs that group your reservations by status:
-
-- **My Events**
-- **Not Approved**
-- **Update Requested**
-- **Confirmed**
-- **Canceled**
-
-Each tab helps you quickly filter and manage reservations.
+The **Manager Dashboard** provides a unified view of all reservation activity. It is designed to help you quickly identify requests that need your attention and keep track of confirmed bookings.
 
 ---
 
-## My Events
+## :fontawesome-solid-layer-group: Dashboard Tabs
 
-The **My Events** tab shows your personal reservations divided into two sections:
+At the top of the page, you'll find navigation tabs that group reservations by their lifecycle state. These filters allow you to focus on specific management tasks.
 
-### Upcoming Events
+| Tab | Purpose |
+| :--- | :--- |
+| **My Events** | Your personal reservations (same as the [User Dashboard](../../user-guide/basic-features/dashboard.md)). |
+| **Not Approved** | High priority! Requests waiting for your initial confirmation. |
+| **Update Requested** | Existing reservations where users have proposed a time change. |
+| **Confirmed** | Future view of all active, approved bookings. |
+| **Canceled** | Records of all events that were declined or withdrawn. |
 
-Displays all **current and future reservations**.
+---
+
+## :fontawesome-solid-user-clock: My Events
+
+The **My Events** tab functions just like the standard user dashboard, showing your own personal activity.
+
+### Upcoming & Past Events
+Track what you have booked personally. Each card provides a snapshot of the service, time, and status.
 
 ![Upcoming Events](assets/my-events.png)
 
-Each event includes:
-
-- **Event name**
-- **Service** (e.g., Club Room)
-- **Date and time range**
-- **Number of guests**
-- **Status** (e.g., Confirmed)
-
-#### Available Actions
-
-Depending on the reservation state, you can:
-
-- **Request Time Change** – Propose a new time for your reservation
-- **Cancel** – Cancel the reservation
-
 ---
 
-### Past Events
+## :fontawesome-solid-list-check: Status-Specific Tabs
 
-Displays your **previous reservations**.
-
-![Past Events](assets/my-events.png)
-
-This section is read-only and helps you:
-
-- Review past activity
-- Track usage history
-
----
-
-## Reservation Status Tabs
-
-### Not Approved
-
-Shows reservations that are **waiting for approval**.
+### :fontawesome-solid-hourglass-half: Not Approved
+This is your primary work queue. It contains reservations that **cannot be confirmed automatically** due to room rules (e.g., large groups or restricted hours).
 
 ![Not Approved](assets/not-approved-events.png)
 
-- Status is marked as **Pending Approval**
-- No access is granted until approval
-- **Managers:** Can [**Approve or Decline**](review-reservations.md#reviewing-pending-approvals) these requests directly from this tab.
+- **Action Required**: Managers should [**Approve or Decline**](review-reservations.md#reviewing-pending-approvals) these as soon as possible.
+- **Impact**: No access or confirmation is granted to the user until you take action.
 
 ---
 
-### Update Requested
-
-Displays reservations where a **time change has been requested**.
+### :fontawesome-solid-calendar-plus: Update Requested
+Shows reservations where a user has requested a modification.
 
 ![Update Request](assets/update-events.png)
 
-- Waiting for manager approval
-- Original reservation remains active until confirmed
-- **Managers:** Can [**Approve or Decline time changes**](review-reservations.md#reviewing-time-changes).
+- **Grace Period**: The original reservation remains valid until you confirm the change.
+- **Action**: You can [**Approve or Decline time changes**](review-reservations.md#reviewing-time-changes).
 
 ---
 
-### Confirmed
-
-Shows all **approved reservations**.
+### :fontawesome-solid-calendar-check: Confirmed
+A complete list of all successful bookings.
 
 ![Confirmed](assets/confirmed-events.png)
 
-- These reservations are fully active
-- Access rights (if applicable) are granted
-- **Managers:** Can [**Edit or Cancel**](review-reservations.md#editing-and-canceling) confirmed reservations if necessary.
+- **Visibility**: Essential for checking who is currently using a space.
+- **Management**: Managers can still [**Edit or Cancel**](review-reservations.md#editing-and-canceling) these if organizational needs change.
 
 ---
 
-### Canceled
+## :fontawesome-solid-users-gear: Role Capabilities
 
-Displays all **canceled reservations**.
+| Feature | Regular User | Manager |
+| :--- | :---: | :---: |
+| View own reservations | :fontawesome-solid-check: | :fontawesome-solid-check: |
+| Request time changes | :fontawesome-solid-check: | :fontawesome-solid-check: |
+| **Review others' requests** | :fontawesome-solid-xmark: | :fontawesome-solid-check: |
+| **Edit any reservation** | :fontawesome-solid-xmark: | :fontawesome-solid-check: |
+| **Provide observations** | :fontawesome-solid-xmark: | :fontawesome-solid-check: |
 
-![Canceled](assets/canceled-events.png)
-
-- Includes both user-canceled and manager-rejected events
-
----
-
-## Role Differences (Brief)
-
-- **Regular Users**
-    - View, manage, and cancel their own reservations.
-    - Request time changes for upcoming events.
-    - Receive automated email notifications on status changes.
-
-- **Managers**
-    - All user capabilities, plus:
-    - [**Review and Approve/Decline**](review-reservations.md) pending reservations.
-    - Handle time change requests.
-    - **Email Notifications:** When a manager updates a reservation, the system sends an email to the user including any [**Manager Observations**](review-reservations.md#manager-observations) provided.
+!!! info "Observations"
+    When you update a reservation, you can add a **Manager Observation**. This text is included in the automated email sent to the user, providing context for your decision.
 
 ---
 
-## What’s Next
+## :fontawesome-solid-arrow-right-long: What’s Next?
 
-From the Dashboard, you can:
+Ready to take action? Learn the details of the review process:
 
-- Manage your reservations
-- Track their status
-- Navigate back to services to create new reservations
-
-For more details about creating or modifying reservations, see the related sections.
+- **[Reviewing Pending Approvals](review-reservations.md)**
+- **[Handling Time Changes](review-reservations.md#reviewing-time-changes)**

@@ -2,99 +2,78 @@
 icon: lucide/check-square
 ---
 
-# Reviewing Reservations
+# Reviewing Reservations :fontawesome-solid-square-check:{ .main-color }
 
-As a manager, you are responsible for reviewing reservation requests that require approval. This process ensures that all bookings meet the necessary criteria and do not conflict with other events.
+As a manager, your review process is vital for maintaining the balance of shared spaces. This guide explains how to handle various request types and how to communicate your decisions effectively.
 
 ---
 
-## Reviewing Pending Approvals
+## :fontawesome-solid-clipboard-list: Reviewing Pending Approvals
 
-Reservations that cannot be confirmed automatically appear in the **Not Approved** tab of the [Dashboard](dashboard.md). This typically includes:
+Reservations that require manual oversight appear in the **Not Approved** tab. Common reasons for this include:
 
-- **Night-time reservations**
-- **Reservations exceeding capacity limits**
-- **Specific services** or reservation types that require explicit manager permission
+- :fontawesome-solid-moon: **Night-time bookings**
+- :fontawesome-solid-people-group: **Capacity overrides**
+- :fontawesome-solid-lock: **Restricted services**
 
 ![Not Approved Tab](assets/not-approved-events.png)
 
-### Approving an Event
-
-To approve a request:
-
-1. Locate the reservation in the **Not Approved** tab.
-2. Click the **Approve Event** icon in the actions column.
-3. In the confirmation dialog, review the details and click **Approve**.
+### :fontawesome-solid-circle-check: Approving an Event
+1. Locate the request in the **Not Approved** tab.
+2. Click the **Approve Event** button.
+3. Review the final details in the dialog and click **Approve**.
 
 ![Approve Event Dialog](assets/approve-event.png)
 
-### Declining an Event
-
-If a reservation cannot be fulfilled, you can decline it:
-
-1. Click the **Decline Event** icon in the actions column.
-2. In the dialog, you can provide a reason in the **Manager Observation** field.
+### :fontawesome-solid-circle-xmark: Declining an Event
+1. Click the **Decline Event** button.
+2. **Crucial**: Provide a reason in the **Manager Observation** field so the user knows why.
 3. Click **Confirm**.
 
 ![Decline Event Dialog](assets/decline-event.png)
 
 ---
 
-## Reviewing Time Changes
+## :fontawesome-solid-clock-rotate-left: Reviewing Time Changes
 
-When a user requests a new time for an existing reservation, it appears in the **Update Requested** tab.
+When users need to shift their booking, they propose a new slot which appears in **Update Requested**.
 
 ![Update Requested Tab](assets/update-events.png)
 
-### Approving a Time Change
-
-Approving the request will update the reservation to the new proposed time.
-
-1. Click the **Approve Time Change** icon.
-2. Confirm the update in the dialog.
-
-![Approve Time Change Dialog](assets/approve-time-change.png)
-
-### Declining a Time Change
-
-If the proposed time is not suitable, you can decline the change. The reservation will remain at its original time.
-
-1. Click the **Decline Time Change** icon.
-2. Confirm the rejection in the dialog.
-
-![Decline Time Change Dialog](assets/decline-time-change.png)
+### Handling the Proposal:
+- **To Approve**: Click **Approve time** to finalize the new time.
+- **To Decline**: Click **Decline time** to keep the reservation at its original time.
 
 ---
 
-## Editing and Canceling
+## :fontawesome-solid-pen-to-square: Editing and Canceling
 
-Managers can also perform general maintenance on reservations from **Update Requested** tab where the actions are available.
+Beyond just approving/declining, you can perform direct maintenance on any active reservation.
 
 ![Confirmed Tab](assets/confirmed-events.png)
 
-### Editing Reservations
+### :fontawesome-solid-user-pen: Editing Details
+Need to adjust the number of guests or add a note?
 
-You can modify details like the number of people or add observations to any active reservation.
+1. Click the **Edit Event**.
+2. Update the fields and **Save Changes**.
 
-1. Click the **Edit Event** icon.
-2. Update the fields and click **Save Changes**.
+### :fontawesome-solid-trash-can: Emergency Cancellation
+If a space becomes unavailable (e.g., maintenance), you can cancel any booking.
 
-![Edit Event Dialog](assets/edit-event.png)
-
-### Canceling Reservations
-
-Managers can cancel a reservation at any time.
-
-1. Click the **Cancel Event** icon.
-2. Confirm the cancellation in the dialog.
-
-![Cancel Event Dialog](assets/cancel-event.png)
+1. Click the **Cancel Event**.
+2. Confirm the action. An email will be sent to the user immediately.
 
 ---
 
-## Manager Observations
+## :fontawesome-solid-comment-dots: Manager Observations
 
-The **Manager Observation** field is a powerful communication tool. When you perform an action (approve, decline, or edit), the system automatically sends an **email notification** to the user.
+The **Manager Observation** field is your direct line to the user. Every time you take an action, the system sends an email.
 
-- **Email Content**: The email includes the updated status of the reservation and any text you entered in the **Manager Observation** field.
-- **Usage**: Use this field to provide instructions (e.g., "Pick up keys at reception"), explain why a request was declined, or request further information.
+!!! quote "Effective Observations"
+    - **Instructions**: "The door code is 1234. Please ensure the lights are off."
+    - **Explanations**: "Declined because the room is reserved for a private event."
+    - **Requests**: "Please contact IT for the projector setup before you arrive."
+
+- **Email Content**: Users see your observation clearly highlighted in their confirmation email.
+- **History**: These notes are preserved in the system for future reference.
