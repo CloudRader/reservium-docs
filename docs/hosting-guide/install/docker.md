@@ -1,8 +1,14 @@
-# Docker
+---
+icon: lucide/container
+---
 
-## Docker Compose
+# Docker :material-docker:{ .main-color }
 
-The easiest and recommended way to deploy your reservium stack is to use docker compose.
+The easiest and recommended way to deploy your Reservium stack is to use Docker Compose. This method ensures that all dependencies are correctly configured and isolated.
+
+---
+
+## :material-tray-arrow-down: Docker Compose
 
 ### Step 1. Install Docker and Docker Compose
 
@@ -18,16 +24,18 @@ docker --version
 docker compose version
 ```
 
-### Step 2. Create an ```.env``` file
+---
 
-Create a project directory to store your n8n environment configuration and Docker Compose files and navigate inside:
+### Step 2. Create an `.env` file
+
+Create a project directory to store your environment configuration and Docker Compose files, then navigate inside:
 
 ```bash
 mkdir reservium
 cd reservium
 ```
 
-Inside the ```reservium``` directory, create an ```.env``` file to customize your reservium instance's details. Change it to match your own information:
+Inside the `reservium` directory, create an `.env` file to customize your Reservium instance's details. Change it to match your own information:
 
 ```editorconfig
 # Database
@@ -58,18 +66,14 @@ GOOGLE__CLIENT_ID=example-client-id
 GOOGLE__CLIENT_X509_CERT_URL=https://www.googleapis.com/robot/v1/metadata/x509/example-client-email.iam.gserviceaccount.com
 ```
 
-**Initial setup**
+!!! info "Initial Setup"
+    For the first setup, you can copy the example above and replace only the `client_id` and `client_secret` fields with values from Google Cloud Console. All other fields can remain unchanged for initial testing and will be updated automatically by the application during authentication.
 
-For the first setup, you can copy the example above and replace only the following fields with values from Google Cloud Console:
-
-- client_id
-- client_secret
-
-All other fields can remain unchanged for initial testing and will be updated automatically by the application during authentication.
+---
 
 ### Step 3. Create a Docker Compose file
 
-Create a ```compose.yaml``` file. Paste the following in the file:
+Create a `compose.yaml` file and paste the following content:
 
 ```yaml
 ---
@@ -139,38 +143,32 @@ volumes:
   postgres_data:
 ```
 
-The Docker Compose file above defines **three containers** that together form the Reservium stack:
+---
+
+## :material-layers-outline: Component Breakdown
+
+The Docker Compose file defines **three containers** that form the Reservium stack:
 
 **1. `db` (PostgreSQL)**
-
 - Stores all application data (reservations, services, users, etc.)
-- Uses environment variables:
-    - `POSTGRES_DB`
-    - `POSTGRES_USER`
-    - `POSTGRES_PASSWORD`
-- Data is persisted in the `postgres_data` Docker volume
+- Data is persisted in the `postgres_data` Docker volume.
 
 **2. `reservium-api`**
-
-- The backend API responsible for business logic, authentication, and integrations
-- Requires configuration via environment variables, including:
-    - **Database connection** (`DB__*`)
-    - **Email settings** (`MAIL__*`) for reservation notifications
-    - **Keycloak** (`KEYCLOAK__*`) for SSO authentication
-    - **Google Calendar** (`GOOGLE__*`) for calendar synchronization
-    - **External integrations** (e.g. access systems)
+- The backend API responsible for business logic, authentication, and integrations.
+- Handles database connections, email settings, and external sync (Keycloak, Google Calendar).
 
 **3. `reservium-ui`**
+- The frontend web interface.
+- Communicates internally with the API container.
 
-- The frontend web interface
-- Exposed on port `3000`
-- Communicates internally with the API container
+!!! warning "Security"
+    All sensitive values should be defined in a `.env` file and **must not be committed to version control**.
 
-All sensitive values should be defined in a `.env` file and **must not be committed to version control**.
+---
 
 ### Step 4. Start Docker Compose
 
-Start reservium by typing:
+Start Reservium by running:
 
 ```bash
 docker compose up -d
@@ -178,18 +176,16 @@ docker compose up -d
 
 **🚀 The system will automatically:**
 
-- Start PostgreSQL
-- Run database migrations
-- Launch the backend API on port 8000
-- Launch the frontend on port 3000
+- Start PostgreSQL and run database migrations.
+- Launch the backend API on port 8000.
+- Launch the frontend on port 3000.
 
 **You can access:**
 
-- API Docs: http://localhost:8000/docs
-- Frontend: http://localhost:3000
+- **API Docs**: [http://localhost:8000/docs](http://localhost:8000/docs)
+- **Frontend**: [http://localhost:3000](http://localhost:3000)
 
-To stop the containers, type:
-
+To stop the containers, use:
 ```bash
 docker compose stop
 ```

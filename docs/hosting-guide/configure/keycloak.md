@@ -1,102 +1,93 @@
-# How to configure SSO with Keycloak
+---
+icon: lucide/key-round
+---
+
+# Keycloak Configuration :fontawesome-solid-key:{ .main-color }
 
 !!! warning "DEMO CONFIGURATION"
-
     This documentation includes examples from a demo environment for informational purposes only. Adapt the configuration values (domains, ports, credentials) to match your specific setup.
 
 Reservium supports SSO via OpenID Connect (OIDC). This guide shows how to configure SSO with Keycloak as an example.
 
-## How does it work?
+---
+
+## :material-cog-outline: How does it work?
 
 Reservium SSO uses Keycloak OAuth2/OpenID Connect. When a user logs in through Keycloak, they unlock a server-side key needed to decrypt their secret key passphrase.
 
-## Prerequisites
+---
+
+## :material-clipboard-check-outline: Prerequisites
 
 You need the following to configure Keycloak SSO with Reservium:
 
-- A running Keycloak instance (version 26.4 or later)
-- Access to Keycloak and Reservium server where they run
+- A running **Keycloak instance** (version 26.4 or later).
+- Access to the Keycloak admin panel and the Reservium server.
 
-!!! info "KEYCLOAK VERSION"
+!!! info "Keycloak Version"
+    This guide uses Keycloak 26.4. It is recommended to use a specific version rather than `latest` for consistency: `quay.io/keycloak/keycloak:26.4`.
 
-    This guide uses Keycloak 26.4. Use a specific version rather than latest for consistency: quay.io/keycloak/keycloak:26.4.
+---
 
-## Configuration
+## :material-format-list-numbered: Configuration Steps
 
 ### Step 1: Configure Keycloak
 
 **Create a Keycloak Realm**
 
-1. Navigate to your Keycloak instance (e.g., ```https://keycloak.local:8443```)
-2. Log in with the admin credentials:
-    - **Username**: `admin`
-    - **Password**: `admin`
-3. Navigate to the dropdown in the top-left corner and click "`Create realm`"
-4. Enter a realm name (e.g., "reservium")
-5. Click "**Create**"
+1. Navigate to your Keycloak instance (e.g., `https://keycloak.local:8443`).
+2. Log in with admin credentials.
+3. In the top-left dropdown, click **Create realm**.
+4. Enter a realm name (e.g., `reservium`) and click **Create**.
 
 **Create a Keycloak Client**
 
-1. In your newly created realm, go to "**Clients**" in the left menu
-2. Click "**Create client**"
-3. Configure the client:
-    - Client type: OpenID Connect
-    - Client ID: reservium-client (or your preferred name)
-    - Click "Next"
-    - Configure client settings:
-4. Client authentication: On
-    - Authorization: Off
-    - Authentication flow: Standard flow
-    - Click "Next"
-5. Configure login settings:
-    - Root URL: Leave empty
-    - Home URL: Leave empty
-    - Valid redirect URIs: Add your Reservium redirect URI (get this from Reservium's SSO configuration page)
-    - Web origins: https://reservium.local
-    - Click "Save"
+1. In your new realm, go to **Clients** -> **Create client**.
+2. **Client type**: `OpenID Connect`.
+3. **Client ID**: `reservium-client`.
+4. **Client authentication**: `On`.
+5. **Authentication flow**: `Standard flow`.
+6. **Valid redirect URIs**: Add your Reservium redirect URI.
+7. **Web origins**: `https://reservium.local`.
+8. Click **Save**.
 
 **Configure Client Credentials**
 
-1. In the client settings, go to the "**Credentials**" tab
-2. Copy the **Client secret** value - you'll need this for Reservium configuration
+1. In the client settings, go to the **Credentials** tab.
+2. Copy the **Client secret** - you will need this for Reservium configuration.
 
 **Create a Test User**
 
-1. Go to "**Users**" in the left menu
-2. Click "**Create new user**"
-3. Fill in the user details:
-    - Username: Choose a username
-    - Email: Use an email that exists in Passbolt
-    - First name and Last name: Fill as desired
-    - Email verified: Toggle to "On"
-    - Click "Create"
-4. Set a password for the user:
-    - Go to the "**Credentials**" tab
-    - Click "**Set password**"
-    - Enter a password and confirm it
-    - Toggle "**Temporary**" to "Off"
-    - Click "**Save**"
+1. Go to **Users** -> **Create new user**.
+2. Fill in details (Username, Email, etc.) and set **Email verified** to `On`.
+3. In the **Credentials** tab, click **Set password**.
+4. Set a password and toggle **Temporary** to `Off`.
+
+---
 
 ### Step 2: Configure Reservium Environment Variables
 
-1. Connect to the server where Reservium is running.
-2. Navigate to the working directory containing your ```compose.yaml``` and configuration files.
-3. Open the ```.env``` file and add the following environment variables:
+1. Connect to your Reservium server.
+2. Open your `.env` file and add the following variables:
+
 ```editorconfig
 KEYCLOAK__SERVER_URL=https://keycloak.example.com:8443
 KEYCLOAK__REALM=your.realm
 KEYCLOAK__CLIENT_ID=reservium-app
 KEYCLOAK__CLIENT_SECRET=your-secret
 ```
-4. Restart the Docker containers to apply the changes:
+
+3. Restart the Docker containers:
+
 ```bash
-docker-compose down
-docker-compose up -d
+docker compose down
+docker compose up -d
 ```
 
+---
 
 ### Step 3: Verify Configuration
 
 1. Open the Reservium login page and click the login button.
-2. Confirm that you can authenticate via Keycloak successfully.
-3. Ensure you can access Reservium after logging in.
+2. Confirm that you are redirected to Keycloak and can authenticate successfully.
+3. Ensure you have access to the Reservium dashboard after logging in.
