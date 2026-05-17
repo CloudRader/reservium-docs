@@ -1,14 +1,69 @@
-# Welcome to the Hosting Guide!
+# Welcome to the Hosting Guide! :fontawesome-solid-server:{ .main-color }
 
 ## What is the Hosting Guide?
 
-The documentation for Reservium contains several main sections, all accessible from the top navigation bar:
+The **Hosting Guide** contains all the technical information related to the setup, configuration, and maintenance of your Reservium self-hosted server. It is intended for system administrators and DevOps engineers.
 
-- The [**Hosting Guide**](index.md) that you're currently reading contains all the technical information related to the setup and update of your reservium self-hosted server.
-- The [**User Guide**](../../user-guide/introduction/index.md) contains all about the functionalities available to every user.
-- The [**Manager Guide**](../../manager-guide/introduction/index.md) contains all the information for users with the manager role, e.g. all about the manager features.
-- The [**Contribute Guide**](../../contribute-guide/introduction/index.md) contains information about how you can contribute to Reservium.
-- The [**API Guide**](../../api-reference/index.md) contains detailed information related to the different endpoints of the backend API.
-- The [**Release Notes**](../../release-notes/backend.md) section provides a complete history of changes for both the backend (API) and the frontend (UI), including all updates, improvements, and bug fixes.
+---
 
-If you are new to Reservium you can get some introduction in the next section, otherwise feel free to peruse and find what you are looking for using the navigation on the left.
+### :fontawesome-solid-map: Explore the Documentation
+
+Choose a section below to dive into specific details:
+
+<div class="grid cards" markdown>
+
+-   :fontawesome-solid-server:{ .main-color } __[Hosting Guide]__
+
+    ---
+
+    Technical instructions for self-hosting your own instance.
+
+-   :fontawesome-solid-book-open:{ .main-color } __[User Guide]__
+
+    ---
+
+    Everything you need to know about using Reservium daily.
+
+-   :fontawesome-solid-user-shield:{ .main-color } __[Manager Guide]__
+
+    ---
+
+    Advanced features for administrators and space managers.
+
+-   :fontawesome-solid-users-rectangle:{ .main-color } __[Contribute Guide]__
+
+    ---
+
+    Learn how to help improve Reservium and join the community.
+
+-   :fontawesome-solid-code:{ .main-color } __[API Reference]__
+
+    ---
+
+    Detailed documentation for developers and integrations.
+
+-   :fontawesome-solid-clock-rotate-left:{ .main-color } __[Release Notes]__
+
+    ---
+
+    Stay updated with the latest features and bug fixes.
+
+</div>
+
+  [Hosting Guide]: index.md
+  [User Guide]: ../../user-guide/introduction/index.md
+  [Manager Guide]: ../../manager-guide/introduction/index.md
+  [Contribute Guide]: ../../contribute-guide/introduction/index.md
+  [API Reference]: ../../api-reference/index.md
+  [Release Notes]: ../../release-notes/backend.md
+
+---
+
+## :fontawesome-solid-circle-info: Hosting Overview
+
+Setting up Reservium involves a few key components to ensure a secure and scalable environment:
+
+!!! tip "Key Hosting Steps"
+    - **Installation**: Use Docker Compose for a quick and reliable deployment.
+    - **Security**: Configure Keycloak for secure Single Sign-On (SSO) authentication.
+    - **Maintenance**: Regularly update your containers to benefit from the latest features and security patches.
