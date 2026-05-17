@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.2.16](https://github.com/CloudRader/reservium-docs/compare/v0.2.15...v0.2.16) (2026-05-17)
+
+
+### 🧱 Updates & Improvements
+
+* **deps:** update python to v3.14.5 ([#37](https://github.com/CloudRader/reservium-docs/issues/37)) ([9b9f3be](https://github.com/CloudRader/reservium-docs/commit/9b9f3be2ac19445de61fa0cdcdf16a2393e5e453))
+* **hosting-guide:** redesign and better styling section ([240914e](https://github.com/CloudRader/reservium-docs/commit/240914e53ffce61222370ca0f6578c786e1015bf))
+* **manager-guide:** redesign and better styling section ([94e3dec](https://github.com/CloudRader/reservium-docs/commit/94e3dec66089802567895b5922a69307667afc7c))
+* **user-guide:** redesign and better styling section ([29b6623](https://github.com/CloudRader/reservium-docs/commit/29b6623b03db60231b738bf401261c71c62d1bfe))
+
+
+### 🛠️ Fixes
+
+* **deps:** update dependency requests to v2.34.2 ([#36](https://github.com/CloudRader/reservium-docs/issues/36)) ([32278af](https://github.com/CloudRader/reservium-docs/commit/32278afc8c91f37c2172087990b8eda2dd1cad50))
+* **deps:** update dependency zensical to v0.0.42 ([#39](https://github.com/CloudRader/reservium-docs/issues/39)) ([eed8043](https://github.com/CloudRader/reservium-docs/commit/eed8043b0fb3b9131e273034fe3fdd3b8dfd7677))
+
 ## [0.2.15](https://github.com/CloudRader/reservium-docs/compare/v0.2.14...v0.2.15) (2026-05-10)
 
 
