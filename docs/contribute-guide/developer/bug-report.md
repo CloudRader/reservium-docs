@@ -1,3 +1,7 @@
+---
+icon: lucide/bug
+---
+
 # How to Report a Bug :fontawesome-solid-bug:{ .main-color }
 
 Found a bug in **Reservium**? Your reports help us make the system more stable and reliable for everyone. Thank you for taking the time to let us know!

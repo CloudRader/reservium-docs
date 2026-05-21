@@ -70,6 +70,8 @@ nav = [
     {"Developer" = [
         "contribute-guide/developer/feature-request.md",
         "contribute-guide/developer/bug-report.md",
+        "contribute-guide/developer/backend-setup.md",
+        "contribute-guide/developer/frontend-setup.md",
     ]},
   ]},
   {"API Reference" = [

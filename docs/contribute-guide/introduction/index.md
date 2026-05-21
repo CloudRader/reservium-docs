@@ -65,10 +65,9 @@ We welcome contributions from developers of all skill levels. Here are some ways
 
 *   **[Feature Requests](../developer/feature-request.md)**: Propose new features or improvements.
 *   **[Bug Reports](../developer/bug-report.md)**: Report issues you've found in the system.
-*   **Setting up Environment**: Get started with the local development setup.
-
-!!! info "Coming Soon"
-    Detailed instructions for setting up your environment and our contribution workflow will be added here soon.
+*   **Setting up Environment**:
+    *   **[Backend Setup](../developer/backend-setup.md)**: Get started with the API development.
+    *   **[Frontend Setup](../developer/frontend-setup.md)**: Get started with the UI development.
 
 ---
 
