@@ -1,3 +1,7 @@
+---
+icon: lucide/lightbulb
+---
+
 # How to Request a Feature :fontawesome-solid-lightbulb:{ .main-color }
 
 Have a great idea for **Reservium**? We'd love to hear it! Feature requests are a vital part of improving the system for everyone.
