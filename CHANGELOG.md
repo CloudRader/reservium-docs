@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.18](https://github.com/CloudRader/reservium-docs/compare/v0.2.17...v0.2.18) (2026-05-21)
+
+
+### 🧱 Updates & Improvements
+
+* **contribute-guide:** add backend and frontend setup pages ([fe7f2ac](https://github.com/CloudRader/reservium-docs/commit/fe7f2acf457f81635a06711d6407f2e9faa951bc))
+
 ## [0.2.17](https://github.com/CloudRader/reservium-docs/compare/v0.2.16...v0.2.17) (2026-05-19)
 
 

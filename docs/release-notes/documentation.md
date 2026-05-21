@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.2.18](https://github.com/CloudRader/reservium-docs/compare/v0.2.17...v0.2.18) (2026-05-21)
+
+
+### 🧱 Updates & Improvements
+
+* **contribute-guide:** add backend and frontend setup pages ([fe7f2ac](https://github.com/CloudRader/reservium-docs/commit/fe7f2acf457f81635a06711d6407f2e9faa951bc))
+
+## [0.2.17](https://github.com/CloudRader/reservium-docs/compare/v0.2.16...v0.2.17) (2026-05-19)
+
+
+### 🧱 Updates & Improvements
+
+* **contribute-guide:** add pages for request features and bugs ([1941e46](https://github.com/CloudRader/reservium-docs/commit/1941e46cbd7c94ba47a9645078a2473d1f01ce6f))
+
+
+### 🛠️ Fixes
+
+* **deps:** update dependency zensical to v0.0.43 ([#40](https://github.com/CloudRader/reservium-docs/issues/40)) ([57566e6](https://github.com/CloudRader/reservium-docs/commit/57566e6433bb48bc193b4f5504c5f9fbb259a8e3))
+
 ## [0.2.16](https://github.com/CloudRader/reservium-docs/compare/v0.2.15...v0.2.16) (2026-05-17)
 
 
