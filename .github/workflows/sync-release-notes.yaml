@@ -23,7 +23,7 @@ jobs:
           ref: release-please--branches--main
 
       - name: Install uv
-        uses: astral-sh/setup-uv@v8.1.0
+        uses: astral-sh/setup-uv@v8.2.0
 
       - name: Fetch and generate release notes
         run: uv run scripts/fetch_releases.py
