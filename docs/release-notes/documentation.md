@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.2.19](https://github.com/CloudRader/reservium-docs/compare/v0.2.18...v0.2.19) (2026-06-10)
+
+
+### 🧱 Updates & Improvements
+
+* **deps:** update astral-sh/setup-uv action to v8.2.0 ([#49](https://github.com/CloudRader/reservium-docs/issues/49)) ([552a0bd](https://github.com/CloudRader/reservium-docs/commit/552a0bd063d3c582ebeaba56d4cc21c58ed49bfd))
+
+
+### 🛠️ Fixes
+
+* **deps:** update dependency typer to v0.26.4 ([#43](https://github.com/CloudRader/reservium-docs/issues/43)) ([51e66a7](https://github.com/CloudRader/reservium-docs/commit/51e66a721900f6082e92abe5eee076d4f9d399e1))
+* **deps:** update dependency typer to v0.26.5 ([#45](https://github.com/CloudRader/reservium-docs/issues/45)) ([810f7a4](https://github.com/CloudRader/reservium-docs/commit/810f7a4ea19d433a92a9bc28e16f6939beb6663c))
+* **deps:** update dependency typer to v0.26.6 ([#46](https://github.com/CloudRader/reservium-docs/issues/46)) ([8566a53](https://github.com/CloudRader/reservium-docs/commit/8566a5314c6ea0cfcdb7a700c5fa27648b44ed77))
+* **deps:** update dependency typer to v0.26.7 ([#48](https://github.com/CloudRader/reservium-docs/issues/48)) ([bd5ae76](https://github.com/CloudRader/reservium-docs/commit/bd5ae7691e92104f6cd4243299f3411b7b1488b9))
+* **deps:** update dependency zensical to v0.0.44 ([#51](https://github.com/CloudRader/reservium-docs/issues/51)) ([4cbb1ce](https://github.com/CloudRader/reservium-docs/commit/4cbb1ce182746eed4c1c6750d29dc5bdc79a7632))
+* **deps:** update dependency zensical to v0.0.45 ([#52](https://github.com/CloudRader/reservium-docs/issues/52)) ([f00cf9c](https://github.com/CloudRader/reservium-docs/commit/f00cf9c4f94b75c7685a1258ed7ded6325d06ce3))
+* python version for uv and renovate ([13ef2f2](https://github.com/CloudRader/reservium-docs/commit/13ef2f2d3fb981f7f1025f1d470cf388052ecd0c))
+
 ## [0.2.18](https://github.com/CloudRader/reservium-docs/compare/v0.2.17...v0.2.18) (2026-05-21)
 
 
