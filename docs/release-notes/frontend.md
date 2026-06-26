@@ -1,5 +1,25 @@
 # Changelog
 
+## [2.4.1](https://github.com/CloudRader/reservium-ui/compare/v2.4.0...v2.4.1) (2026-06-14)
+
+
+### 🧱 Updates & Improvements
+
+* **build:** load ENV in runtime ([f21db28](https://github.com/CloudRader/reservium-ui/commit/f21db288c89c6bfaec7ac8a544fb92b4bf3d7440))
+
+
+### 🛠️ Fixes
+
+* **build:** add or return import.meta.env for local envs ([f414761](https://github.com/CloudRader/reservium-ui/commit/f414761e4ac98590fc541d75083edd4de5d6b633))
+* **view:** show calendars in public view page ([cc8cbcc](https://github.com/CloudRader/reservium-ui/commit/cc8cbccb8875a450252487863395f849b1bb9c5a))
+
+## [2.4.0](https://github.com/CloudRader/reservium-ui/compare/v2.3.3...v2.4.0) (2026-06-07)
+
+
+### ✨ New Features
+
+* **migration:** from google id to internal models UUID ([#22](https://github.com/CloudRader/reservium-ui/issues/22)) ([7c40230](https://github.com/CloudRader/reservium-ui/commit/7c402307f3b9de5c6e3bb4e95f1bf3b2df8b5c25))
+
 ## [2.3.3](https://github.com/CloudRader/reservium-ui/compare/v2.3.2...v2.3.3) (2026-04-19)
 
 
