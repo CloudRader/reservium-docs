@@ -21,15 +21,15 @@ jobs:
       ${{ github.event.workflow_run.conclusion == 'success' &&
           contains(github.event.workflow_run.head_commit.message, 'chore(main): release') }}
     steps:
-      - uses: actions/configure-pages@v6
-      - uses: actions/checkout@v7
+      - uses: actions/configure-pages@v6.0.0
+      - uses: actions/checkout@v7.0.1
       - uses: astral-sh/setup-uv@v8.2.0
 
       - run: uv sync
       - run: uv run zensical build --clean
 
-      - uses: actions/upload-pages-artifact@v5
+      - uses: actions/upload-pages-artifact@v5.0.0
         with:
           path: site
-      - uses: actions/deploy-pages@v5
+      - uses: actions/deploy-pages@v5.0.0
         id: deployment
