@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.20](https://github.com/CloudRader/reservium-docs/compare/v0.2.19...v0.2.20) (2026-07-22)
+
+
+### ♻️ Updates & Improvements
+
+* **deps:** update astral-sh/setup-uv action to v8.3.2 ([#56](https://github.com/CloudRader/reservium-docs/issues/56)) ([c34be99](https://github.com/CloudRader/reservium-docs/commit/c34be99ef345dc8b64988052e00ab5379d1e3930))
+* **deps:** update dependency zensical to v0.0.50 ([#59](https://github.com/CloudRader/reservium-docs/issues/59)) ([f99ee53](https://github.com/CloudRader/reservium-docs/commit/f99ee530b9884143e1dafda7a14549587edf9439))
+
+
+### ⚙️ DevOps & CI/CD
+
+* **release-please:** update config ([1eb983b](https://github.com/CloudRader/reservium-docs/commit/1eb983b08a5eed8a23ea07c81ee607f4ff6eebc8))
+
 ## [0.2.19](https://github.com/CloudRader/reservium-docs/compare/v0.2.18...v0.2.19) (2026-06-26)
 
 
