@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reservium API Reference</title>
+    <script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference@1.62.0"></script>
+    <style>
+      html,
+      body,
+      #api-reference {
+        min-height: 0;
+        margin: 0;
+      }
+
+      body {
+        background: #0b0c0e;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="api-reference"></div>
+    <script>
+      Scalar.createApiReference("#api-reference", {
+        url: "openapi.json",
+        // servers: [
+        //   {
+        //     url: "https://api.reservation.buk.cvut.cz",
+        //     description: "Production"
+        //   }
+        // ],
+        theme: "default",
+        darkMode: true,
+        withDefaultFonts: false,
+        showSidebar: true,
+        hideSearch: false,
+        hideClientButton: true,
+        hideDarkModeToggle: true,
+        hideTestRequestButton: false,
+        showDeveloperTools: "never",
+        telemetry: false,
+        agent: {
+          disabled: true
+        },
+        mcp: {
+          disabled: true
+        },
+        authentication: {
+          preferredSecurityScheme: "HTTPBearer"
+        }
+      });
+    </script>
+  </body>
+</html>

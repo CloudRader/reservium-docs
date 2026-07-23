@@ -3,8 +3,9 @@ site_name = "Reservium"
 repo_name = "CloudRader/reservium-api"
 repo_url = "https://github.com/CloudRader/reservium-api"
 edit_uri = "https://github.com/CloudRader/reservium-docs/edit/main/docs/"
-extra_css = ["assets/stylesheets/extra.css"]
-
+extra_css = [
+  "assets/stylesheets/extra.css",
+]
 nav = [
   {"User Guide" = [
     {"Introduction" = [
@@ -109,7 +110,7 @@ repo = "fontawesome/brands/github"
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme: dark)"
-scheme = "default"
+scheme = "slate"
 primary = "custom"
 accent = "yellow"
 toggle.icon = "material/weather-night"
@@ -117,7 +118,7 @@ toggle.name = "Switch to light mode"
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme: light)"
-scheme = "slate"
+scheme = "default"
 primary = "custom"
 accent = "yellow"
 toggle.icon = "material/weather-sunny"
