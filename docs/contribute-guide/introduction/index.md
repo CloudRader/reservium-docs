@@ -50,7 +50,7 @@ Choose a section below to dive into specific details:
 
 </div>
 
-  [Contribute Guide]: index.md
+  [Contribute Guide]: ../../contribute-guide/introduction/index.md
   [User Guide]: ../../user-guide/introduction/index.md
   [Manager Guide]: ../../manager-guide/introduction/index.md
   [Hosting Guide]: ../../hosting-guide/introduction/index.md

@@ -26,7 +26,7 @@ Once you select a service, the calendar becomes the central part of your experie
     - **Types**: Visual indicators for different areas (e.g., Entire Space vs. Pool).
 
 - **:material-calendar-sync: Toggle Views:** Customize how you see availability:
-    - :material-calendar-day: **Day**
+    - :material-calendar-today: **Day**
   	- :material-calendar-week: **Week**
   	- :material-calendar-month: **Month**
   	- :material-view-list: **List**
