@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.0](https://github.com/CloudRader/reservium-docs/compare/v0.2.20...v0.3.0) (2026-07-23)
+
+
+### ✨ New Features
+
+* **api-reference:** add page with scalar api reference ([2209e69](https://github.com/CloudRader/reservium-docs/commit/2209e6993a534bf234fc8b4357ff46ef6ede5d11))
+
+
+### 🐛 Fixes
+
+* **deps:** update dependency typer to v0.27.0 ([#60](https://github.com/CloudRader/reservium-docs/issues/60)) ([d942356](https://github.com/CloudRader/reservium-docs/commit/d942356367a5a78cb6d15d7cb66155bba62a12be))
+* **docs:** calendar icon and link in index pages ([fa6915c](https://github.com/CloudRader/reservium-docs/commit/fa6915ce3b02f8b6d997871602985e54aeed7f38))
+
 ## [0.2.20](https://github.com/CloudRader/reservium-docs/compare/v0.2.19...v0.2.20) (2026-07-22)
 
 

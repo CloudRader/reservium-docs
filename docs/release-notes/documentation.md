@@ -1,16 +1,24 @@
 # Changelog
 
+## [0.3.0](https://github.com/CloudRader/reservium-docs/compare/v0.2.20...v0.3.0) (2026-07-23)
+
+
+### ✨ New Features
+
+* **api-reference:** add page with scalar api reference ([2209e69](https://github.com/CloudRader/reservium-docs/commit/2209e6993a534bf234fc8b4357ff46ef6ede5d11))
+
+
+### 🐛 Fixes
+
+* **deps:** update dependency typer to v0.27.0 ([#60](https://github.com/CloudRader/reservium-docs/issues/60)) ([d942356](https://github.com/CloudRader/reservium-docs/commit/d942356367a5a78cb6d15d7cb66155bba62a12be))
+* **docs:** calendar icon and link in index pages ([fa6915c](https://github.com/CloudRader/reservium-docs/commit/fa6915ce3b02f8b6d997871602985e54aeed7f38))
+
 ## [0.2.20](https://github.com/CloudRader/reservium-docs/compare/v0.2.19...v0.2.20) (2026-07-22)
 
 
 ### ♻️ Updates & Improvements
 
 * **deps:** update astral-sh/setup-uv action to v8.3.2 ([#56](https://github.com/CloudRader/reservium-docs/issues/56)) ([c34be99](https://github.com/CloudRader/reservium-docs/commit/c34be99ef345dc8b64988052e00ab5379d1e3930))
-
-
-### 🐛 Fixes
-
-* **deps:** update dependency zensical to v0.0.47 ([#57](https://github.com/CloudRader/reservium-docs/issues/57)) ([7dccc32](https://github.com/CloudRader/reservium-docs/commit/7dccc32236b105df1624145bd122a52c0032d3ac))
 * **deps:** update dependency zensical to v0.0.50 ([#59](https://github.com/CloudRader/reservium-docs/issues/59)) ([f99ee53](https://github.com/CloudRader/reservium-docs/commit/f99ee530b9884143e1dafda7a14549587edf9439))
 
 
