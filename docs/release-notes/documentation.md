@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.1](https://github.com/CloudRader/reservium-docs/compare/v0.3.0...v0.3.1) (2026-07-27)
+
+
+### ♻️ Updates & Improvements
+
+* **agents:** add repository guidance and fix logging ([#64](https://github.com/CloudRader/reservium-docs/issues/64)) ([8b817fa](https://github.com/CloudRader/reservium-docs/commit/8b817fa1e1514d04d42280affcbf3a7777d264f0))
+
+
+### 🐛 Fixes
+
+* **deps:** update dependency zensical to v0.0.51 ([#62](https://github.com/CloudRader/reservium-docs/issues/62)) ([1cd7070](https://github.com/CloudRader/reservium-docs/commit/1cd7070aa4bfef1f39779a0870389899d382cbf2))
+
 ## [0.3.0](https://github.com/CloudRader/reservium-docs/compare/v0.2.20...v0.3.0) (2026-07-23)
 
 
