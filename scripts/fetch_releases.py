@@ -1,6 +1,5 @@
 import logging
 from pathlib import Path
-from typing import Dict
 
 import requests
 import typer
@@ -11,9 +10,10 @@ app = typer.Typer(
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+logger = logging.getLogger(__name__)
 
 # Map title -> repo slug
-REPOS: Dict[str, str] = {
+REPOS: dict[str, str] = {
     "Backend": "CloudRader/reservium-api",
     "Frontend": "CloudRader/reservium-ui",
 }
@@ -31,7 +31,7 @@ def fetch_changelog(repo_slug: str, branch: str = "main") -> str:
     headers = {}  # optional: {"Authorization": f"token {GITHUB_TOKEN}"}
     response = requests.get(url, headers=headers)
     if response.status_code == 404:
-        logging.warning(
+        logger.warning(
             "CHANGELOG.md not found for %s on branch '%s'", repo_slug, branch
         )
         return "_No changelog found_"
@@ -52,14 +52,14 @@ def generate(
     output_dir.mkdir(parents=True, exist_ok=True)
 
     for title, repo_slug in REPOS.items():
-        logging.info("Fetching CHANGELOG.md for %s...", repo_slug)
+        logger.info("Fetching CHANGELOG.md for %s...", repo_slug)
         changelog = fetch_changelog(repo_slug, branch)
 
         filename = f"{title.lower().replace(' ', '-')}.md"
         output_file = output_dir / filename
 
         output_file.write_text(changelog, encoding="utf-8")
-        logging.info("✅ Generated %s", output_file)
+        logger.info("✅ Generated %s", output_file)
 
 
 if __name__ == "__main__":
