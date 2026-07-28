@@ -78,15 +78,21 @@ before making a contribution.
 
 ## Code and Content Conventions
 
-- Use Markdown compatible with the extensions configured in `zensical.toml`.
-- Follow the existing page structure, front matter, admonition syntax, and icon
-  conventions in neighboring documents.
 - Use ASCII for new source text unless the content or existing file requires
   another character set. Existing release-note headings may contain Unicode.
-- Keep navigation paths in `zensical.toml` synchronized with files under `docs/`.
-- Preserve relative links and verify referenced images when moving pages.
+- Keep source documentation under `docs/` and site configuration in
+  `zensical.toml`.
 - Python code should remain type-annotated and formatted consistently with the
   existing `scripts/fetch_releases.py` style.
+
+## Documentation Pages
+
+For adding or updating documentation pages, use the repository-local skill
+[`create-update-pages`](.agents/skills/create-update-pages/SKILL.md). It is the
+source of truth for page structure, clarification questions, writing style,
+icons, admonitions, screenshots, asset placement, relative links, and
+navigation changes. Read and follow that skill before editing files under
+`docs/`; keep this guide focused on repository-wide workflows and constraints.
 
 ## Release and Deployment
 
