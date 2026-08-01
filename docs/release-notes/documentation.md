@@ -1,5 +1,25 @@
 # Changelog
 
+## [0.3.2](https://github.com/CloudRader/reservium-docs/compare/v0.3.1...v0.3.2) (2026-08-01)
+
+
+### ♻️ Updates & Improvements
+
+* add description of repo to README ([e9e782c](https://github.com/CloudRader/reservium-docs/commit/e9e782c98441c97c984b447db764e7b4f7887f83))
+* **deps:** update astral-sh/setup-uv action to v9 ([#66](https://github.com/CloudRader/reservium-docs/issues/66)) ([8b4e142](https://github.com/CloudRader/reservium-docs/commit/8b4e142223aa003a8438f244ecc8f2b975c91664))
+
+
+### 🐛 Fixes
+
+* **deps:** update dependency zensical to v0.0.52 ([#67](https://github.com/CloudRader/reservium-docs/issues/67)) ([c62752c](https://github.com/CloudRader/reservium-docs/commit/c62752c2f2b6fe063ee086eec5e98c9147f3be3c))
+
+
+### 📝 Documentation
+
+* **agents:** add page formatting rules in skill ([8564461](https://github.com/CloudRader/reservium-docs/commit/8564461164f662b5109e4865e48fdb76e792734d))
+* **agents:** centralize page authoring guidance ([40787d1](https://github.com/CloudRader/reservium-docs/commit/40787d1dad035f230a99c5df0f2941ba9a9a017a))
+* standardize page formatting ([3d79b85](https://github.com/CloudRader/reservium-docs/commit/3d79b85b5103be5ac70c99227082950767f3498b))
+
 ## [0.3.1](https://github.com/CloudRader/reservium-docs/compare/v0.3.0...v0.3.1) (2026-07-27)
 
 
