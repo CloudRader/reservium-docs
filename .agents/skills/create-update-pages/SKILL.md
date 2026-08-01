@@ -79,6 +79,10 @@ Match the closest neighboring pages rather than introducing a new format.
   prerequisites, steps, controls, results, and recovery paths.
 - Use numbered steps for procedures, bullets for sets of facts or options, and
   tables only for compact comparisons such as permissions or error types.
+- Use `-` for unordered list markers and one space after ordered list markers,
+  for example `1. Step`. Keep nested lists consistently indented.
+- Do not end headings with a colon. Put explanatory punctuation in the sentence
+  before the heading or after the heading in the body text.
 - Bold UI labels and important values. Use backticks for commands, filenames,
   environment variables, paths, and literal API values.
 - Use the configured Markdown extensions: admonitions such as `!!! info`,
@@ -103,7 +107,8 @@ For each screenshot:
 
 1. Confirm its source, UI state, and page-specific location.
 2. Save it under the nearest relevant `assets/` directory.
-3. Reference it with a relative Markdown image link and a useful alt text.
+3. Reference it with a relative Markdown image link and concise, descriptive
+   alt text without extra whitespace.
 4. Explain the action or state shown immediately before or after the image.
 5. Check that the asset exists and is readable before finishing.
 
@@ -122,7 +127,9 @@ verified special requirement, such as the API iframe layout.
 4. Edit the smallest appropriate set of files. Preserve unrelated wording,
    links, generated release notes, and user changes.
 5. Check headings, front matter, icons, admonitions, relative links, image
-   references, code fences, and navigation ordering.
+   references, code fences, list formatting, heading punctuation, and
+   navigation ordering. Remove trailing whitespace and avoid relying on
+   trailing spaces for line breaks.
 6. Build and run repository checks before reporting completion.
 
 ## Validation
