@@ -12,7 +12,7 @@ This guide will help you set up the **Reservium UI** (Frontend) for local develo
 
 Before you begin, ensure you have the following tools installed:
 
-*   :fontawesome-brands-node-js: **Node.js (v20+)**: For Frontend development.
+-   :fontawesome-brands-node-js: **Node.js (v20+)**: For Frontend development.
 
 ---
 
@@ -67,9 +67,9 @@ Every commit message should follow this pattern: `type: description` (or `type(s
 
 ### Workflow
 
-1.  **Create a branch**: Use a descriptive name starting with the type, e.g., `feat/ui-dashboard-fix`.
-2.  **Commit changes**: Use the types above. This allows us to automatically generate changelogs and manage version tags.
-3.  **Push to your fork** and create a **Pull Request**.
+1. **Create a branch**: Use a descriptive name starting with the type, e.g., `feat/ui-dashboard-fix`.
+2. **Commit changes**: Use the types above. This allows us to automatically generate changelogs and manage version tags.
+3. **Push to your fork** and create a **Pull Request**.
 
 ---
 

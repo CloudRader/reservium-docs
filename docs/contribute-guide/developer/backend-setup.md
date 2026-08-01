@@ -12,8 +12,8 @@ This guide will help you set up the **Reservium API** (Backend) for local develo
 
 Before you begin, ensure you have the following tools installed:
 
-*   :material-docker: **Docker & Docker Compose**: To run the PostgreSQL database.
-*   :fontawesome-brands-python: **Python (3.12+)**: We recommend using [**uv**](https://docs.astral.sh/uv/) for package management.
+-   :material-docker: **Docker & Docker Compose**: To run the PostgreSQL database.
+-   :fontawesome-brands-python: **Python (3.12+)**: We recommend using [**uv**](https://docs.astral.sh/uv/) for package management.
 
 ---
 
@@ -122,9 +122,9 @@ Every commit message should follow this pattern: `type: description` (or `type(s
 
 ### Workflow
 
-1.  **Create a branch**: Use a descriptive name starting with the type, e.g., `feat/add-google-sync`.
-2.  **Commit changes**: Use the types above. This allows us to automatically generate changelogs and manage version tags.
-3.  **Push to your fork** and create a **Pull Request**.
+1. **Create a branch**: Use a descriptive name starting with the type, e.g., `feat/add-google-sync`.
+2. **Commit changes**: Use the types above. This allows us to automatically generate changelogs and manage version tags.
+3. **Push to your fork** and create a **Pull Request**.
 
 ---
 

@@ -33,14 +33,14 @@ Once logged in, you'll see the main dashboard and available services.
 
 ![Main Page](assets/main-page.png)
 
-### Follow these steps to book:
+### Follow these steps to book
 
-1.  **Choose a Service**: Use the top bar to select what you want to reserve (e.g., *Meeting Room*).
-2.  **Fill the Form**: Use the left panel to enter your details:
+1. **Choose a Service**: Use the top bar to select what you want to reserve (e.g., *Meeting Room*).
+2. **Fill the Form**: Use the left panel to enter your details:
     - :material-clock-start: **Start & End Time**
     - :material-message-text-outline: **Purpose**
     - :material-account-multiple: **Participants**
-3.  **Submit**: Click the **Submit** button to finalize.
+3. **Submit**: Click the **Submit** button to finalize.
 
 ---
 

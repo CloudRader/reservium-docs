@@ -63,11 +63,11 @@ Choose a section below to dive into specific details:
 
 We welcome contributions from developers of all skill levels. Here are some ways you can help:
 
-*   **[Feature Requests](../developer/feature-request.md)**: Propose new features or improvements.
-*   **[Bug Reports](../developer/bug-report.md)**: Report issues you've found in the system.
-*   **Setting up Environment**:
-    *   **[Backend Setup](../developer/backend-setup.md)**: Get started with the API development.
-    *   **[Frontend Setup](../developer/frontend-setup.md)**: Get started with the UI development.
+-   **[Feature Requests](../developer/feature-request.md)**: Propose new features or improvements.
+-   **[Bug Reports](../developer/bug-report.md)**: Report issues you've found in the system.
+-   **Setting up Environment**:
+    -   **[Backend Setup](../developer/backend-setup.md)**: Get started with the API development.
+    -   **[Frontend Setup](../developer/frontend-setup.md)**: Get started with the UI development.
 
 ---
 
@@ -75,9 +75,9 @@ We welcome contributions from developers of all skill levels. Here are some ways
 
 The best way to get started is to:
 
-1.  **Read our Code of Conduct**: Ensure a welcoming environment for everyone.
-2.  **Choose an area**: Pick a feature or a bug you'd like to work on.
-3.  **Start contributing!**: Fork the repository and submit your first Pull Request.
+1. **Read our Code of Conduct**: Ensure a welcoming environment for everyone.
+2. **Choose an area**: Pick a feature or a bug you'd like to work on.
+3. **Start contributing!**: Fork the repository and submit your first Pull Request.
 
 ---
 
@@ -85,6 +85,6 @@ The best way to get started is to:
 
 If you need help getting started or have any questions, please feel free to reach out:
 
-*   :fontawesome-solid-envelope: **Email**: [artyom.20century@gmail.com](mailto:artyom.20century@gmail.com)
+-   :fontawesome-solid-envelope: **Email**: [artyom.20century@gmail.com](mailto:artyom.20century@gmail.com)
 
 We currently don't have other official communication channels, but we are always happy to hear from you via email!
