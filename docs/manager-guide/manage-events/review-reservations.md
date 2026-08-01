@@ -40,7 +40,7 @@ When users need to shift their booking, they propose a new slot which appears in
 
 ![Update Requested Tab](assets/update-events.png)
 
-### Handling the Proposal:
+### Handling the Proposal
 - **To Approve**: Click **Approve time** to finalize the new time.
 - **To Decline**: Click **Decline time** to keep the reservation at its original time.
 

@@ -37,7 +37,7 @@ Services can offer different **reservation types**, which allow for flexible boo
 - :material-stairs-up: **Upper Floor**
 - :material-vector-square: **Specific Area**
 
-![Reservation Types ](assets/reservation-type.png)
+![Reservation Types](assets/reservation-type.png)
 
 !!! warning "Rules vary by type"
     Each reservation type may have unique constraints:
@@ -93,7 +93,7 @@ In some scenarios, your reservation might not be confirmed immediately. This usu
 
 ![Event Registration Form Confirmation](assets/event-registration-form-confirmation.png)
 
-### The Approval Flow:
+### The Approval Flow
 1. **Submit**: Create your reservation as usual.
 2. **Pending**: The status will show as **"Not approved"**.
 3. **Review**: A manager receives a notification to review your request.
