@@ -132,15 +132,28 @@ verified special requirement, such as the API iframe layout.
    trailing spaces for line breaks.
 6. Build and run repository checks before reporting completion.
 
+Use the repository Makefile for normal local commands:
+
+- `make install` installs the locked dependencies.
+- `make build` builds the documentation site.
+- `make serve` starts the local preview server.
+- `make pre-commit` runs all pre-commit hooks.
+- `make diff-check` checks for whitespace errors.
+- `make check` runs the build, pre-commit hooks, and diff check together.
+
+Use the underlying `uv run ...` commands only when a Makefile target is not
+available or when CI/debugging requires the direct command.
+
 ## Validation
 
 From the repository root, run:
 
 ```bash
-uv run zensical build --clean
-pre-commit run --all-files
-git diff --check
+make check
 ```
+
+For focused validation, use `make build`, `make pre-commit`, and
+`make diff-check` separately.
 
 If a full pre-commit run reports unrelated existing files, run the relevant
 hooks against the changed files and report the unrelated failure explicitly.

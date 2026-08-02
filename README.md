@@ -35,6 +35,7 @@ The documentation is built with **Zensical** and automatically deployed to **Git
 │   └── fetch_releases.py  # Generates release notes
 ├── site/                  # Generated static site
 ├── .github/workflows/     # CI/CD and deployment workflows
+├── Makefile               # Common local development commands
 ├── zensical.toml          # Site configuration
 ├── pyproject.toml
 └── uv.lock
@@ -54,10 +55,11 @@ The documentation is built with **Zensical** and automatically deployed to **Git
 Clone the repository and install the project dependencies:
 
 ```bash
-uv sync
+make install
 ```
 
-All project commands should be executed through `uv run`.
+The Makefile uses `uv` and provides the standard local workflow. Use `uv run`
+directly for commands without a Make target.
 
 ---
 
@@ -66,7 +68,7 @@ All project commands should be executed through `uv run`.
 ### Build the documentation
 
 ```bash
-uv run zensical build --clean
+make build
 ```
 
 The generated website is written to:
@@ -78,7 +80,7 @@ site/
 ### Run a local development server
 
 ```bash
-uv run zensical serve
+make serve
 ```
 
 The server automatically rebuilds the site when documentation changes.
@@ -108,7 +110,7 @@ Release notes are generated from the Backend and Frontend repositories.
 To regenerate them:
 
 ```bash
-uv run scripts/fetch_releases.py
+make fetch-release-notes
 ```
 
 This updates:
@@ -129,9 +131,12 @@ docs/release-notes/frontend.md
 Before opening a pull request, run:
 
 ```bash
-uv run zensical build --clean
-pre-commit run --all-files
+make check
 ```
+
+To run only the pre-commit hooks, use `make pre-commit`. To install them as a
+Git hook, use `make pre-commit-install`. The whitespace-only check is available
+as `make diff-check`.
 
 The configured pre-commit hooks validate:
 

@@ -9,6 +9,7 @@ a single-package Python project that uses Zensical for Markdown site generation.
 Key paths:
 
 - `docs/`: Markdown pages and static assets.
+- `Makefile`: Common install, build, preview, release-note, and validation commands.
 - `zensical.toml`: Site configuration, navigation, theme, and Markdown extensions.
 - `scripts/fetch_releases.py`: Fetches Backend and Frontend changelogs from GitHub.
 - `site/`: Generated site output. The GitHub Pages workflow rebuilds this directory.
@@ -24,25 +25,26 @@ Prerequisites:
 Install the locked dependencies from the repository root:
 
 ```bash
-uv sync
+make install
 ```
 
-Use `uv run ...` for project commands so the managed environment and lockfile
-are respected. Do not commit `.venv` or generated cache files.
+Use the Makefile targets for normal local workflows. Use `uv run ...` directly
+when invoking a command that has no Make target. Do not commit `.venv` or
+generated cache files.
 
 ## Development Workflow
 
 Build the documentation site locally:
 
 ```bash
-uv run zensical build --clean
+make build
 ```
 
 The generated files are written to `site/`. To preview the site with Zensical,
 run:
 
 ```bash
-uv run zensical serve
+make serve
 ```
 
 Edit Markdown under `docs/` and update the `nav` structure in `zensical.toml`
@@ -54,7 +56,7 @@ Generate release-note pages from the current `main` branches of the Backend and
 Frontend repositories with:
 
 ```bash
-uv run scripts/fetch_releases.py
+make fetch-release-notes
 ```
 
 The script writes `docs/release-notes/backend.md` and
@@ -67,9 +69,11 @@ There is no application test suite in this repository. Before submitting
 documentation changes, run the build and repository hygiene hooks:
 
 ```bash
-uv run zensical build --clean
-pre-commit run --all-files
+make check
 ```
+
+Run only the pre-commit hooks with `make pre-commit`, install the Git hook with
+`make pre-commit-install`, or run the whitespace check with `make diff-check`.
 
 The pre-commit configuration checks trailing whitespace, final newlines, YAML,
 TOML, and unusually large added files. If `pre-commit` is not installed, run
