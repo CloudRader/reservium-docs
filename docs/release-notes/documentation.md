@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.3.3](https://github.com/CloudRader/reservium-docs/compare/v0.3.2...v0.3.3) (2026-08-04)
+
+
+### ♻️ Updates & Improvements
+
+* **build:** add Makefile development commands ([5e9394c](https://github.com/CloudRader/reservium-docs/commit/5e9394cbc760c98cdb730af4e4c92541d2f190ea))
+
+
+### 📝 Documentation
+
+* **workflow:** use Makefile commands in repository guides and skill ([3b577b2](https://github.com/CloudRader/reservium-docs/commit/3b577b2ef80be14b26e15ac67ae7f9aadea27db3))
+
+
+### ⚙️ DevOps & CI/CD
+
+* **validation:** add documentation checks workflow ([d397eb2](https://github.com/CloudRader/reservium-docs/commit/d397eb29973efd8a59449f374372d0f794ca0cf2))
+* **validation:** skip checks for Release Please branch ([978cac0](https://github.com/CloudRader/reservium-docs/commit/978cac0216605c5cc69c9dcbbb6a41226b9a21e4))
+* **validation:** skip Release Please pull request checks ([3fe28fd](https://github.com/CloudRader/reservium-docs/commit/3fe28fd9a6262c71290fe5b5be9d419b3db28b6e))
+
 ## [0.3.2](https://github.com/CloudRader/reservium-docs/compare/v0.3.1...v0.3.2) (2026-08-01)
 
 
