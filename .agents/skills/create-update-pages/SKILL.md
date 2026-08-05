@@ -138,8 +138,9 @@ Use the repository Makefile for normal local commands:
 - `make build` builds the documentation site.
 - `make serve` starts the local preview server.
 - `make pre-commit` runs all pre-commit hooks.
+- `make links` checks local Markdown links and image or HTML asset references.
 - `make diff-check` checks for whitespace errors.
-- `make check` runs the build, pre-commit hooks, and diff check together.
+- `make check` runs the build, link check and pre-commit hooks together.
 
 Use the underlying `uv run ...` commands only when a Makefile target is not
 available or when CI/debugging requires the direct command.
@@ -152,8 +153,7 @@ From the repository root, run:
 make check
 ```
 
-For focused validation, use `make build`, `make pre-commit`, and
-`make diff-check` separately.
+For focused validation, use `make build`, `make links`, `make pre-commit`, and separately.
 
 If a full pre-commit run reports unrelated existing files, run the relevant
 hooks against the changed files and report the unrelated failure explicitly.

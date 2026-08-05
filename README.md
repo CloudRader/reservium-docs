@@ -32,7 +32,8 @@ The documentation is built with **Zensical** and automatically deployed to **Git
 .
 ├── docs/                  # Documentation pages and assets
 ├── scripts/
-│   └── fetch_releases.py  # Generates release notes
+│   ├── fetch_releases.py        # Generates release notes
+│   └── check_internal_links.py  # Checks local links and assets
 ├── site/                  # Generated static site
 ├── .github/workflows/     # CI/CD and deployment workflows
 ├── Makefile               # Common local development commands
@@ -135,8 +136,8 @@ make check
 ```
 
 To run only the pre-commit hooks, use `make pre-commit`. To install them as a
-Git hook, use `make pre-commit-install`. The whitespace-only check is available
-as `make diff-check`.
+Git hook, use `make pre-commit-install`. The internal link and asset check is
+available as `make links`.
 
 The configured pre-commit hooks validate:
 
