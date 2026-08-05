@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := help
 
-.PHONY: help install build serve pre-commit pre-commit-install fetch-release-notes diff-check check clean
+.PHONY: help install build serve pre-commit pre-commit-install fetch-release-notes links diff-check check clean
 
 help: ## Show this help message
 	@echo "Available commands:"
@@ -24,9 +24,13 @@ pre-commit-install: ## Install pre-commit as a Git hook
 fetch-release-notes: ## Fetch Backend and Frontend release notes
 	uv run scripts/fetch_releases.py
 
+links: ## Check internal Markdown links and assets
+	uv run scripts/check_internal_links.py
+
 check: ## Run all checks
 	@make build
 	@make pre-commit
+	@make links
 
 clean: ## Remove generated files and caches
 	rm -rf .cache/ site/

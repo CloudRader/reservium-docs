@@ -12,6 +12,7 @@ Key paths:
 - `Makefile`: Common install, build, preview, release-note, and validation commands.
 - `zensical.toml`: Site configuration, navigation, theme, and Markdown extensions.
 - `scripts/fetch_releases.py`: Fetches Backend and Frontend changelogs from GitHub.
+- `scripts/check_internal_links.py`: Checks local Markdown links and asset references.
 - `site/`: Generated site output. The GitHub Pages workflow rebuilds this directory.
 - `.github/workflows/`: Release-note, release, and deployment automation.
 
@@ -72,8 +73,7 @@ documentation changes, run the build and repository hygiene hooks:
 make check
 ```
 
-Run only the pre-commit hooks with `make pre-commit`, install the Git hook with
-`make pre-commit-install`, or run the whitespace check with `make diff-check`.
+Run only the pre-commit hooks with `make pre-commit`, install the Git hook with `make pre-commit-install`, check local links with `make links`.
 
 The pre-commit configuration checks trailing whitespace, final newlines, YAML,
 TOML, and unusually large added files. If `pre-commit` is not installed, run
