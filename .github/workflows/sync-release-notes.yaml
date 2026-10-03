@@ -22,11 +22,14 @@ jobs:
           fetch-depth: 0
           ref: release-please--branches--main
 
-      - name: Install uv
-        uses: astral-sh/setup-uv@v9.0.0
+      - name: Setup mise
+        uses: jdx/mise-action@v2
+
+      - name: Install dependencies
+        run: mise run install
 
       - name: Fetch and generate release notes
-        run: uv run scripts/fetch_releases.py
+        run: mise run fetch-release-notes
 
       - name: Copy CHANGELOG to docs
         run: cp CHANGELOG.md docs/release-notes/documentation.md
