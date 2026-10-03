@@ -1,5 +1,38 @@
 # Changelog
 
+## [0.3.3](https://github.com/CloudRader/reservium-docs/compare/v0.3.2...v0.3.3) (2026-10-03)
+
+
+### ♻️ Updates & Improvements
+
+* add deterministic internal link checks ([12b7601](https://github.com/CloudRader/reservium-docs/commit/12b76010cc46b8359664a7feebfe4da978c04c84))
+* **deps:** pin dependencies ([#94](https://github.com/CloudRader/reservium-docs/issues/94)) ([68dd158](https://github.com/CloudRader/reservium-docs/commit/68dd1580cff7eda67cab6a791415bc3e1080198b))
+* **renovate:** update config ([05407ae](https://github.com/CloudRader/reservium-docs/commit/05407ae1776e40dc634e0b2d6486c68e5f3a5b33))
+* **workflow:** replace Makefile with mise and update CI workflows ([e3aa4a9](https://github.com/CloudRader/reservium-docs/commit/e3aa4a9d621bee032bf0c3a401d69f56f4d0cd31))
+
+
+### 🐛 Fixes
+
+* **deps:** update dependency typer to v0.27.2 ([#78](https://github.com/CloudRader/reservium-docs/issues/78)) ([1d8e345](https://github.com/CloudRader/reservium-docs/commit/1d8e3453dd1801cec86bb9e1bd192fe2631ffea1))
+* **deps:** update dependency zensical to v0.0.67 ([#92](https://github.com/CloudRader/reservium-docs/issues/92)) ([b56677d](https://github.com/CloudRader/reservium-docs/commit/b56677db8b1fc6f0739ee50549cb4c353690e898))
+
+
+### 📦 Dependencies
+
+* update python and uv versions ([0fa5701](https://github.com/CloudRader/reservium-docs/commit/0fa57017efc84b2e0ded26a2c076e18d6f3a60fc))
+* update python version in pyproject, update lock file ([ac39550](https://github.com/CloudRader/reservium-docs/commit/ac395509e2c25105a04708e1ce2b886720fa95e0))
+
+
+### 📝 Documentation
+
+* **workflow:** update guides and skills to use mise commands ([20ff354](https://github.com/CloudRader/reservium-docs/commit/20ff354d2b4b8a01ad203b99a5843c0edecb7d43))
+
+
+### ⚙️ DevOps & CI/CD
+
+* **validation:** add documentation checks workflow ([a13b65f](https://github.com/CloudRader/reservium-docs/commit/a13b65f349fd46bb10d05acf9b4a8e02d127ca64))
+* **validation:** skip Release Please pull request checks ([08056ee](https://github.com/CloudRader/reservium-docs/commit/08056eee4d91b5124a4a8e495eee91470f05da08))
+
 ## [0.3.2](https://github.com/CloudRader/reservium-docs/compare/v0.3.1...v0.3.2) (2026-08-01)
 
 
