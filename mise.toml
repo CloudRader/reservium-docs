@@ -1,0 +1,40 @@
+[tools]
+python = "3.14.3"
+uv = "0.12.17"
+pre-commit = "4.6.2"
+
+[tasks.install]
+description = "Install locked dependencies"
+run = "uv sync --locked"
+
+[tasks.build]
+description = "Build the documentation site"
+run = "uv run zensical build --clean"
+
+[tasks.serve]
+description = "Start the local documentation server"
+run = "uv run zensical serve"
+
+[tasks.pre-commit]
+description = "Run all pre-commit hooks"
+run = "pre-commit run --all-files"
+
+[tasks.pre-commit-install]
+description = "Install pre-commit as a Git hook"
+run = "pre-commit install"
+
+[tasks.fetch-release-notes]
+description = "Fetch Backend and Frontend release notes"
+run = "uv run scripts/fetch_releases.py"
+
+[tasks.links]
+description = "Check internal Markdown links and assets"
+run = "uv run scripts/check_internal_links.py"
+
+[tasks.check]
+description = "Run all checks"
+depends = ["build", "pre-commit", "links"]
+
+[tasks.clean]
+description = "Remove generated files and caches"
+run = "rm -rf .cache/ site/"
