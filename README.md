@@ -36,7 +36,7 @@ The documentation is built with **Zensical** and automatically deployed to **Git
 │   └── check_internal_links.py  # Checks local links and assets
 ├── site/                  # Generated static site
 ├── .github/workflows/     # CI/CD and deployment workflows
-├── Makefile               # Common local development commands
+├── mise.toml              # Tool version pinning and task runner
 ├── zensical.toml          # Site configuration
 ├── pyproject.toml
 └── uv.lock
@@ -46,21 +46,22 @@ The documentation is built with **Zensical** and automatically deployed to **Git
 
 ## Requirements
 
-- Python **3.14.3**
-- [uv](https://github.com/astral-sh/uv)
+- [mise](https://mise.jdx.dev) (automatically manages Python 3.14.3, uv, and pre-commit)
+- [git](https://git-scm.com/)
 
 ---
 
 ## Installation
 
-Clone the repository and install the project dependencies:
+Clone the repository and install the project tools and dependencies:
 
 ```bash
-make install
+mise install
+mise run install
 ```
 
-The Makefile uses `uv` and provides the standard local workflow. Use `uv run`
-directly for commands without a Make target.
+`mise.toml` configures pinned versions for `python`, `uv`, and `pre-commit`, and provides the standard local task runner. Use `uv run`
+directly for commands without a defined task.
 
 ---
 
@@ -69,7 +70,7 @@ directly for commands without a Make target.
 ### Build the documentation
 
 ```bash
-make build
+mise run build
 ```
 
 The generated website is written to:
@@ -81,7 +82,7 @@ site/
 ### Run a local development server
 
 ```bash
-make serve
+mise run serve
 ```
 
 The server automatically rebuilds the site when documentation changes.
@@ -111,7 +112,7 @@ Release notes are generated from the Backend and Frontend repositories.
 To regenerate them:
 
 ```bash
-make fetch-release-notes
+mise run fetch-release-notes
 ```
 
 This updates:
@@ -132,12 +133,12 @@ docs/release-notes/frontend.md
 Before opening a pull request, run:
 
 ```bash
-make check
+mise run check
 ```
 
-To run only the pre-commit hooks, use `make pre-commit`. To install them as a
-Git hook, use `make pre-commit-install`. The internal link and asset check is
-available as `make links`.
+To run only the pre-commit hooks, use `mise run pre-commit`. To install them as a
+Git hook, use `mise run pre-commit-install`. The internal link and asset check is
+available as `mise run links`.
 
 The configured pre-commit hooks validate:
 
