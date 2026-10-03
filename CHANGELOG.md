@@ -6,32 +6,14 @@
 ### ♻️ Updates & Improvements
 
 * add deterministic internal link checks ([12b7601](https://github.com/CloudRader/reservium-docs/commit/12b76010cc46b8359664a7feebfe4da978c04c84))
-* **build:** add Makefile development commands ([9271d3c](https://github.com/CloudRader/reservium-docs/commit/9271d3c7f325786a2bcd63371f966762c10f0745))
 * **deps:** pin dependencies ([#94](https://github.com/CloudRader/reservium-docs/issues/94)) ([68dd158](https://github.com/CloudRader/reservium-docs/commit/68dd1580cff7eda67cab6a791415bc3e1080198b))
-* **deps:** update dependency python to v3.14.7 ([#87](https://github.com/CloudRader/reservium-docs/issues/87)) ([bf8cc4a](https://github.com/CloudRader/reservium-docs/commit/bf8cc4ad86cc75fbf6d23fe2755c3f2bf782c2db))
-* **deps:** update jdx/mise-action action to v4 ([#91](https://github.com/CloudRader/reservium-docs/issues/91)) ([db14ed8](https://github.com/CloudRader/reservium-docs/commit/db14ed8c5cb5ddb001374eb7b86f8d9a11667627))
-* **deps:** update jdx/mise-action action to v5 ([#93](https://github.com/CloudRader/reservium-docs/issues/93)) ([fd06802](https://github.com/CloudRader/reservium-docs/commit/fd06802256b2e83e3fd49f25e8109ed910b48238))
 * **renovate:** update config ([05407ae](https://github.com/CloudRader/reservium-docs/commit/05407ae1776e40dc634e0b2d6486c68e5f3a5b33))
 * **workflow:** replace Makefile with mise and update CI workflows ([e3aa4a9](https://github.com/CloudRader/reservium-docs/commit/e3aa4a9d621bee032bf0c3a401d69f56f4d0cd31))
 
 
 ### 🐛 Fixes
 
-* **deps:** update dependency typer to v0.27.1 ([#71](https://github.com/CloudRader/reservium-docs/issues/71)) ([4e2a766](https://github.com/CloudRader/reservium-docs/commit/4e2a766e884fde0d190db6ce93bd899440b708cf))
 * **deps:** update dependency typer to v0.27.2 ([#78](https://github.com/CloudRader/reservium-docs/issues/78)) ([1d8e345](https://github.com/CloudRader/reservium-docs/commit/1d8e3453dd1801cec86bb9e1bd192fe2631ffea1))
-* **deps:** update dependency zensical to v0.0.53 ([#72](https://github.com/CloudRader/reservium-docs/issues/72)) ([8f45985](https://github.com/CloudRader/reservium-docs/commit/8f4598567e3f78710e5caee28ed352132982fbc8))
-* **deps:** update dependency zensical to v0.0.54 ([#74](https://github.com/CloudRader/reservium-docs/issues/74)) ([a213ad6](https://github.com/CloudRader/reservium-docs/commit/a213ad6b641f583bc7332af089bb6a0c48be47f8))
-* **deps:** update dependency zensical to v0.0.55 ([#75](https://github.com/CloudRader/reservium-docs/issues/75)) ([7397218](https://github.com/CloudRader/reservium-docs/commit/7397218683c24267bef31916136a518b479c0777))
-* **deps:** update dependency zensical to v0.0.56 ([#76](https://github.com/CloudRader/reservium-docs/issues/76)) ([9390806](https://github.com/CloudRader/reservium-docs/commit/93908063317ab964ae5302ab059aceef8ec88966))
-* **deps:** update dependency zensical to v0.0.57 ([#77](https://github.com/CloudRader/reservium-docs/issues/77)) ([4106b3f](https://github.com/CloudRader/reservium-docs/commit/4106b3ff93e97976644d1b99ea4280c18903fe94))
-* **deps:** update dependency zensical to v0.0.58 ([#79](https://github.com/CloudRader/reservium-docs/issues/79)) ([4e8199a](https://github.com/CloudRader/reservium-docs/commit/4e8199afc5da508d147836a6a90f4e38bd21effd))
-* **deps:** update dependency zensical to v0.0.59 ([#80](https://github.com/CloudRader/reservium-docs/issues/80)) ([2be3feb](https://github.com/CloudRader/reservium-docs/commit/2be3febd26588a60be4b1dcab349fd0da8429c0e))
-* **deps:** update dependency zensical to v0.0.60 ([#81](https://github.com/CloudRader/reservium-docs/issues/81)) ([eda71a9](https://github.com/CloudRader/reservium-docs/commit/eda71a978c6b18f5def5dc4820a56434b074c159))
-* **deps:** update dependency zensical to v0.0.61 ([#82](https://github.com/CloudRader/reservium-docs/issues/82)) ([6836fed](https://github.com/CloudRader/reservium-docs/commit/6836fedd2c881cc997401ee2076396ff5725880b))
-* **deps:** update dependency zensical to v0.0.62 ([#83](https://github.com/CloudRader/reservium-docs/issues/83)) ([7f75c91](https://github.com/CloudRader/reservium-docs/commit/7f75c9111445bc01f75b9fce52955554c6382307))
-* **deps:** update dependency zensical to v0.0.63 ([#84](https://github.com/CloudRader/reservium-docs/issues/84)) ([45e49c9](https://github.com/CloudRader/reservium-docs/commit/45e49c9f68cb3b0ec963755748f13f9ee3700feb))
-* **deps:** update dependency zensical to v0.0.64 ([#85](https://github.com/CloudRader/reservium-docs/issues/85)) ([c3a0957](https://github.com/CloudRader/reservium-docs/commit/c3a095715751d698c460b75cbb49324988d252d5))
-* **deps:** update dependency zensical to v0.0.65 ([#86](https://github.com/CloudRader/reservium-docs/issues/86)) ([e8f6bd4](https://github.com/CloudRader/reservium-docs/commit/e8f6bd42f85335859f08fd58e05b241e39d09b0a))
 * **deps:** update dependency zensical to v0.0.67 ([#92](https://github.com/CloudRader/reservium-docs/issues/92)) ([b56677d](https://github.com/CloudRader/reservium-docs/commit/b56677db8b1fc6f0739ee50549cb4c353690e898))
 
 
@@ -44,13 +26,11 @@
 ### 📝 Documentation
 
 * **workflow:** update guides and skills to use mise commands ([20ff354](https://github.com/CloudRader/reservium-docs/commit/20ff354d2b4b8a01ad203b99a5843c0edecb7d43))
-* **workflow:** use Makefile commands in repository guides and skill ([79a18cc](https://github.com/CloudRader/reservium-docs/commit/79a18cc587379c9e902de316d74a1d87b9aa4b9e))
 
 
 ### ⚙️ DevOps & CI/CD
 
 * **validation:** add documentation checks workflow ([a13b65f](https://github.com/CloudRader/reservium-docs/commit/a13b65f349fd46bb10d05acf9b4a8e02d127ca64))
-* **validation:** skip checks for Release Please branch ([8c502dd](https://github.com/CloudRader/reservium-docs/commit/8c502dd3201b34960550d437f472b12b5cd73795))
 * **validation:** skip Release Please pull request checks ([08056ee](https://github.com/CloudRader/reservium-docs/commit/08056eee4d91b5124a4a8e495eee91470f05da08))
 
 ## [0.3.2](https://github.com/CloudRader/reservium-docs/compare/v0.3.1...v0.3.2) (2026-08-01)
