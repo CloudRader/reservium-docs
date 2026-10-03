@@ -3,11 +3,5 @@
   "extends": [
     "github>cloudrader/renovate-config:org-inherited-config"
   ],
-  "baseBranchPatterns": ["main"],
-  "packageRules": [
-    {
-      "matchPackageNames": ["python"],
-      "allowedVersions": "3.14.3"
-    }
-  ]
+  "baseBranchPatterns": ["main"]
 }
