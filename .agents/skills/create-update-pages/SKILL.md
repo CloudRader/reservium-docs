@@ -132,17 +132,16 @@ verified special requirement, such as the API iframe layout.
    trailing spaces for line breaks.
 6. Build and run repository checks before reporting completion.
 
-Use the repository Makefile for normal local commands:
+Use mise tasks for normal local commands:
 
-- `make install` installs the locked dependencies.
-- `make build` builds the documentation site.
-- `make serve` starts the local preview server.
-- `make pre-commit` runs all pre-commit hooks.
-- `make links` checks local Markdown links and image or HTML asset references.
-- `make diff-check` checks for whitespace errors.
-- `make check` runs the build, link check and pre-commit hooks together.
+- `mise run install` installs the locked dependencies.
+- `mise run build` builds the documentation site.
+- `mise run serve` starts the local preview server.
+- `mise run pre-commit` runs all pre-commit hooks.
+- `mise run links` checks local Markdown links and image or HTML asset references.
+- `mise run check` runs the build, link check and pre-commit hooks together.
 
-Use the underlying `uv run ...` commands only when a Makefile target is not
+Use the underlying `uv run ...` commands only when a task target is not
 available or when CI/debugging requires the direct command.
 
 ## Validation
@@ -150,10 +149,10 @@ available or when CI/debugging requires the direct command.
 From the repository root, run:
 
 ```bash
-make check
+mise run check
 ```
 
-For focused validation, use `make build`, `make links`, `make pre-commit`, and separately.
+For focused validation, use `mise run build`, `mise run links`, and `mise run pre-commit` separately.
 
 If a full pre-commit run reports unrelated existing files, run the relevant
 hooks against the changed files and report the unrelated failure explicitly.

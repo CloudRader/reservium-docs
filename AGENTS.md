@@ -9,7 +9,7 @@ a single-package Python project that uses Zensical for Markdown site generation.
 Key paths:
 
 - `docs/`: Markdown pages and static assets.
-- `Makefile`: Common install, build, preview, release-note, and validation commands.
+- `mise.toml`: Pinned tool versions (Python, uv, pre-commit) and task runner commands.
 - `zensical.toml`: Site configuration, navigation, theme, and Markdown extensions.
 - `scripts/fetch_releases.py`: Fetches Backend and Frontend changelogs from GitHub.
 - `scripts/check_internal_links.py`: Checks local Markdown links and asset references.
@@ -20,17 +20,18 @@ Key paths:
 
 Prerequisites:
 
-- `uv`.
-- Python `3.14.3`, as pinned by `pyproject.toml` and Renovate configuration.
+- `mise` (manages Python `3.14.3`, `uv`, and `pre-commit` as configured in `mise.toml`).
+- `git`.
 
-Install the locked dependencies from the repository root:
+Install the tools and locked dependencies from the repository root:
 
 ```bash
-make install
+mise install
+mise run install
 ```
 
-Use the Makefile targets for normal local workflows. Use `uv run ...` directly
-when invoking a command that has no Make target. Do not commit `.venv` or
+Use `mise run <task>` for normal local workflows. Use `uv run ...` directly
+when invoking a command that has no task target. Do not commit `.venv` or
 generated cache files.
 
 ## Development Workflow
@@ -38,14 +39,14 @@ generated cache files.
 Build the documentation site locally:
 
 ```bash
-make build
+mise run build
 ```
 
 The generated files are written to `site/`. To preview the site with Zensical,
 run:
 
 ```bash
-make serve
+mise run serve
 ```
 
 Edit Markdown under `docs/` and update the `nav` structure in `zensical.toml`
@@ -57,7 +58,7 @@ Generate release-note pages from the current `main` branches of the Backend and
 Frontend repositories with:
 
 ```bash
-make fetch-release-notes
+mise run fetch-release-notes
 ```
 
 The script writes `docs/release-notes/backend.md` and
@@ -70,14 +71,14 @@ There is no application test suite in this repository. Before submitting
 documentation changes, run the build and repository hygiene hooks:
 
 ```bash
-make check
+mise run check
 ```
 
-Run only the pre-commit hooks with `make pre-commit`, install the Git hook with `make pre-commit-install`, check local links with `make links`.
+Run only the pre-commit hooks with `mise run pre-commit`, install the Git hook with `mise run pre-commit-install`, check local links with `mise run links`.
 
 The pre-commit configuration checks trailing whitespace, final newlines, YAML,
 TOML, and unusually large added files. If `pre-commit` is not installed, run
-the checks through the project's configured environment or install it locally
+the checks through `mise run check` or install it through `mise install`
 before making a contribution.
 
 ## Code and Content Conventions
