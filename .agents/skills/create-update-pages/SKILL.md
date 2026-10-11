@@ -134,12 +134,12 @@ verified special requirement, such as the API iframe layout.
 
 Use mise tasks for normal local commands:
 
-- `mise run install` installs the locked dependencies.
-- `mise run build` builds the documentation site.
-- `mise run serve` starts the local preview server.
-- `mise run pre-commit` runs all pre-commit hooks.
-- `mise run links` checks local Markdown links and image or HTML asset references.
-- `mise run check` runs the build, link check and pre-commit hooks together.
+- `mise uv:install-lock` installs the locked dependencies (or `mise run uv:install` to sync).
+- `mise docs:build` builds the documentation site.
+- `mise docs:serve` starts the local preview server.
+- `mise pre-commit:run` runs all pre-commit hooks.
+- `mise docs:links` checks local Markdown links and image or HTML asset references.
+- `mise check` runs the build, link check and pre-commit hooks together.
 
 Use the underlying `uv run ...` commands only when a task target is not
 available or when CI/debugging requires the direct command.
@@ -149,10 +149,10 @@ available or when CI/debugging requires the direct command.
 From the repository root, run:
 
 ```bash
-mise run check
+mise check
 ```
 
-For focused validation, use `mise run build`, `mise run links`, and `mise run pre-commit` separately.
+For focused validation, use `mise docs:build`, `mise docs:links`, and `mise pre-commit:run` separately.
 
 If a full pre-commit run reports unrelated existing files, run the relevant
 hooks against the changed files and report the unrelated failure explicitly.

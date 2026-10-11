@@ -27,10 +27,10 @@ jobs:
         uses: jdx/mise-action@v5.0.1
 
       - name: Install dependencies
-        run: mise run install
+        run: mise uv:install-prod
 
       - name: Build documentation site
-        run: mise run build
+        run: mise docs:build
 
       - uses: actions/upload-pages-artifact@v5.0.0
         with:

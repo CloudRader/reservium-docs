@@ -1,40 +1,46 @@
 [tools]
-python = "3.14.8"
 uv = "0.12.23"
-pre-commit = "4.6.2"
 
-[tasks.install]
+[tasks."uv:install"]
+description = "Install dependencies"
+run = "uv sync"
+
+[tasks."uv:install-lock"]
 description = "Install locked dependencies"
 run = "uv sync --locked"
 
-[tasks.build]
+[tasks."uv:install-prod"]
+description = "Install locked production dependencies (without dev)"
+run = "uv sync --locked --no-dev"
+
+[tasks."docs:build"]
 description = "Build the documentation site"
 run = "uv run zensical build --clean"
 
-[tasks.serve]
+[tasks."docs:serve"]
 description = "Start the local documentation server"
 run = "uv run zensical serve"
 
-[tasks.pre-commit]
-description = "Run all pre-commit hooks"
-run = "pre-commit run --all-files"
+[tasks."docs:clean"]
+description = "Remove generated files and caches"
+run = "rm -rf .cache/ site/"
 
-[tasks.pre-commit-install]
-description = "Install pre-commit as a Git hook"
-run = "pre-commit install"
-
-[tasks.fetch-release-notes]
-description = "Fetch Backend and Frontend release notes"
-run = "uv run scripts/fetch_releases.py"
-
-[tasks.links]
+[tasks."docs:links"]
 description = "Check internal Markdown links and assets"
 run = "uv run scripts/check_internal_links.py"
 
+[tasks."docs:fetch-release-notes"]
+description = "Fetch Backend and Frontend release notes"
+run = "uv run scripts/fetch_releases.py"
+
+[tasks."pre-commit:run"]
+description = "Run all pre-commit hooks"
+run = "uv run pre-commit run --all-files"
+
+[tasks."pre-commit:install"]
+description = "Install pre-commit as a Git hook"
+run = "uv run pre-commit install"
+
 [tasks.check]
 description = "Run all checks"
-depends = ["build", "pre-commit", "links"]
-
-[tasks.clean]
-description = "Remove generated files and caches"
-run = "rm -rf .cache/ site/"
+depends = ["docs:build", "pre-commit:run", "docs:links"]

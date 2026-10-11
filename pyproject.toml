@@ -8,3 +8,8 @@ dependencies = [
     "typer==0.27.2",
     "requests==2.34.2",
 ]
+
+[dependency-groups]
+dev = [
+  "pre-commit==4.6.2",
+]
