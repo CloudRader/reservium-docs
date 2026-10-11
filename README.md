@@ -46,7 +46,7 @@ The documentation is built with **Zensical** and automatically deployed to **Git
 
 ## Requirements
 
-- [mise](https://mise.jdx.dev) (automatically manages Python 3.14.3, uv, and pre-commit)
+- [mise](https://mise.jdx.dev) (manages uv; uv manages Python and project dependencies)
 - [git](https://git-scm.com/)
 
 ---
@@ -57,10 +57,10 @@ Clone the repository and install the project tools and dependencies:
 
 ```bash
 mise install
-mise run install
+mise uv:install-lock
 ```
 
-`mise.toml` configures pinned versions for `python`, `uv`, and `pre-commit`, and provides the standard local task runner. Use `uv run`
+`mise.toml` configures `uv` and provides namespaced development tasks (`uv:install`, `uv:install-lock`, `docs:build`, etc.). Use `uv run`
 directly for commands without a defined task.
 
 ---
@@ -70,7 +70,7 @@ directly for commands without a defined task.
 ### Build the documentation
 
 ```bash
-mise run build
+mise docs:build
 ```
 
 The generated website is written to:
@@ -82,7 +82,7 @@ site/
 ### Run a local development server
 
 ```bash
-mise run serve
+mise docs:serve
 ```
 
 The server automatically rebuilds the site when documentation changes.
@@ -112,7 +112,7 @@ Release notes are generated from the Backend and Frontend repositories.
 To regenerate them:
 
 ```bash
-mise run fetch-release-notes
+mise docs:fetch-release-notes
 ```
 
 This updates:
@@ -136,9 +136,9 @@ Before opening a pull request, run:
 mise run check
 ```
 
-To run only the pre-commit hooks, use `mise run pre-commit`. To install them as a
-Git hook, use `mise run pre-commit-install`. The internal link and asset check is
-available as `mise run links`.
+To run only the pre-commit hooks, use `mise pre-commit:run`. To install them as a
+Git hook, use `mise pre-commit:install`. The internal link and asset check is
+available as `mise docs:links`.
 
 The configured pre-commit hooks validate:
 

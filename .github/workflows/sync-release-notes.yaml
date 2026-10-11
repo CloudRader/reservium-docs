@@ -26,10 +26,10 @@ jobs:
         uses: jdx/mise-action@v5.0.1
 
       - name: Install dependencies
-        run: mise run install
+        run: mise uv:install-lock
 
       - name: Fetch and generate release notes
-        run: mise run fetch-release-notes
+        run: mise docs:fetch-release-notes
 
       - name: Copy CHANGELOG to docs
         run: cp CHANGELOG.md docs/release-notes/documentation.md

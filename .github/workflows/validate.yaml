@@ -23,7 +23,7 @@ jobs:
         uses: jdx/mise-action@v5.0.1
 
       - name: Install dependencies
-        run: mise run install
+        run: mise uv:install-lock
 
       - name: Run validation checks
-        run: mise run check
+        run: mise check

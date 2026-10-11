@@ -9,7 +9,7 @@ a single-package Python project that uses Zensical for Markdown site generation.
 Key paths:
 
 - `docs/`: Markdown pages and static assets.
-- `mise.toml`: Pinned tool versions (Python, uv, pre-commit) and task runner commands.
+- `mise.toml`: Pinned tool versions (uv) and task runner commands.
 - `zensical.toml`: Site configuration, navigation, theme, and Markdown extensions.
 - `scripts/fetch_releases.py`: Fetches Backend and Frontend changelogs from GitHub.
 - `scripts/check_internal_links.py`: Checks local Markdown links and asset references.
@@ -20,17 +20,17 @@ Key paths:
 
 Prerequisites:
 
-- `mise` (manages Python `3.14.3`, `uv`, and `pre-commit` as configured in `mise.toml`).
+- `mise` (manages `uv` as configured in `mise.toml`; `uv` manages Python and project dependencies).
 - `git`.
 
 Install the tools and locked dependencies from the repository root:
 
 ```bash
 mise install
-mise run install
+mise uv:install-lock
 ```
 
-Use `mise run <task>` for normal local workflows. Use `uv run ...` directly
+Use `mise <task>` for normal local workflows (e.g. `mise uv:install` to sync unlocked dependencies). Use `uv run ...` directly
 when invoking a command that has no task target. Do not commit `.venv` or
 generated cache files.
 
@@ -39,14 +39,14 @@ generated cache files.
 Build the documentation site locally:
 
 ```bash
-mise run build
+mise docs:build
 ```
 
 The generated files are written to `site/`. To preview the site with Zensical,
 run:
 
 ```bash
-mise run serve
+mise docs:serve
 ```
 
 Edit Markdown under `docs/` and update the `nav` structure in `zensical.toml`
@@ -58,7 +58,7 @@ Generate release-note pages from the current `main` branches of the Backend and
 Frontend repositories with:
 
 ```bash
-mise run fetch-release-notes
+mise docs:fetch-release-notes
 ```
 
 The script writes `docs/release-notes/backend.md` and
@@ -71,15 +71,14 @@ There is no application test suite in this repository. Before submitting
 documentation changes, run the build and repository hygiene hooks:
 
 ```bash
-mise run check
+mise check
 ```
 
-Run only the pre-commit hooks with `mise run pre-commit`, install the Git hook with `mise run pre-commit-install`, check local links with `mise run links`.
+Run only the pre-commit hooks with `mise pre-commit:run`, install the Git hook with `mise pre-commit:install`, check local links with `mise docs:links`.
 
 The pre-commit configuration checks trailing whitespace, final newlines, YAML,
-TOML, and unusually large added files. If `pre-commit` is not installed, run
-the checks through `mise run check` or install it through `mise install`
-before making a contribution.
+TOML, and unusually large added files. Pre-commit is managed as a development
+dependency via `uv`.
 
 ## Code and Content Conventions
 
