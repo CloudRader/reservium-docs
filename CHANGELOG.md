@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.3.4](https://github.com/CloudRader/reservium-docs/compare/v0.3.3...v0.3.4) (2026-10-23)
+
+
+### ♻️ Updates & Improvements
+
+* **deps:** update dependency uv to v0.12.23 ([#95](https://github.com/CloudRader/reservium-docs/issues/95)) ([b647c99](https://github.com/CloudRader/reservium-docs/commit/b647c991537b48081f13228c5fc5a5c2a883985b))
+* **deps:** update dependency uv to v0.12.24 ([#101](https://github.com/CloudRader/reservium-docs/issues/101)) ([7ee9370](https://github.com/CloudRader/reservium-docs/commit/7ee93704cbdbfd6112c78dc9dc01e1db39a2ae3f))
+* **workflow:** organize mise tasks into namespaces and manage ([395d5f6](https://github.com/CloudRader/reservium-docs/commit/395d5f6ed06cd670068a701f42728e8fdb0fca41))
+
+
+### 🐛 Fixes
+
+* **deps:** update dependency typer to v0.27.3 ([#99](https://github.com/CloudRader/reservium-docs/issues/99)) ([946cf22](https://github.com/CloudRader/reservium-docs/commit/946cf2291b38af5193779926072f24f873acbc4b))
+* **deps:** update dependency zensical to v0.0.68 ([#98](https://github.com/CloudRader/reservium-docs/issues/98)) ([d7f1491](https://github.com/CloudRader/reservium-docs/commit/d7f149154f5e8fb38a9487c6fff4269a1f8fcef5))
+* **deps:** update dependency zensical to v0.0.69 ([#100](https://github.com/CloudRader/reservium-docs/issues/100)) ([c7f8a36](https://github.com/CloudRader/reservium-docs/commit/c7f8a36b8463a2f91d3e44dfb980eb824ac0aba9))
+* **deps:** update dependency zensical to v0.0.70 ([#104](https://github.com/CloudRader/reservium-docs/issues/104)) ([e3ba7ac](https://github.com/CloudRader/reservium-docs/commit/e3ba7ac96025893844f7250f8602ddb38ae4839e))
+* **deps:** update dependency zensical to v0.0.71 ([#106](https://github.com/CloudRader/reservium-docs/issues/106)) ([6fbaa63](https://github.com/CloudRader/reservium-docs/commit/6fbaa633730d3d16f338041198048bf8244913ad))
+
 ## [0.3.3](https://github.com/CloudRader/reservium-docs/compare/v0.3.2...v0.3.3) (2026-10-03)
 
 
