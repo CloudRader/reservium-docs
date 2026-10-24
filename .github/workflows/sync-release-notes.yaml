@@ -23,7 +23,7 @@ jobs:
           ref: release-please--branches--main
 
       - name: Setup mise
-        uses: jdx/mise-action@v5.0.1
+        uses: jdx/mise-action@v5.2.0
 
       - name: Install dependencies
         run: mise uv:install-lock
